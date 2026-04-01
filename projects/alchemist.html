@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alchemist — Victor Nikhil Antony</title>
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body class="alchemist-page">
+
+  <nav class="nav home-nav">
+    <a class="nav-brand home-brand" href="../index.html">victor nikhil antony</a>
+    <div class="nav-links">
+      <a href="../index.html#work">Work</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../assets/pdf/vantony_CV.pdf" target="_blank">CV</a>
+      <a href="mailto:vantony1@jhu.edu">Contact</a>
+    </div>
+  </nav>
+
+  <header class="xpress-header alchemist-header">
+    <div class="alchemist-landing">
+      <div class="alchemist-copy">
+        <p class="alchemist-kicker">Alchemist</p>
+        <h1 class="alchemist-title">Tell the robot the outcome. Let the system build the program.</h1>
+        <p class="alchemist-subtitle">
+          Alchemist is a conversational programming interface for robotics.
+          Instead of asking end-users to think in code, it lets them describe what they want in plain language,
+          then generates, verifies, previews, and executes robot programs inside one integrated workspace.
+        </p>
+        <div class="hero-meta">
+          <span class="meta-chip">HRI 2024</span>
+          <span class="meta-chip">End-user programming</span>
+          <span class="meta-chip">Robotics + LLMs</span>
+          <span class="meta-chip">Open Source</span>
+        </div>
+        <div class="intro-actions" style="margin-top: 1.35rem;">
+          <a class="btn btn-primary" href="../assets/pdf/alchemist.pdf" target="_blank">Read the paper</a>
+        </div>
+      </div>
+      <div class="alchemist-hero-side">
+        <div class="alchemist-teaser figure-panel alchemist-teaser-panel" id="alchemist-teaser-panel">
+        <button class="alchemist-zoom-trigger" type="button" aria-label="Expand Alchemist interface image">+</button>
+        <img src="../assets/img/alchemist/teaser-draft.png" alt="Alchemist interface showing 3D robot visualization, chat, terminal, and code editor." />
+        <p class="figure-caption">One interface for chatting with the robot, inspecting generated code, previewing execution, and running the task.</p>
+        </div>
+        <div class="alchemist-authors-wrap">
+          <p class="alchemist-authors">Ulas Berk Karli, Juo-Tung Chen, <span>Victor Nikhil Antony</span>, Chien-Ming Huang</p>
+          <p class="alchemist-note">HRI 2024 · 24.3% acceptance</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="project-body alchemist-shell">
+
+    <section class="alchemist-proof-strip">
+      <div class="alchemist-proof-grid">
+        <div class="alchemist-proof-card">
+          <div class="alchemist-proof-number">10</div>
+          <div class="alchemist-proof-label">Validated users across novice scientists and robotics experts</div>
+        </div>
+        <div class="alchemist-proof-card">
+          <div class="alchemist-proof-number">~1 hr</div>
+          <div class="alchemist-proof-label">Task completion time for novices and experts alike</div>
+        </div>
+        <div class="alchemist-proof-card">
+          <div class="alchemist-proof-number">3</div>
+          <div class="alchemist-proof-label">Robot platforms supported: UR5, Franka Panda, and TIAGo</div>
+        </div>
+        <div class="alchemist-proof-card">
+          <div class="alchemist-proof-number">5</div>
+          <div class="alchemist-proof-label">Design objectives shaping the system architecture</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alchemist-story-block">
+      <div class="alchemist-story-copy">
+        <span class="alchemist-section-tag">01 · What it fixes</span>
+        <h2 class="xpress-title">The bottleneck is not the robot. It is the programming layer.</h2>
+        <p class="intro-lede">
+          In labs, factories, and care settings, the people who know what the robot should do are rarely the people who know how to program it.
+          Alchemist closes that gap by shifting the user’s job from specifying logic to specifying outcomes.
+        </p>
+      </div>
+      <div class="intro-highlights alchemist-highlight-grid">
+        <div class="highlight-item">
+          <span class="highlight-title">Outcome-first interaction</span>
+          <p>Users describe tasks in plain language instead of translating domain knowledge into robot code.</p>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-title">Built for domain experts</span>
+          <p>Scientists and operators can configure robot behavior without prior robotics experience.</p>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-title">One programming surface</span>
+          <p>Conversation, code generation, verification, and execution live inside the same tool instead of across separate apps.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="alchemist-image-chapter">
+      <div class="alchemist-chapter-head">
+        <span class="alchemist-section-tag">02 · Interaction modes</span>
+        <h2 class="xpress-title">Two ways of working with robots, one interface.</h2>
+        <p class="section-lede">
+          Alchemist supports both full workflow automation and live collaborative assistance.
+          That matters because real deployments rarely fit a single mode of use.
+        </p>
+      </div>
+
+      <div class="alchemist-mode-grid">
+        <div class="context-card alchemist-mode-card">
+          <h4>Automation <span class="ctx-badge">End-to-end</span></h4>
+          <p>Users define an entire process in natural language and Alchemist turns it into a reusable program.</p>
+          <ul>
+            <li>Describe multi-step workflows in plain language</li>
+            <li>Preview and verify before execution</li>
+            <li>Save and rerun procedures across sessions</li>
+          </ul>
+        </div>
+        <div class="context-card alchemist-mode-card">
+          <h4>Collaboration <span class="ctx-badge">Real-time</span></h4>
+          <p>Users can also instruct the robot live, letting it respond to in-the-moment needs as a teammate rather than a fixed script.</p>
+          <ul>
+            <li>Voice input via speech-to-text</li>
+            <li>Ad-hoc assistance during ongoing work</li>
+            <li>Combines live requests with structured robot capabilities</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="alchemist-image-chapter">
+      <div class="alchemist-chapter-head">
+        <span class="alchemist-section-tag">03 · Safeguards</span>
+        <h2 class="xpress-title">The system does not just generate code. It constrains and checks it.</h2>
+        <p class="section-lede">
+          Alchemist becomes usable for non-programmers because it narrows what the LLM can do,
+          injects domain-specific rules, and verifies the generated program before anything runs on the robot.
+        </p>
+      </div>
+
+      <div class="alchemist-architecture-layout">
+        <div class="figure-panel alchemist-panel-large">
+          <img src="../assets/img/alchemist/backend.png" alt="Alchemist backend pipeline showing function library, grounded prompts, GPT-4, and code verification." />
+          <p class="figure-caption">The backend pipeline turns user intent into executable robot code through constrained generation and verification.</p>
+        </div>
+        <div class="alchemist-architecture-notes">
+          <div class="context-card">
+            <h4>Function library <span class="ctx-badge">Constrained actions</span></h4>
+            <p>The LLM can only call capabilities that exist in the robot’s function library, preventing hallucinated APIs.</p>
+          </div>
+          <div class="context-card">
+            <h4>Grounded prompting <span class="ctx-badge">Task-aware rules</span></h4>
+            <p>Every prompt carries contextual constraints so the model generates code that respects task structure and safety expectations.</p>
+          </div>
+          <div class="context-card">
+            <h4>Code verification <span class="ctx-badge">Before execution</span></h4>
+            <p>Generated programs are parsed and corrected for common failures before users ever ask the robot to run them.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alchemist-image-chapter">
+      <div class="alchemist-chapter-head">
+        <span class="alchemist-section-tag">04 · In action</span>
+        <h2 class="xpress-title">A novice researcher can program a biochemistry task through dialogue.</h2>
+        <p class="section-lede">
+          The evaluation centered on LB media preparation, a familiar but repetitive lab procedure.
+          Participants described the task in natural language and used Alchemist to have the robot pick, pour, and place equipment autonomously.
+        </p>
+      </div>
+
+      <div class="alchemist-demo-layout">
+        <div class="figure-panel alchemist-panel-large">
+          <img src="../assets/img/alchemist/demonstration-draft.png" alt="Alchemist demonstration showing a user instructing the robot to pour graduated cylinders into a beaker." />
+          <p class="figure-caption">A novice life sciences researcher instructs the robot through natural language instead of directly programming motion logic.</p>
+        </div>
+        <div class="alchemist-demo-copy">
+          <div class="context-card">
+            <h4>Concrete domain fit <span class="ctx-badge">Biochemistry</span></h4>
+            <p>The task is not hypothetical; it reflects repetitive lab work that domain experts already want to automate.</p>
+          </div>
+          <div class="context-card">
+            <h4>Programming without code <span class="ctx-badge">Core shift</span></h4>
+            <p>Users stay inside a conversational loop, making the interface feel like task specification rather than software development.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alchemist-image-chapter">
+      <div class="alchemist-chapter-head">
+        <span class="alchemist-section-tag">05 · Evidence</span>
+        <h2 class="xpress-title">Novices and experts reached the same outcome in about the same time.</h2>
+        <p class="section-lede">
+          The strongest result is not that experts were fast. It is that novices could complete the programming task on roughly the same timeline,
+          suggesting the real barrier is the interface, not the user’s intelligence or domain knowledge.
+        </p>
+      </div>
+
+      <div class="alchemist-evidence-grid">
+        <div class="context-card">
+          <h4>Novices ≈ experts on time <span class="ctx-badge">Main result</span></h4>
+          <p>Novice mean task completion was <strong>1:03:02</strong>; expert mean was <strong>1:01:59</strong>. Different workflows, same endpoint.</p>
+        </div>
+        <div class="context-card">
+          <h4>Novices stayed in language <span class="ctx-badge">Interaction pattern</span></h4>
+          <p>Novice users debugged through prompting instead of dropping into code, showing that the conversational loop did real work.</p>
+        </div>
+        <div class="context-card">
+          <h4>Domain pull was immediate <span class="ctx-badge">Adoption signal</span></h4>
+          <p>Participants spontaneously described workflows from their own labs that they would want a system like this to automate.</p>
+        </div>
+      </div>
+
+      <div class="quote-grid alchemist-quote-grid">
+        <div class="quote-block">
+          <blockquote>
+            "I think the idea behind this project is really novel. It can be used extensively, especially in biochemistry labs, where tasks like these are a frequent occurrence."
+          </blockquote>
+          <p class="quote-attr">Novice participant N5</p>
+        </div>
+        <div class="quote-block">
+          <blockquote>
+            "I would love to have a liquid handling system in our lab where I could simply press a button and say 'go' without worrying about it failing."
+          </blockquote>
+          <p class="quote-attr">Novice participant N4</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="alchemist-section">
+      <div class="opportunity-block alchemist-opportunity">
+        <span class="opp-label">Why it matters</span>
+        <p>
+          Alchemist points toward a more useful robotics future: one where domain experts can configure robot behavior directly,
+          without waiting on specialist programmers to translate their intent. The near-term path is to extend the same interaction model across new domains and robots,
+          while continuing to reduce the remaining reliability burden on the user.
+        </p>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="site-footer">
+    <p>
+      <a href="mailto:vantony1@jhu.edu">vantony1@jhu.edu</a>
+      &nbsp;·&nbsp;
+      <a href="../publications.html">All Publications</a>
+      &nbsp;·&nbsp;
+      <a href="../index.html#work">All Work</a>
+    </p>
+    <p>Johns Hopkins University &nbsp;·&nbsp; Baltimore, MD</p>
+  </footer>
+
+  <script>
+    (() => {
+      const panel = document.getElementById('alchemist-teaser-panel');
+      if (!panel) return;
+
+      const trigger = panel.querySelector('.alchemist-zoom-trigger');
+      if (!trigger) return;
+
+      const setExpanded = (expanded) => {
+        panel.classList.toggle('is-expanded', expanded);
+        trigger.setAttribute('aria-label', expanded ? 'Collapse Alchemist interface image' : 'Expand Alchemist interface image');
+        trigger.textContent = expanded ? '×' : '+';
+      };
+
+      trigger.addEventListener('click', (event) => {
+        event.stopPropagation();
+        setExpanded(!panel.classList.contains('is-expanded'));
+      });
+
+      document.addEventListener('click', (event) => {
+        if (!panel.classList.contains('is-expanded')) return;
+        if (panel.contains(event.target)) return;
+        setExpanded(false);
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') setExpanded(false);
+      });
+    })();
+  </script>
+
+</body>
+</html>
