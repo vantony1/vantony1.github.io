@@ -1,139 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ELLA — Victor Nikhil Antony</title>
-  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ELLA · Victor Nikhil Antony</title>
+<meta name="description" content="ELLA: Generative AI-Powered Social Robots for Early Language Development at Home (ACM IDC 2026). An autonomous, LLM-powered social robot that supports early language development through interactive storytelling.">
+<link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;family=Libre+Franklin:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400&amp;family=Noto+Serif+Tamil:wght@400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/project.css">
 </head>
-<body class="ella-page">
+<body>
 
-  <nav class="nav home-nav">
-    <a class="nav-brand home-brand" href="../index.html">victor nikhil antony</a>
-    <div class="nav-links">
-      <a href="../index.html#work">Work</a>
+<div class="shell page">
+  <aside class="rail">
+    <a href="../index.html"><img class="portrait" src="../assets/img/headshot.jpg" alt="Victor Nikhil Antony"></a>
+    <p class="name"><a href="../index.html">Victor Nikhil Antony</a></p>
+    <p class="alt-name"><span lang="ta">விக்டர்</span> <span lang="hi">निखिल</span> <span lang="ta">ஆண்டனி</span></p>
+    <p class="byline">Ph.D. Candidate, Computer Science, Johns Hopkins University</p>
+    <nav aria-label="Primary">
+      <a href="../index.html#research">Research</a>
       <a href="../publications.html">Publications</a>
-      <a href="../assets/pdf/vantony_CV.pdf" target="_blank">CV</a>
-      <a href="mailto:vantony1@jhu.edu">Contact</a>
-    </div>
-  </nav>
+      <a href="../index.html#mentoring">Mentoring &amp; Teaching</a>
+      <a href="../studio.html" aria-current="true">Studio</a>
+      <a href="../assets/pdf/vantony_CV.pdf">CV</a>
+    </nav>
+    <p class="contact">
+      <a href="mailto:vantony1@jhu.edu">vantony1@jhu.edu</a><br>
+      <a href="https://scholar.google.com/citations?user=g-6V3woAAAAJ&amp;hl=en">Google Scholar</a> · <a href="https://github.com/vantony1">GitHub</a>
+    </p>
+  </aside>
 
-  <header class="xpress-header ella-header">
-    <div class="ella-landing">
-      <div class="ella-copy">
-        <p class="ella-kicker">ELLA</p>
-        <h1 class="ella-title">A home robot that helped children practice language in everyday family life.</h1>
-        <p class="ella-subtitle">
-          ELLA is an embodied AI learning companion for children at home. Parents choose target vocabulary and themes,
-          and the robot turns that input into personalized storytelling sessions with recall prompts, comprehension checks,
-          and target-word practice. The central question was simple: could a robot support real language learning outside the lab?
-        </p>
-        <div class="hero-meta">
-          <span class="meta-chip">ACM IDC 2026</span>
-          <span class="meta-chip">Home Deployment</span>
-          <span class="meta-chip">Early Learning</span>
-          <span class="meta-chip">Generative AI</span>
-        </div>
-        <div class="intro-actions" style="margin-top: 1.35rem;">
-          <a class="btn btn-primary" href="https://arxiv.org/pdf/2603.12508" target="_blank">Read the paper</a>
-          <a class="btn btn-ghost" href="https://arxiv.org/abs/2603.12508" target="_blank">View arXiv</a>
-        </div>
+  <main class="main project">
+    <p class="crumb"><a href="../studio.html">Studio</a> / ELLA</p>
+
+    <header class="project-head">
+      <span class="kicker">ACM IDC 2026</span>
+      <h1>ELLA</h1>
+      <p class="dek">ELLA: Generative AI-Powered Social Robots for Early Language Development at Home</p>
+      <p class="credits"><b>Victor Nikhil Antony</b>*, Shiye Cao*, Shuning Wang, and Chien-Ming Huang</p>
+      <p class="note">*equal contribution</p>
+      <div class="tags"><span>Home Deployment</span><span>Early Learning</span><span>Generative AI</span></div>
+      <div class="actions">
+        <a class="button primary" href="https://doi.org/10.1145/3773077.3806113">Read the paper</a>
+        <a class="button" href="https://arxiv.org/abs/2603.12508">arXiv</a>
       </div>
-      <div class="ella-hero-side">
-        <div class="ella-video-frame">
-          <div class="ella-video-shell">
-            <iframe
-              src="https://drive.google.com/file/d/1-VcBec5GJEAZfBw-TG3vyuu6syvBeQ20/preview"
-              title="ELLA project video"
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="autoplay"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="ella-authors-wrap">
-          <p class="ella-authors">Victor Nikhil Antony<span>*</span>, Shiye Cao<span>*</span>, Shuning Wang, Chien-Ming Huang</p>
-          <p class="ella-note">*equal contribution · ACM IDC 2026</p>
-        </div>
+    </header>
+
+    <figure class="fig hero">
+      <div class="video wide"><iframe src="https://drive.google.com/file/d/1-VcBec5GJEAZfBw-TG3vyuu6syvBeQ20/preview" title="ELLA project video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay" allowfullscreen></iframe></div>
+    </figure>
+
+    <div class="side">
+      <div>
+        <p class="lede">Early language development shapes children’s later literacy and learning, yet many families have limited access to scalable, high-quality support at home. Recent advances in generative AI make it possible for social robots to move beyond scripted interactions and engage children in adaptive, conversational activities, but it remains unclear how to design such systems for pre-schoolers and how children engage with them over time in the home.</p>
+        <p class="lede">We present ELLA (Early Language Learning Agent), an autonomous, LLM-powered social robot that supports early language development through interactive storytelling, parent-selected language targets, and scaffolded dialogue. Using a multi-phased, human-centered process, we interviewed parents (n=7) and educators (n=5) and iteratively refined ELLA through twelve in-home design workshops. We then deployed ELLA with ten children for eight days.</p>
+      </div>
+      <div class="stats col">
+        <div class="stat"><b>12</b><span>In-home design workshops with children and their families</span></div>
+        <div class="stat"><b>10</b><span>Children, ages 4–6, who each hosted ELLA for eight consecutive days</span></div>
+        <div class="stat"><b>320</b><span>Stories generated, spanning 71 unique themes and 32 distinct target words</span></div>
+        <div class="stat"><b>2.6</b><span>Average gain in target words known, pre- to post-deployment (p&nbsp;=&nbsp;.001)</span></div>
+        <div class="stat"><b>+0.92</b><span>Words per turn in days 5–8 compared with days 1–4 (p&nbsp;=&nbsp;.037)</span></div>
       </div>
     </div>
-  </header>
 
-  <div class="project-body ella-shell">
+    <section class="chapter">
+      <span class="kicker">Method</span>
+      <h2>Design process</h2>
+      <p class="lede">We followed a three-phased, human-centered design process to develop a social robot for early language development in children aged 4–6 at home. It addressed two questions: how to design developmentally appropriate interactions for pre-schoolers (RQ1), and how children engage and learn with a generative AI-driven robot over an extended period, at home (RQ2).</p>
+      <figure class="fig">
+        <img src="../assets/img/ella/overview-hires.png" alt="The three stages: interviews with parents and educators, four phases of in-home workshops, and an eight-day deployment study with introduction, onboarding, deployment, and offboarding steps.">
+        <figcaption>To design a social robot to support language development in children ages 4–6, we engaged in a three-stage design process: online interviews, in-home workshops, and an in-home deployment study.</figcaption>
+      </figure>
+    </section>
 
-    <section class="ella-teaser-section">
-      <div class="ella-frame ella-teaser-frame">
-        <img src="../assets/img/ella/overview-hires.png" alt="Overview of the ELLA project from interviews and workshops through the eight-day home deployment." />
-        <p class="figure-caption">From interviews and workshops to an eight-day deployment in the home, ELLA was shaped around real routines rather than lab-only interaction.</p>
+    <section class="chapter">
+      <span class="kicker">Design context</span>
+      <h2>Design goals</h2>
+      <p class="lede">We conducted semi-structured interviews with parents (n=7) and educators (n=5) about everyday language-learning practices, observed challenges, instructional strategies, and the constraints shaping language use at home and in classrooms. We synthesized themes from these interviews, along with insights from prior work, into six design goals.</p>
+      <div class="points">
+        <div class="point"><span class="kicker">DG1</span><h3>Leverage storytelling as a flexible, interest-driven learning context</h3><p>Parents and educators consistently described storytelling as a central pedagogical practice for supporting early language development.</p></div>
+        <div class="point"><span class="kicker">DG2</span><h3>Provide repeated, contextualized exposure to vocabulary</h3><p>Educators described revisiting the same stories or themes across days, while parents reported rereading favorite books and repeating words in everyday conversations.</p></div>
+        <div class="point"><span class="kicker">DG3</span><h3>Blend explicit and implicit vocabulary instruction</h3><p>Educators discussed target words during read-alouds, while parents interjected short explanations (e.g., “this means...”) without breaking the narrative flow.</p></div>
+        <div class="point"><span class="kicker">DG4</span><h3>Support both receptive and expressive language development</h3><p>Children often understand more words than they can articulate. Educators and parents used low-pressure prompting strategies (e.g., fill-in-the-blank questions) without requiring correctness.</p></div>
+        <div class="point"><span class="kicker">DG5</span><h3>Scaffold language use to support diverse developmental needs</h3><p>Educators emphasized differentiation, while parents adapted their own prompts based on daily fluctuations in attention and interest.</p></div>
+        <div class="point"><span class="kicker">DG6</span><h3>Maintain engagement through expressive storytelling practices</h3><p>Parents and teachers described using expressive prosody, voice modulation, facial expression, and theatrical delivery to maintain children’s attention.</p></div>
       </div>
     </section>
 
-    <section class="ella-proof-strip">
-      <div class="ella-proof-grid">
-        <div class="ella-proof-card">
-          <div class="ella-proof-number">10</div>
-          <div class="ella-proof-text">Children deployed with ELLA at home for eight days</div>
-        </div>
-        <div class="ella-proof-card">
-          <div class="ella-proof-number">29/40</div>
-          <div class="ella-proof-text">Target words actively used by children during sessions</div>
-        </div>
-        <div class="ella-proof-card">
-          <div class="ella-proof-number">5–8</div>
-          <div class="ella-proof-text">Days when average words per turn rose above days 1–4</div>
-        </div>
-        <div class="ella-proof-card">
-          <div class="ella-proof-number">12</div>
-          <div class="ella-proof-text">In-home workshops used to refine stories, questions, and onboarding</div>
-        </div>
+    <section class="chapter">
+      <span class="kicker">Iterative design</span>
+      <h2>Iterative design at home, with families</h2>
+      <p class="lede">We developed an exploratory social robot prototype and refined it across 12 at-home workshops by observing children’s interactions with early versions of the system and incorporating feedback from both children and parents. Each workshop took approximately 60 minutes.</p>
+      <div class="points two">
+        <div class="point"><span class="kicker">Phase 1 · Workshops 1–3</span><h3>Improving interaction flow and quality</h3><p>High response latency (approximately 10 seconds) disrupted conversational turn-taking, and several children described the robot as “scary.” We restructured turn detection, added incremental text-to-speech, and introduced brighter colors, interchangeable faceplates, and a soft, plush exterior.</p></div>
+        <div class="point"><span class="kicker">Phase 2 · Workshops 4–6</span><h3>Improving story content and flow</h3><p>Children struggled to follow longer, conceptually dense stories that introduced multiple vocabulary words. We shortened narratives, limited each story to a single target word, and reframed stories around familiar, everyday contexts personalized to the child’s interests.</p></div>
+        <div class="point"><span class="kicker">Phase 3 · Workshops 7–9</span><h3>Improving interaction questions</h3><p>Questions interspersed throughout the story disrupted narrative flow. We repositioned them to follow the narrative arc, progressing from story perception, to story recall, and finally to vocabulary practice grounded in personal experience.</p></div>
+        <div class="point"><span class="kicker">Phase 4 · Workshops 10–12</span><h3>Improving onboarding and deployability</h3><p>We developed a user interface for generating and reviewing individualized content, added content moderation using Llama-Guard-4-12B, refined onboarding procedures, and validated data collection and logging pipelines.</p></div>
       </div>
     </section>
 
-    <section class="ella-story-block">
-      <div class="ella-story-copy">
-        <span class="ella-section-tag">01 · Outcomes</span>
-        <h2 class="xpress-title">The strongest signal was not just enjoyment. It was language growth.</h2>
-        <p class="intro-lede">
-          ELLA did more than keep children engaged. The deployment showed significant vocabulary gains,
-          active use of target words during sessions, and longer verbal responses over time.
-          That makes the project compelling as a learning system, not only as an expressive robot.
-        </p>
+    <section class="chapter">
+      <span class="kicker">System</span>
+      <h2>System design</h2>
+      <p class="lede">ELLA is built on a custom social robot platform actuated by five servo motors controlling base rotation, head tilt and rotation, and independent arm movement. Once ready, ELLA greets the child and asks whether they would like to hear a story. Each story is generated around a parent-selected target word and a theme aligned with the child’s interests, and ELLA tells at most four stories per day.</p>
+      <figure class="fig">
+        <img src="../assets/img/ella/story-session-example-hires.png" alt="A full story session transcript with stages: greeting, storytelling, story perception, story recall, target word practice, another story, and farewell. The target word is sympathy and the theme is Fancy Nancy.">
+        <figcaption>One sample story session from our deployment study, with the target word “Sympathy” and the TV show “Fancy Nancy” as its theme. The robot incorporates the target word into a story generated using LLMs and engages the child through targeted and scaffolded interactions.</figcaption>
+      </figure>
+      <div class="points">
+        <div class="point"><h3>Story generation</h3><p>Given a theme and a target word, a GPT-5 model writes a 200-word story in which the target word appears at least three times and is taught both implicitly and explicitly. A second model adds three questions: story perception, story recall, and vocabulary practice.</p></div>
+        <div class="point"><h3>Storytelling behavior generation</h3><p>Xpress3D extends Xpress into a multimodal behavior generator that produces facial expressions and body gestures aligned to a story’s narrative structure, tone, and context.</p></div>
+        <div class="point"><h3>Interaction behavior generation</h3><p>For each child turn, a GPT-OSS 120B LLM produces a behavior plan: a scaffolding strategy followed by short utterances, each with a facial expression and a gesture primitive from a fixed behavior library.</p></div>
       </div>
-      <div class="ella-outcome-notes">
-        <div class="context-card">
-          <h4>Vocabulary gains <span class="ctx-badge">Measured</span></h4>
-          <p>A PPVT-style pre/post assessment showed significant improvement in children’s recognition of the target vocabulary by the end of deployment.</p>
-        </div>
-        <div class="context-card">
-          <h4>Target-word production <span class="ctx-badge">Observed</span></h4>
-          <p>Children actively spoke <strong>29 of 40</strong> target words during interactions, showing that vocabulary moved from hearing to use.</p>
-        </div>
-        <div class="context-card">
-          <h4>Longer responses over time <span class="ctx-badge">Days 5–8</span></h4>
-          <p>Average words per turn increased significantly in the second half of the study, suggesting deeper participation as the routine settled in.</p>
-        </div>
-      </div>
+      <figure class="fig">
+        <img src="../assets/img/ella/pipeline-hires.png" alt="The content generation pipeline from child name, target word, and theme through story and interaction generation, text to speech, high-level analysis, face and body descriptions, and code, to a cloud story database.">
+        <figcaption>Pipeline for generating personalized and targeted content for interactive storytelling with ELLA. Design evolution of components across the four workshop phases is indicated by color.</figcaption>
+      </figure>
+      <figure class="fig">
+        <img src="../assets/img/ella/system-hires.png" alt="ELLA system diagram with turn-end detection, the interaction handler LLM, content moderation, the robot behavior orchestrator, and the story generation pipeline.">
+        <figcaption>ELLA system diagram. Design evolution of components across the four workshop phases is indicated by color.</figcaption>
+      </figure>
+    </section>
 
-      <div class="ella-language-table-wrap">
-        <div class="ella-language-table-head">
-          <h3>Child Language During Deployment</h3>
-          <p>Learned target words are highlighted to show where home interaction translated into measurable uptake.</p>
-        </div>
-        <div class="ella-language-table-scroll">
-          <table class="ella-language-table">
+    <section class="chapter">
+      <span class="kicker">Deployment</span>
+      <h2>In-home deployment</h2>
+      <p class="lede">To examine how children interact with a storytelling robot in real-world settings, how the system fits into family routines, and whether it can support early language development, we deployed ELLA with ten children. Each family hosted the robot for eight consecutive days.</p>
+      <p class="lede">Parents selected four target vocabulary words that their child did not yet know, and provided story themes based on the child’s interests. Parents were encouraged to engage with ELLA for at least one story per day, but were told that interaction timing and frequency were flexible and that missing days was acceptable.</p>
+      <div class="points four">
+        <div class="point"><h3>Vocabulary assessment</h3><p>A pre- and post-deployment receptive vocabulary assessment in a PPVT-style format.</p></div>
+        <div class="point"><h3>Parent diaries</h3><p>A short daily diary on what initiated sessions, who was present, and the child’s affect.</p></div>
+        <div class="point"><h3>Interviews</h3><p>Semi-structured interviews with parents and structured interviews with children after the deployment.</p></div>
+        <div class="point"><h3>Session logs</h3><p>Audio and video of story sessions, session times, and conversational transcripts.</p></div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Results</span>
+      <h2>Engagement and learning outcomes</h2>
+      <p class="lede">Across the eight-day deployment, children used ELLA regularly but with substantial variation in cadence, social configuration, and interaction quality.</p>
+      <figure class="fig">
+        <img src="../assets/img/ella/ella-usage-hires.png" alt="Stacked bar chart of stories per day across the eight days, broken down by child and by weekday or weekend.">
+        <figcaption>ELLA usage over time, in stories per day. Usage patterns indicate consistent but flexible use, with meaningful household-to-household differences in frequency and intensity.</figcaption>
+      </figure>
+      <div class="stats">
+        <div class="stat"><b>5.9 / 8</b><span>Days each child interacted with ELLA, on average</span></div>
+        <div class="stat"><b>13.9</b><span>Stories per child across the deployment, on average</span></div>
+        <div class="stat"><b>5.80 min</b><span>Average length of an individual story session</span></div>
+        <div class="stat"><b>14.01 hrs</b><span>Total engagement across all children</span></div>
+      </div>
+      <div class="points two">
+        <div class="point"><h3>Vocabulary learning outcomes</h3><p>On average, each child correctly recognized 2.8 words on the post-deployment PPVT-style assessment. The gain in target words children knew from pre- to post-deployment (M = 2.6) was significantly greater than zero (p = .001).</p></div>
+        <div class="point"><h3>Expressive language</h3><p>Children used the target words when responding to ELLA, and used more words per turn during the second half of the deployment than the first (M = 0.92, p = .037). Parents reported that children slowed down, spoke louder, and articulated more clearly to help the robot “understand” them.</p></div>
+      </div>
+      <div class="table-wrap">
+        <h3>Child language usage during deployment</h3>
+        <p>Highlighted words are those the child learned by the end of the deployment study.</p>
+        <div class="table-scroll">
+          <table class="data">
             <thead>
               <tr>
                 <th>Pseudonym</th>
                 <th>Age</th>
-                <th>Stories</th>
+                <th>Stories listened to</th>
                 <th>Target words used</th>
-                <th>Target word usage during sessions</th>
-                <th>Total target words</th>
+                <th>Target word usage during story sessions</th>
+                <th>Total target words used</th>
                 <th>Avg words/turn</th>
               </tr>
             </thead>
@@ -143,7 +180,7 @@
                 <td>4</td>
                 <td>18</td>
                 <td>3/4</td>
-                <td><span class="word-chip learned">Massive (14)</span> <span class="word-chip">Ordinary (16)</span> <span class="word-chip learned">Clumsy (13)</span> <span class="word-chip">Imitate (0)</span></td>
+                <td><span class="chip on">Massive (14)</span> <span class="chip">Ordinary (16)</span> <span class="chip on">Clumsy (13)</span> <span class="chip">Imitate (0)</span></td>
                 <td>43</td>
                 <td>3.78</td>
               </tr>
@@ -152,7 +189,7 @@
                 <td>4</td>
                 <td>13</td>
                 <td>3/4</td>
-                <td><span class="word-chip learned">Permission (3)</span> <span class="word-chip">Self-Control (2)</span> <span class="word-chip learned">Imagine (1)</span> <span class="word-chip">Confident (0)</span></td>
+                <td><span class="chip on">Permission (3)</span> <span class="chip">Self-Control (2)</span> <span class="chip on">Imagine (1)</span> <span class="chip">Confident (0)</span></td>
                 <td>6</td>
                 <td>3.48</td>
               </tr>
@@ -161,7 +198,7 @@
                 <td>4</td>
                 <td>18</td>
                 <td>4/4</td>
-                <td><span class="word-chip learned">Compassion (2)</span> <span class="word-chip learned">Awestruck (2)</span> <span class="word-chip learned">Perseverance (0)</span> <span class="word-chip learned">Gumption (0)</span></td>
+                <td><span class="chip on">Compassion (2)</span> <span class="chip on">Awestruck (2)</span> <span class="chip on">Perseverance (0)</span> <span class="chip on">Gumption (0)</span></td>
                 <td>4</td>
                 <td>3.48</td>
               </tr>
@@ -170,7 +207,7 @@
                 <td>4</td>
                 <td>4</td>
                 <td>1/4</td>
-                <td><span class="word-chip learned">Chirp (2)</span> <span class="word-chip">Permission (0)</span> <span class="word-chip">Consequences (0)</span> <span class="word-chip">Orbit (0)</span></td>
+                <td><span class="chip on">Chirp (2)</span> <span class="chip">Permission (0)</span> <span class="chip">Consequences (0)</span> <span class="chip">Orbit (0)</span></td>
                 <td>2</td>
                 <td>2.46</td>
               </tr>
@@ -179,7 +216,7 @@
                 <td>5</td>
                 <td>11</td>
                 <td>2/4</td>
-                <td><span class="word-chip learned">Clumsy (8)</span> <span class="word-chip learned">Imitate (1)</span> <span class="word-chip">Somersault (0)</span> <span class="word-chip">Frisky (0)</span></td>
+                <td><span class="chip on">Clumsy (8)</span> <span class="chip on">Imitate (1)</span> <span class="chip">Somersault (0)</span> <span class="chip">Frisky (0)</span></td>
                 <td>9</td>
                 <td>4.91</td>
               </tr>
@@ -188,7 +225,7 @@
                 <td>5</td>
                 <td>12</td>
                 <td>2/4</td>
-                <td><span class="word-chip">Advocate (2)</span> <span class="word-chip learned">Bait (1)</span> <span class="word-chip">Justice (1)</span> <span class="word-chip">Apartment (0)</span></td>
+                <td><span class="chip">Advocate (2)</span> <span class="chip on">Bait (1)</span> <span class="chip">Justice (1)</span> <span class="chip">Apartment (0)</span></td>
                 <td>4</td>
                 <td>3.02</td>
               </tr>
@@ -197,7 +234,7 @@
                 <td>6</td>
                 <td>10</td>
                 <td>3/4</td>
-                <td><span class="word-chip learned">Frisky (4)</span> <span class="word-chip learned">Wonder (3)</span> <span class="word-chip learned">Permission (1)</span> <span class="word-chip">Sympathy (0)</span></td>
+                <td><span class="chip on">Frisky (4)</span> <span class="chip on">Wonder (3)</span> <span class="chip on">Permission (1)</span> <span class="chip">Sympathy (0)</span></td>
                 <td>8</td>
                 <td>2.48</td>
               </tr>
@@ -206,7 +243,7 @@
                 <td>6</td>
                 <td>30</td>
                 <td>4/4</td>
-                <td><span class="word-chip learned">Achieve (23)</span> <span class="word-chip learned">Attempt (17)</span> <span class="word-chip">Persistent (16)</span> <span class="word-chip learned">Considerate (10)</span></td>
+                <td><span class="chip on">Achieve (23)</span> <span class="chip on">Attempt (17)</span> <span class="chip">Persistent (16)</span> <span class="chip on">Considerate (10)</span></td>
                 <td>66</td>
                 <td>6.30</td>
               </tr>
@@ -215,7 +252,7 @@
                 <td>6</td>
                 <td>20</td>
                 <td>4/4</td>
-                <td><span class="word-chip learned">Advocate (9)</span> <span class="word-chip learned">Sympathy (7)</span> <span class="word-chip learned">Legal (5)</span> <span class="word-chip learned">Empathy (5)</span></td>
+                <td><span class="chip on">Advocate (9)</span> <span class="chip on">Sympathy (7)</span> <span class="chip on">Legal (5)</span> <span class="chip on">Empathy (5)</span></td>
                 <td>26</td>
                 <td>4.98</td>
               </tr>
@@ -224,7 +261,7 @@
                 <td>6</td>
                 <td>11</td>
                 <td>3/4</td>
-                <td><span class="word-chip learned">Usual (3)</span> <span class="word-chip learned">Sheriff (1)</span> <span class="word-chip learned">Adventure (1)</span> <span class="word-chip">Orbit (0)</span></td>
+                <td><span class="chip on">Usual (3)</span> <span class="chip on">Sheriff (1)</span> <span class="chip on">Adventure (1)</span> <span class="chip">Orbit (0)</span></td>
                 <td>5</td>
                 <td>4.60</td>
               </tr>
@@ -232,130 +269,93 @@
           </table>
         </div>
       </div>
-    </section>
-
-    <section class="ella-image-chapter">
-      <div class="ella-chapter-head">
-        <span class="ella-section-tag">02 · Evidence</span>
-        <h2 class="xpress-title">Usage stayed steady enough for learning to happen, not just novelty.</h2>
-        <p class="section-lede">
-          The outcomes matter more because they happened in a repeated home routine rather than a single session.
-          ELLA was used across the eight-day deployment with broadly positive sentiment around talking to the robot and listening to its stories.
-        </p>
-      </div>
-
-      <div class="figure-panel">
-        <img src="../assets/img/ella/ella-usage-hires.png" alt="ELLA usage across the eight-day deployment, broken down by child and weekday versus weekend." />
-        <p class="figure-caption">Repeated use across the week suggests the robot fit into family routines instead of fading after the first encounter.</p>
+      <div class="points two">
+        <div class="point"><h3>Children’s overall experience</h3><p>Eight out of nine children indicated that they like or love ELLA (M = 4.1 out of 5) and similarly like or love talking to ELLA (M = 3.9). Children generally evaluated ELLA’s stories positively (M = 4.2), while their perceptions of being understood by ELLA were more mixed.</p></div>
+        <div class="point"><h3>Interaction breakdowns in the home</h3><p>Speech recognition errors frequently manifested as interaction breakdowns, especially in noisy environments, as ELLA could not distinguish speakers. Families adapted the environment and setup, for example by moving ELLA from a shared living room to a bedroom.</p></div>
       </div>
     </section>
 
-    <section class="ella-image-chapter">
-      <div class="ella-chapter-head">
-        <span class="ella-section-tag">03 · Home interactions</span>
-        <h2 class="xpress-title">Children did not just listen to stories. They folded ELLA into home life.</h2>
-        <p class="section-lede">
-          The deployment became most interesting when children treated ELLA as part of their social environment:
-          bringing in objects, linking stories to personal memories, asking for more, and involving siblings or parents.
-        </p>
+    <section class="chapter">
+      <span class="kicker">Findings</span>
+      <h2>Interaction patterns in the home</h2>
+      <p class="lede">Our deployment data highlighted interaction patterns that inspire new design opportunities. Children applied target words not only within the narrative but also in novel ways, often relating them to personal experiences, and ELLA rarely sat in a pure dyad: it existed as a social artifact inside a dynamic social scene.</p>
+      <figure class="fig">
+        <img src="../assets/img/ella/interaction-examples-hires.png" alt="Three transcripts with video stills: a child fetching her axolotl toy, a child sharing a roller coaster experience, and an older sibling whispering answers.">
+        <figcaption>Instances of object-based engagement, sharing of personal experiences, and sibling dynamics. The target vocabulary for each interaction is highlighted in red.</figcaption>
+      </figure>
+      <figure class="fig">
+        <img src="../assets/img/ella/interaction-examples-2-hires.png" alt="Three transcripts with video stills: a parent repeating an answer, a child rambling while his father prompts him, and a child requesting a mermaid story.">
+        <figcaption>Instances of parent prompting, playful rambling, and story requests. Overlapping speech is shown in brackets.</figcaption>
+      </figure>
+      <div class="points">
+        <div class="point"><h3>Language use beyond story sessions</h3><p>Outside of story sessions, parents described children bringing target vocabulary into shared reading, play, and conversation, indicating transfer beyond the interaction itself.</p></div>
+        <div class="point"><h3>Robots as social artifacts</h3><p>Parents modeled how to answer, encouraged more complete sentences, and managed background chatter. When older siblings were present, they occasionally answered questions on the child’s behalf.</p></div>
+        <div class="point"><h3>Children’s mental models</h3><p>Children treated being understood or not as relational: speech recognition errors were experienced not as technical “errors,” but as social refusal.</p></div>
       </div>
-
-      <div class="figure-panel">
-        <img src="../assets/img/ella/interaction-examples-hires.png" alt="Examples of sharing interests, sharing personal experience, and sibling dynamics during interactions with ELLA." />
-        <p class="figure-caption">Children tied the stories back to their own lives, interests, and family context instead of treating ELLA as a fixed tutor.</p>
-      </div>
-
-      <div class="figure-panel">
-        <img src="../assets/img/ella/interaction-examples-2-hires.png" alt="Examples of parent prompting, playful rambling, and direct story requests during interaction with ELLA." />
-        <p class="figure-caption">Playful rambling, story requests, and parent prompting show how the interaction became socially shared rather than tightly scripted.</p>
-      </div>
-
-      <div class="intro-highlights ella-interaction-notes">
-        <div class="highlight-item">
-          <span class="highlight-title">Object-based engagement</span>
-          <p>Children sometimes left to fetch toys or other objects connected to the story, pulling the surrounding room into the interaction.</p>
+      <div class="quotes">
+        <div class="quote">
+          <blockquote>“We were reading about a bike and a little girl who was trying again and again and again. I said, ‘Well, what is that?’ and [Sarah] goes, ‘Perseverance...and gumption!’”</blockquote>
+          <p>Sarah’s parent, on vocabulary use during shared reading</p>
         </div>
-        <div class="highlight-item">
-          <span class="highlight-title">Personal storytelling</span>
-          <p>Target words often became entry points for children to talk about their own travel, play, memories, and experiences.</p>
-        </div>
-        <div class="highlight-item">
-          <span class="highlight-title">Family participation</span>
-          <p>Parents and siblings sometimes stepped in as collaborators, shaping the sessions into shared routines rather than one-on-one tutoring.</p>
+        <div class="quote">
+          <blockquote>“[when building a toy] he used ‘frisky’ to express his excitement and ‘clumsy’ when his toy broke into pieces since his hands weren’t controlling well.”</blockquote>
+          <p>Jason’s parent, on vocabulary use during play</p>
         </div>
       </div>
     </section>
 
-    <section class="ella-image-chapter">
-      <div class="ella-chapter-head">
-        <span class="ella-section-tag">04 · Interaction structure</span>
-        <h2 class="xpress-title">The interaction worked because it was carefully scaffolded.</h2>
-        <p class="section-lede">
-          ELLA is not freeform chat. The session format deliberately moves through storytelling, perception, recall,
-          and target-word practice so the child hears, understands, and produces language within one repeated loop.
-        </p>
-      </div>
-
-      <div class="figure-panel ella-panel-large">
-        <img src="../assets/img/ella/story-session-example-hires.png" alt="A full ELLA story session showing greeting, storytelling, story perception, story recall, target word practice, another story, and farewell." />
-        <p class="figure-caption">A single session moves from greeting to narration to recall and vocabulary practice, making the interaction pedagogically structured rather than casually conversational.</p>
-      </div>
-      <div class="ella-session-notes">
-        <div class="context-card">
-          <h4>Why the structure matters <span class="ctx-badge">Learning</span></h4>
-          <p>Repeating target words in narrative context and then asking recall questions gives children multiple ways to encounter and produce language.</p>
+    <section class="chapter">
+      <span class="kicker">Discussion</span>
+      <h2>Lessons learned and design opportunities</h2>
+      <p class="lede">While the deployment demonstrated ELLA’s potential, it also surfaced key insights into the complex realities of home-based engagement with pre-school aged children. We distill these insights into lessons learned and design opportunities for generative AI-powered social robots supporting early language learning at home.</p>
+      <div class="table-wrap">
+        <div class="table-scroll">
+          <table class="data">
+            <thead>
+              <tr>
+                <th>Lesson</th>
+                <th>Design opportunities</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Inviting caregiver partnership could enrich language development</td>
+                <td>1. Make learning gains visible through caregiver-facing reflective summaries.<br>2. Extend language learning beyond session through robot-caregiver collaboration.</td>
+              </tr>
+              <tr>
+                <td>Stories need freshness to retain playfulness over instructional tone</td>
+                <td>3. Support low-effort, ongoing co-authoring to keep content aligned with shifting interests and goals.<br>4. Balance meaningful repetition and novelty through narrative variation.</td>
+              </tr>
+              <tr>
+                <td>Making talk feel safe needs legible, low-pressure interaction</td>
+                <td>5. Scaffold question complexity and turn-taking to children’s moment-to-moment readiness.<br>6. Explicitly build and support children’s mental models of robot state.</td>
+              </tr>
+              <tr>
+                <td>Robots could treat the living space as a pedagogical resource</td>
+                <td>7. Leverage multimodal intelligence to support embodied questioning.<br>8. Turn multi-party presence into a learning catalyst.</td>
+              </tr>
+              <tr>
+                <td>Rigid interaction obligations are incompatible with family routines</td>
+                <td>9. Sustain learning through flexible cadence and fitting into family routines.<br>10. Enable spontaneous and proactive engagement through placement in shared spaces.</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="context-card">
-          <h4>Why embodiment matters <span class="ctx-badge">Presence</span></h4>
-          <p>The robot gives the interaction timing, turn-taking, and ritual presence that a passive app or video would struggle to create.</p>
-        </div>
       </div>
     </section>
 
-    <section class="ella-image-chapter">
-      <div class="ella-chapter-head">
-        <span class="ella-section-tag">05 · System</span>
-        <h2 class="xpress-title">Caregiver input is transformed into a full embodied learning session.</h2>
-        <p class="section-lede">
-          The technical system matters because it lets a small amount of parent input become personalized stories,
-          scaffolded prompts, moderated dialogue, and autonomous robot behavior for use in the home.
-        </p>
+    <aside class="callout">
+      <span class="kicker">Future work</span>
+      <p>Our study involved a small number of families and a short, eight-day home deployment, limiting insight into longer-term engagement, habit formation, and evolving caregiver roles. Future studies should include delayed post-tests, richer expressive measures, and comparative baselines, and should involve more socioeconomically and culturally diverse families to understand equity and necessary design adaptations.</p>
+      <div class="actions">
+        <a class="button primary" href="https://doi.org/10.1145/3773077.3806113">Read the paper</a>
+        <a class="button" href="https://arxiv.org/abs/2603.12508">arXiv</a>
       </div>
+    </aside>
+  </main>
+</div>
 
-      <div class="figure-panel">
-        <img src="../assets/img/ella/pipeline-hires.png" alt="ELLA generation pipeline from child name, target word, and theme through story and interaction generation to robot behavior." />
-        <p class="figure-caption">A small amount of caregiver input becomes a complete story-and-practice session tuned to the child and target vocabulary.</p>
-      </div>
-
-      <div class="figure-panel">
-        <img src="../assets/img/ella/system-hires.png" alt="ELLA system diagram with speech-to-text, content moderation, story generation, and robot control modules." />
-        <p class="figure-caption">Story generation, speech handling, moderation, and robot control are tied together for autonomous use in the home.</p>
-      </div>
-    </section>
-
-    <section class="ella-section">
-      <div class="opportunity-block ella-opportunity">
-        <span class="opp-label">Why it matters</span>
-        <p>
-          ELLA suggests a strong direction for embodied AI: systems that do not just generate content,
-          but turn that content into a recurring social learning ritual. The project is compelling because it combines measurable gains,
-          rich home interaction, and a form factor that can live inside family routines rather than outside them.
-        </p>
-      </div>
-    </section>
-
-  </div>
-
-  <footer class="site-footer">
-    <p>
-      <a href="mailto:vantony1@jhu.edu">vantony1@jhu.edu</a>
-      &nbsp;·&nbsp;
-      <a href="../publications.html">All Publications</a>
-      &nbsp;·&nbsp;
-      <a href="../index.html#work">All Work</a>
-    </p>
-    <p>Johns Hopkins University &nbsp;·&nbsp; Baltimore, MD</p>
-  </footer>
+<footer class="site page">Victor Nikhil Antony · Department of Computer Science, Johns Hopkins University · Baltimore, MD</footer>
 
 </body>
 </html>

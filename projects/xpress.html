@@ -1,249 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Xpress — Victor Nikhil Antony</title>
-  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xpress · Victor Nikhil Antony</title>
+<meta name="description" content="Xpress: A System For Dynamic, Context-Aware Robot Facial Expressions using Language Models (HRI 2025): language models dynamically generate context-aware facial expressions for robots, demonstrated in storytelling and conversation.">
+<link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;family=Libre+Franklin:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400&amp;family=Noto+Serif+Tamil:wght@400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/project.css">
 </head>
-<body class="xpress-page">
+<body>
 
-  <nav class="nav home-nav">
-    <a class="nav-brand home-brand" href="../index.html">victor nikhil antony</a>
-    <div class="nav-links">
-      <a href="../index.html#work">Work</a>
+<div class="shell page">
+  <aside class="rail">
+    <a href="../index.html"><img class="portrait" src="../assets/img/headshot.jpg" alt="Victor Nikhil Antony"></a>
+    <p class="name"><a href="../index.html">Victor Nikhil Antony</a></p>
+    <p class="alt-name"><span lang="ta">விக்டர்</span> <span lang="hi">निखिल</span> <span lang="ta">ஆண்டனி</span></p>
+    <p class="byline">Ph.D. Candidate, Computer Science, Johns Hopkins University</p>
+    <nav aria-label="Primary">
+      <a href="../index.html#research">Research</a>
       <a href="../publications.html">Publications</a>
-      <a href="../assets/pdf/vantony_CV.pdf" target="_blank">CV</a>
-      <a href="mailto:vantony1@jhu.edu">Contact</a>
-    </div>
-  </nav>
-
-  <header class="xpress-header xpress-page-header">
-    <div class="xpress-landing">
-      <div class="xpress-copy">
-        <p class="xpress-kicker">Xpress</p>
-        <h1 class="xpress-page-title">The expression engine for social AI.</h1>
-        <p class="xpress-page-subtitle">
-          Most social robots still rely on a tiny library of canned faces. Xpress replaces static expression sets with a language-model-driven system that reads interaction context and generates expressive robot behavior in real time across storytelling and conversation.
-        </p>
-        <div class="hero-meta">
-          <span class="meta-chip">HRI 2025</span>
-          <span class="meta-chip">Language Models</span>
-          <span class="meta-chip">Conversational Robots</span>
-          <span class="meta-chip">Open Source</span>
-        </div>
-        <div class="intro-actions" style="margin-top: 1.35rem;">
-          <a class="btn btn-primary" href="../assets/pdf/xpress.pdf" target="_blank">Read the paper</a>
-          <a class="btn btn-ghost" href="https://github.com/vantony1/Xpress" target="_blank">View code</a>
-        </div>
-      </div>
-
-      <div class="xpress-hero-side">
-        <div class="xpress-frame xpress-video-frame">
-          <div class="media-embed-shell media-embed-xpress">
-            <iframe
-              src="https://drive.google.com/file/d/1ioOVuuSRA8Gtl0IFFJZlamXlDTpSAq-V/preview"
-              title="Xpress 3D demo"
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="autoplay"
-              allowfullscreen></iframe>
-          </div>
-          <p class="figure-caption">Xpress in motion: expressive face behavior rendered as a synchronized trajectory rather than a fixed expression library.</p>
-        </div>
-        <div class="xpress-authors-wrap">
-          <p class="xpress-authors">HRI 2025 · Victor Nikhil Antony, Chien-Ming Huang</p>
-          <p class="xpress-note">Dynamic expressive behavior generation for social robots, validated across long-form storytelling and real-time conversation.</p>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <div class="project-body xpress-shell">
-
-    <section class="xpress-story-block">
-      <div class="xpress-story-copy">
-        <span class="xpress-section-tag">01 · Why this matters</span>
-        <h2 class="xpress-title">Context-aware expressions make the face feel alive instead of pre-scripted.</h2>
-        <p class="intro-lede">
-          Existing systems usually depend on hand-tuned expression libraries or large training corpora that do not transfer cleanly across robots and interaction settings.
-          Xpress takes a lighter path: it uses language models to segment dialogue, interpret socio-emotional context, and generate executable face behavior on demand without retraining.
-        </p>
-        <div class="hero-pull-quote xpress-pull-quote">
-          <blockquote>
-            "It didn't feel like a robot was telling me a story. It felt closer to a human being."
-          </blockquote>
-          <p class="quote-attr">Adult participant — storytelling study</p>
-        </div>
-      </div>
-      <div class="xpress-insight-notes">
-        <div class="context-card">
-          <h4>Problem <span class="ctx-badge">Static faces</span></h4>
-          <p>Most social robots still rely on a handful of expressions that repeat regardless of timing, dialogue, or emotional nuance.</p>
-        </div>
-        <div class="context-card">
-          <h4>Approach <span class="ctx-badge">LM pipeline</span></h4>
-          <p>Xpress segments interaction flow, conditions on context, and synthesizes executable expression trajectories instead of selecting canned poses.</p>
-        </div>
-        <div class="context-card xpress-span-two">
-          <h4>Why it scales <span class="ctx-badge">No retraining</span></h4>
-          <p>The system works as a generative layer that can be pointed at new interaction content without building a new expression dataset for each deployment.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="xpress-image-chapter">
-      <div class="xpress-chapter-head">
-        <span class="xpress-section-tag">02 · What it looks like</span>
-        <h2 class="xpress-title">The face is generated as a timed expressive trajectory, not a sequence of disconnected emotions.</h2>
-        <p class="section-lede">
-          The strongest static view of the system is the generated face palette itself: a broad range of visual states that shift with narrative and conversational context instead of cycling through the same fixed handful of expressions.
-        </p>
-      </div>
-
-      <div class="figure-panel xpress-panel-large">
-        <img src="../assets/img/xpress/face-teaser.png" alt="Xpress expressive robot face states across interaction moments." />
-        <p class="figure-caption">Generated face palettes across interaction moments, showing how Xpress moves beyond fixed expression sets into richer contextual variation.</p>
-      </div>
-
-      <div class="figure-panel">
-        <img src="../assets/img/xpress/conversation-example.png" alt="Conversation example with expressions synchronized to live dialogue." />
-        <p class="figure-caption">Conversation example: expressions selected in real time as the interaction unfolds.</p>
-      </div>
-
-      <div class="figure-panel xpress-figure-spacer">
-        <img src="../assets/img/xpress/face-examples.png" alt="Expression timeline showing shifts in form and color across segments." />
-        <p class="figure-caption">Expression timeline: changes in palette and form stay aligned to topic, timing, and emotional flow.</p>
-      </div>
-    </section>
-
-    <section class="xpress-image-chapter">
-      <div class="xpress-chapter-head">
-        <span class="xpress-section-tag">03 · Deployment modes</span>
-        <h2 class="xpress-title">The same core system supports both pre-generated storytelling and real-time conversation.</h2>
-        <p class="section-lede">
-          Xpress was validated in two opposite settings: long-form story narration, where the full expression trajectory can be prepared in advance, and live well-being conversation, where the system must react on the fly.
-        </p>
-      </div>
-
-      <div class="xpress-mode-grid">
-        <article class="xpress-mode-card">
-          <p class="xpress-mode-tag">Pre-generated</p>
-          <h3>Storytelling</h3>
-          <p>Full expression trajectories are generated for each story, synchronized to narrative arcs, and rendered across multiple genres.</p>
-          <ul>
-            <li>245 unique expressions across 12 stories</li>
-            <li>100% generated code executed without errors</li>
-            <li>Context Match: 71.67%</li>
-            <li>Validated with adults, children, and parents</li>
-          </ul>
-        </article>
-        <article class="xpress-mode-card">
-          <p class="xpress-mode-tag">Real-time</p>
-          <h3>Conversation</h3>
-          <p>An expression bank plus live LM selection allows the face to respond as the user speaks and while the robot replies.</p>
-          <ul>
-            <li>3 expression banks × 24 faces each</li>
-            <li>Context Match: 75.0%</li>
-            <li>No perceptible lag in study deployment</li>
-            <li>Validated in well-being check-ins with adults</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="xpress-image-chapter">
-      <div class="xpress-chapter-head">
-        <span class="xpress-section-tag">04 · System architecture</span>
-        <h2 class="xpress-title">Time, context, then code: the pipeline separates sequencing from interpretation from execution.</h2>
-        <p class="section-lede">
-          The system architecture stays legible even as the output becomes expressive. One stage captures temporal structure, another interprets socio-emotional context, and the final stage synthesizes executable face trajectories.
-        </p>
-      </div>
-
-      <div class="xpress-pipeline-grid">
-        <div class="context-card">
-          <h4>1. Encode temporal flow <span class="ctx-badge">zT</span></h4>
-          <p>Segment interaction content into timestamped chunks that preserve emotional shifts and narrative pacing.</p>
-        </div>
-        <div class="context-card">
-          <h4>2. Condition on context <span class="ctx-badge">zC</span></h4>
-          <p>Interpret each segment against its socio-emotional framing to form a higher-level expressive description.</p>
-        </div>
-        <div class="context-card">
-          <h4>3. Synthesize trajectory <span class="ctx-badge">tau face</span></h4>
-          <p>Generate executable face code that can be played back in sync with speech or selected live during interaction.</p>
-        </div>
-      </div>
-
-      <div class="figure-panel">
-        <img src="../assets/img/xpress/xpress-storytelling-pipeline.png" alt="Storytelling pipeline from story generation to synchronized face trajectory." />
-        <p class="figure-caption">Storytelling pipeline: from story text to a synchronized sequence of generated facial behavior.</p>
-      </div>
-
-      <div class="figure-panel xpress-figure-spacer">
-        <img src="../assets/img/xpress/realtime-system-diagram.png" alt="Real-time conversational architecture with Reactor and Responder LMs." />
-        <p class="figure-caption">Conversational system: Reactor and Responder LMs coordinate live expression selection and response generation.</p>
-      </div>
-    </section>
-
-    <section class="xpress-image-chapter">
-      <div class="xpress-chapter-head">
-        <span class="xpress-section-tag">05 · User response</span>
-        <h2 class="xpress-title">Children and adults both read the face as part of the interaction, not as decoration.</h2>
-        <p class="section-lede">
-          The strongest evidence from the studies is that people connected the generated expressions directly to what was happening in the story or conversation. The face was legible enough to shape how the robot was understood.
-        </p>
-      </div>
-
-      <div class="figure-panel xpress-panel-large">
-        <img src="../assets/img/xpress/case-study.png" alt="Children engaging with the Xpress storytelling robot." />
-        <p class="figure-caption">Children linked changes in color and shape directly to story events and emotional tone without being prompted to do so.</p>
-      </div>
-
-      <div class="quote-grid xpress-selective-quotes">
-        <div class="quote-block">
-          <blockquote>
-            "Like when it was black, it was like, because it said it was in a very dark place."
-          </blockquote>
-          <p class="quote-attr">Child participant — linking color to story context</p>
-        </div>
-        <div class="quote-block">
-          <blockquote>
-            "It almost felt like talking to a therapist or a friend. It's actually trying to understand what I'm saying."
-          </blockquote>
-          <p class="quote-attr">Adult participant — conversational study</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="xpress-image-chapter xpress-implication-block">
-      <div class="xpress-chapter-head">
-        <span class="xpress-section-tag">06 · Why it matters</span>
-        <h2 class="xpress-title">Xpress suggests a path away from canned expression libraries and toward expressive behavior that is generated with the interaction itself.</h2>
-        <p class="section-lede">
-          The immediate value is more believable storytelling and conversation. The larger implication is that expression can become a generative systems layer for social robots, expanding from face behavior toward richer multimodal embodiment over time.
-        </p>
-      </div>
-    </section>
-
-  </div>
-
-  <footer class="site-footer">
-    <p>
-      <a href="mailto:vantony1@jhu.edu">vantony1@jhu.edu</a>
-      &nbsp;·&nbsp;
-      <a href="../publications.html">All Publications</a>
-      &nbsp;·&nbsp;
-      <a href="../index.html#work">All Work</a>
+      <a href="../index.html#mentoring">Mentoring &amp; Teaching</a>
+      <a href="../studio.html" aria-current="true">Studio</a>
+      <a href="../assets/pdf/vantony_CV.pdf">CV</a>
+    </nav>
+    <p class="contact">
+      <a href="mailto:vantony1@jhu.edu">vantony1@jhu.edu</a><br>
+      <a href="https://scholar.google.com/citations?user=g-6V3woAAAAJ&amp;hl=en">Google Scholar</a> · <a href="https://github.com/vantony1">GitHub</a>
     </p>
-    <p>Johns Hopkins University &nbsp;·&nbsp; Baltimore, MD</p>
-  </footer>
+  </aside>
+
+  <main class="main project">
+    <p class="crumb"><a href="../studio.html">Studio</a> / Xpress</p>
+
+    <header class="project-head">
+      <span class="kicker">HRI 2025</span>
+      <h1>Xpress</h1>
+      <p class="dek">Xpress: A System For Dynamic, Context-Aware Robot Facial Expressions using Language Models</p>
+      <p class="credits"><b>Victor Nikhil Antony</b>, Maia Stiber, and Chien-Ming Huang</p>
+      <div class="tags"><span>Language Models</span><span>Conversational Robots</span><span>Open Source</span></div>
+      <div class="actions">
+        <a class="button primary" href="https://doi.org/10.1109/HRI61500.2025.10974045">Read the paper</a>
+        <a class="button" href="https://github.com/vantony1/Xpress">View code</a>
+      </div>
+    </header>
+
+    <div class="side portrait">
+      <figure class="fig hero">
+        <div class="video portrait"><iframe src="https://drive.google.com/file/d/1ioOVuuSRA8Gtl0IFFJZlamXlDTpSAq-V/preview" title="Xpress 3D demo" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay" allowfullscreen></iframe></div>
+        <figcaption>Xpress uses language models to dynamically generate expressive, context-aware facial expressions for robots.</figcaption>
+      </figure>
+      <div>
+        <p class="lede">Facial expressions are vital in human communication and significantly influence outcomes in human-robot interaction (HRI), such as likeability, trust, and companionship. However, current methods for generating robotic facial expressions are often labor-intensive, lack adaptability across contexts and platforms, and have limited expressive ranges, leading to repetitive behaviors that reduce interaction quality.</p>
+        <p class="lede">We introduce Xpress, a system that leverages language models (LMs) to dynamically generate context-aware facial expressions for robots through a three-phase process: encoding temporal flow, conditioning expressions on context, and generating facial expression code. We demonstrated Xpress as a proof-of-concept through two user studies (n = 15 × 2) and a case study with children and parents (n = 13), in storytelling and conversational scenarios.</p>
+      </div>
+    </div>
+
+    <section class="chapter">
+      <span class="kicker">System</span>
+      <h2>System overview</h2>
+      <p class="lede">Xpress follows a three-phase process to generate context-aware facial expressions as a temporal trajectory, τ<sub>face</sub>, which is conditioned on both the interaction content (e.g., robot speech, user speech) and socio-emotional context (e.g., tone, interaction background).</p>
+      <p class="lede">We use Xpress to generate facial expressions for a custom 28-DoF animated face, created to support a wide range of expressions while capturing the abstract nature of emotional communication. To animate it, a GPT-4 model, prompted to assume the role of a “creative and talented JavaScript programmer,” generates executable code tailored for the face system.</p>
+      <figure class="fig">
+        <img src="../assets/img/xpress/face-teaser.png" alt="Xpress overview: interaction content passes through encoding temporal flow, conditioning facial expressions on context, and generating facial expression code, with storytelling and conversation examples driving a 28-DoF robot face.">
+        <figcaption>Xpress, a system that dynamically generates expressive, context-aware facial expressions for robots. We demonstrate its ability to generate facial expressions in two distinct contexts: storytelling and conversation.</figcaption>
+      </figure>
+      <div class="points">
+        <div class="point"><span class="kicker">Phase 1</span><h3>Encoding temporal flow</h3><p>Xpress processes the interaction content to capture its temporal dependencies (e.g., timing, flow) and encodes this information into an intermediate representation z<sub>T</sub>.</p></div>
+        <div class="point"><span class="kicker">Phase 2</span><h3>Conditioning facial expressions on context</h3><p>Xpress analyzes z<sub>T</sub> along with contextual framing information (e.g., role, previous interaction) and encodes the socio-emotional context as a high-level abstraction z<sub>C</sub> that defines the robot face, representing a spectrum of emotions beyond discrete categories.</p></div>
+        <div class="point"><span class="kicker">Phase 3</span><h3>Synthesizing the trajectory</h3><p>z<sub>C</sub> is used to sequentially synthesize facial expressions that populate the expression trajectory τ<sub>face</sub>, which can then be executed by a robot.</p></div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Storytelling</span>
+      <h2>Storytelling system</h2>
+      <p class="lede">We selected storytelling because it presents complex temporal and socio-emotional challenges: each story requires tailored expressions to ensure contextual appropriateness. We developed a storytelling system to showcase Xpress’s capability in generating context-aware facial expressions over varied socio-emotional context.</p>
+      <figure class="fig">
+        <img src="../assets/img/xpress/xpress-storytelling-pipeline.png" alt="Storytelling pipeline: story generation, text to speech, story segmentation, story to face, and face to code, with example inputs and outputs for each step.">
+        <figcaption>Xpress pipeline for storytelling content generation.</figcaption>
+      </figure>
+      <div class="points two">
+        <div class="point"><span class="kicker">Phase 1</span><h3>Story segmentation</h3><p>An LM, prompted as an “expert, creative, and talented animator working at Disney,” segments the timestamped story transcript into chunks based on significant shifts in the narrative or emotional tone, and generates a color palette to complement each segment’s emotional tone.</p></div>
+        <div class="point"><span class="kicker">Phase 2</span><h3>Story to face</h3><p>Another GPT-4 LM processes each story segment sequentially and generates detailed descriptions of facial expressions. Past expressions and contexts influence future ones, enabling a smooth emotional progression across the story.</p></div>
+        <div class="point"><span class="kicker">Phase 3</span><h3>Face to code</h3><p>The code generation LM turns the face descriptions into face programs, producing a timestamped trajectory of facial expressions synchronized with the story’s delivery.</p></div>
+        <div class="point"><span class="kicker">Delivery</span><h3>Pre-generated stories</h3><p>To overcome the computational overhead (about 7 minutes for a 500-word story), we pre-generate facial expressions. During storytelling, the audio plays and a Node.js server triggers facial expressions based on the timestamps.</p></div>
+      </div>
+      <figure class="fig">
+        <img src="../assets/img/xpress/face-examples.png" alt="Six robot faces in sequence, changing eye shape and color, each above the story text it accompanied.">
+        <figcaption>Example delivery of a story generated using Xpress, showing robot faces and the corresponding story text.</figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Evaluation</span>
+      <h2>Storytelling study</h2>
+      <p class="lede">Participants (n = 15) evaluated a robot telling 12 children’s stories across three genres: solarpunk, horror, and space adventure. The robot narrated three stories to each participant, one from each genre; participants then completed a survey and a semi-structured interview.</p>
+      <div class="stats">
+        <div class="stat"><b>245</b><span>Unique robot facial expressions generated across the 12 stories</span></div>
+        <div class="stat"><b>100%</b><span>Of the facial expression code executable without errors</span></div>
+        <div class="stat"><b>71.67%</b><span>Average Context Match Percentage</span></div>
+        <div class="stat"><b>3.62</b><span>Average Expressiveness Score (of 5), above neutral</span></div>
+      </div>
+      <div class="points two">
+        <div class="point"><h3>Context-awareness</h3><p>Most participants stated that the expressions typically matched the expected emotions except for occasional discrepancies. Participants cited the intensity of the emotion as a reason for perceiving expressions as mismatched.</p></div>
+        <div class="point"><h3>Expressiveness</h3><p>Participants frequently commented on the diversity and range of the expressions. However, two participants struggled to associate the robot’s changing facial features, specifically the shifting shapes and colors, with emotions.</p></div>
+      </div>
+      <div class="quotes">
+        <div class="quote">
+          <blockquote>“the diversity of its expressions was very nice. I feel like I didn’t see too many repeats... It could show, I think, a wide range of emotion.”</blockquote>
+          <p>A11, storytelling study</p>
+        </div>
+        <div class="quote">
+          <blockquote>“Sometimes I felt that it didn’t match the emotions of the story, but like most of the time, it was spot on...”</blockquote>
+          <p>A12, storytelling study</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Case study</span>
+      <h2>Storytelling with children</h2>
+      <p class="lede">Storytelling robots have been proposed to foster cognitive and social growth in children. To evaluate Xpress within this target population, we conducted a case study with children (n = 8, ages 7 to 11) and parents (n = 5). The system narrated space adventure and solarpunk stories, and after the first story, children could choose to continue or stop listening.</p>
+      <figure class="fig">
+        <img src="../assets/img/xpress/case-study.png" alt="Four photos of children watching the storytelling robot, each with a child’s quote about its facial expressions.">
+        <figcaption>Children watched and evaluated our robot narrating stories generated using Xpress.</figcaption>
+      </figure>
+      <div class="stats three">
+        <div class="stat"><b>4.38</b><span>Children’s rating of the robot’s facial expressions (of 5)</span></div>
+        <div class="stat"><b>4.13</b><span>Rating of the robot’s storytelling abilities</span></div>
+        <div class="stat"><b>3.63</b><span>Willingness to listen to additional stories</span></div>
+      </div>
+      <div class="points two">
+        <div class="point"><h3>Perception of facial expressions</h3><p>Children responded positively to the robot’s facial expressions and were able to connect its changing expressions to the content of the stories. C5 observed, “sometimes [robot] was not very happy because the people were always throwing trash everywhere.”</p></div>
+        <div class="point"><h3>Story preference and possible extensions</h3><p>Each child listened to an average of two stories. Children envisioned using the robot for bedtime stories or to alleviate boredom, and wanted more interactivity; parents imagined their children creating stories with the robot.</p></div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Conversation</span>
+      <h2>Conversational system</h2>
+      <p class="lede">To demonstrate Xpress in other interaction paradigms, we adapted it for real-time conversational interactions. We simplify the face description generation by outputting z<sub>C</sub> as discrete emotion-intensity pairings in Phase 2, and pre-generate an expression bank for Phase 3, lowering computation lag by pre-processing the most time-consuming step of Xpress.</p>
+      <figure class="fig">
+        <img src="../assets/img/xpress/realtime-system-diagram.png" alt="Real-time pipeline: a pre-generation phase builds the expression bank; during conversation, speech to text feeds the Reactor LM, and the Responder LM produces the reply and an emotion for text to speech.">
+        <figcaption>Xpress pipeline for real-time interaction using a pre-generated expression bank.</figcaption>
+      </figure>
+      <div class="points">
+        <div class="point"><span class="kicker">Pre-generation</span><h3>Expression bank</h3><p>An LM describes facial expressions for predefined emotions (e.g., happy, sad, surprise, calm), each with two intensity levels: low and high. The code generation model turns these descriptions into the bank.</p></div>
+        <div class="point"><span class="kicker">Listening</span><h3>Reactor</h3><p>The user’s speech is transcribed in real-time and segmented into 5-word chunks. A GPT-4o-mini LM reacts with an appropriate emotion and intensity from the bank, or opts for no change to avoid frequent expression shifts.</p></div>
+        <div class="point"><span class="kicker">Responding</span><h3>Responder</h3><p>Once the user finishes speaking, a GPT-4o LM generates the robot’s verbal reply and selects an emotion-intensity dyad for it, displayed for the first 3 seconds of the robot’s speech.</p></div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Evaluation</span>
+      <h2>Real-time conversation study</h2>
+      <p class="lede">To validate Xpress in real-time interactions, we conducted a study with a robot performing well-being check-ins with 15 participants through a set of questions. Three expression banks were generated, with one randomly selected for each interaction.</p>
+      <div class="stats">
+        <div class="stat"><b>72</b><span>Faces produced across the 3 generated banks</span></div>
+        <div class="stat"><b>100%</b><span>Of the generated code executing without errors</span></div>
+        <div class="stat"><b>75.00%</b><span>Average Context Match Percentage</span></div>
+        <div class="stat"><b>3.90</b><span>Mean Context Alignment Score (of 5), above neutral</span></div>
+      </div>
+      <figure class="fig">
+        <img src="../assets/img/xpress/conversation-example.png" alt="A sequence of robot faces changing color and shape alongside the robot’s and user’s turns in a conversation about friendships.">
+        <figcaption>A snippet of the conversation between a participant and the conversational robot, showcasing the robot’s facial reactions.</figcaption>
+      </figure>
+      <div class="points two">
+        <div class="point"><h3>Context-awareness</h3><p>Most participants felt that the robot’s expressions appropriately matched the content of the conversation. However, participants noted issues with the intensity of expressions, and expression timing influenced perception, with some participants noting a lag.</p></div>
+        <div class="point"><h3>Expressiveness</h3><p>Expressiveness was rated positively (M = 3.69). Expressions appeared to be heavily influenced by the conversation’s emotional tone: in predominantly positive conversations, only positive expressions were experienced.</p></div>
+      </div>
+      <div class="quotes">
+        <div class="quote">
+          <blockquote>“almost felt like talking to therapist or a friend...it’s actually like trying to understand what I’m saying and the facial expressions are according to that.”</blockquote>
+          <p>B10, conversation study</p>
+        </div>
+        <div class="quote">
+          <blockquote>“I feel like there’s a limited set of emotions ... if I’m talking about something depressing, it would feel sad but not empathetic.”</blockquote>
+          <p>B1, conversation study</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Discussion</span>
+      <h2>Insights from Xpress</h2>
+      <p class="lede">Overall, we find that Xpress can dynamically generate expressive and contextually appropriate robot facial expressions across two versatile and different interaction contexts.</p>
+      <div class="pullquote">
+        <blockquote>“[the robot’s] facial expressions had a very humanizing quality... from the beginning to the end, I definitely had a difference of perception. It was a more human perception and that was due to the facial expressions.”</blockquote>
+        <p>A7, storytelling study</p>
+      </div>
+      <div class="points two">
+        <div class="point"><h3>Humanizing HRI</h3><p>The facial expressions had a humanizing effect on the perception of the robot, and in conversation, their reactivity and alignment made participants feel heard. Xpress achieves about 70% Context Match Percentage, while individual differences in perception highlight the need for further research with controlled baselines.</p></div>
+        <div class="point"><h3>Co-creation of robot behaviors</h3><p>Bias in language models could manifest in inappropriate or harmful robot behaviors. Adapting Xpress as a co-creation system with a human-in-the-loop approach, enabling stakeholders such as educators and caregivers to co-create content and robot behaviors, could mitigate these risks.</p></div>
+      </div>
+    </section>
+
+    <aside class="callout">
+      <span class="kicker">Limitations and future work</span>
+      <p>Xpress processes only textual inputs to generate context-aware but uni-modal behavior, i.e., facial expressions. Analyzing prosodic features such as intonation and tempo, along with facial expressions, could provide Xpress with additional information, and by extending Phase 2 and 3, Xpress could generate multi-modal robot behaviors. A key limitation is generation time; leveraging smaller language models could enable real-time generation without a pre-generation phase.</p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/vantony1/Xpress">View code</a>
+        <a class="button" href="https://doi.org/10.1109/HRI61500.2025.10974045">Read the paper</a>
+      </div>
+    </aside>
+  </main>
+</div>
+
+<footer class="site page">Victor Nikhil Antony · Department of Computer Science, Johns Hopkins University · Baltimore, MD</footer>
 
 </body>
 </html>

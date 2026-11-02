@@ -1,370 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Plant Robots — Victor Nikhil Antony</title>
-  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plant-Inspired Robots · Victor Nikhil Antony</title>
+<meta name="description" content="Plant-Inspired Robot Design Metaphors for Ambient HRI (HRI 2026; ACM/IEEE HRI ’26 Best Paper Honorable Mention): plants as metaphoric inspiration for ambient human-robot interaction.">
+<link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;family=Libre+Franklin:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400&amp;family=Noto+Serif+Tamil:wght@400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/project.css">
 </head>
-<body class="plant-page">
+<body>
 
-  <nav class="nav home-nav">
-    <a class="nav-brand home-brand" href="../index.html">victor nikhil antony</a>
-    <div class="nav-links">
-      <a href="../index.html#work">Work</a>
+<div class="shell page">
+  <aside class="rail">
+    <a href="../index.html"><img class="portrait" src="../assets/img/headshot.jpg" alt="Victor Nikhil Antony"></a>
+    <p class="name"><a href="../index.html">Victor Nikhil Antony</a></p>
+    <p class="alt-name"><span lang="ta">விக்டர்</span> <span lang="hi">निखिल</span> <span lang="ta">ஆண்டனி</span></p>
+    <p class="byline">Ph.D. Candidate, Computer Science, Johns Hopkins University</p>
+    <nav aria-label="Primary">
+      <a href="../index.html#research">Research</a>
       <a href="../publications.html">Publications</a>
-      <a href="../assets/pdf/vantony_CV.pdf" target="_blank">CV</a>
-      <a href="mailto:vantony1@jhu.edu">Contact</a>
-    </div>
-  </nav>
-
-  <header class="xpress-header plant-header">
-    <div class="plant-landing">
-      <div class="plant-copy">
-        <p class="plant-kicker">Plant-Inspired Robots</p>
-        <h1 class="plant-title">Ambient robots can signal, support, and stay in the background.</h1>
-        <p class="plant-subtitle">
-          Plants offer a different paradigm for HRI: one based on posture, timing, color, and atmosphere
-          rather than interruption. Through Research through Design, this project translated plant metaphors
-          into robotic artifacts that explore slower, quieter, and more interpretive forms of presence.
-        </p>
-        <div class="hero-meta">
-          <span class="meta-chip">HRI 2026</span>
-          <span class="meta-chip">Research through Design</span>
-          <span class="meta-chip">Ambient HRI</span>
-          <span class="meta-chip">Open Source</span>
-        </div>
-        <div class="intro-actions" style="margin-top: 1.35rem;">
-          <a class="btn btn-primary" href="../assets/pdf/pa-design.pdf" target="_blank">Read the paper</a>
-          <a class="btn btn-ghost" href="https://tinyurl.com/3k82nww3" target="_blank">Open-source materials</a>
-        </div>
-      </div>
-      <div class="plant-teaser figure-panel">
-        <img src="../assets/img/plant/teaser-plant-vert.png" alt="Plant-inspired robot design process spanning plant references, robotic artifacts, and participant imaginaries." />
-        <p class="figure-caption">The full arc: plant references, ambient robotic artifacts, and the speculative futures participants imagined from them.</p>
-      </div>
-    </div>
-  </header>
-
-  <div class="project-body plant-shell">
-
-    <section class="plant-timeline-strip">
-      <div class="plant-timeline">
-        <span class="plant-timeline-item">Primitives</span>
-        <span class="plant-timeline-arrow">→</span>
-        <span class="plant-timeline-item">Prototypes</span>
-        <span class="plant-timeline-arrow">→</span>
-        <span class="plant-timeline-item">Imaginaries</span>
-        <span class="plant-timeline-arrow">→</span>
-        <span class="plant-timeline-item">Design Workshops</span>
-      </div>
-    </section>
-
-    <section class="plant-story-block">
-      <div class="plant-story-copy">
-        <span class="plant-section-tag">01 · Paradigm</span>
-        <h2 class="xpress-title">Plants make a strong interaction model precisely because they do not demand attention.</h2>
-        <p class="intro-lede">
-          Much of HRI borrows from people or animals, leading to expressive forms that ask for frequent acknowledgment.
-          Plant metaphors suggest another route: robots that shape atmosphere, invite interpretation, and communicate gradually through the periphery.
-        </p>
-      </div>
-      <div class="intro-highlights plant-highlight-grid">
-        <div class="highlight-item">
-          <span class="highlight-title">Ambient presence</span>
-          <p>Expression can unfold through timing, posture, and material shifts instead of alerts, speech, or facial reaction.</p>
-        </div>
-        <div class="highlight-item">
-          <span class="highlight-title">Interpretive space</span>
-          <p>Plant-like robots leave more room for people to read intent and emotion into subtle movement without feeling judged.</p>
-        </div>
-        <div class="highlight-item">
-          <span class="highlight-title">Designerly contribution</span>
-          <p>The project builds a vocabulary for an HRI category that is quieter, softer, and more gradual than current robot norms.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="plant-image-chapter">
-      <div class="plant-chapter-head">
-        <span class="plant-section-tag">02 · Primitives</span>
-        <h2 class="xpress-title">The expressive vocabulary begins with four plant primitives.</h2>
-        <p class="section-lede">
-          Rather than copying plant aesthetics directly, the work isolates structural elements that carry expressive potential
-          and then engineers them to move on plant-like timescales.
-        </p>
-      </div>
-
-      <div class="primitives-strip plant-primitives-strip">
-        <div class="primitive-chip">
-          <span class="prim-name">Leaf</span>
-          <p>Curling, wilting, and unfurling through a string-driven flexible mechanism.</p>
-        </div>
-        <div class="primitive-chip">
-          <span class="prim-name">Stem</span>
-          <p>Leaning, bowing, and swaying through a bellow-like actuation logic.</p>
-        </div>
-        <div class="primitive-chip">
-          <span class="prim-name">Flower</span>
-          <p>Glow, translucency, and color as expressive channels with minimal motion.</p>
-        </div>
-        <div class="primitive-chip">
-          <span class="prim-name">Pot</span>
-          <p>Rotation, movement, and form as a way of shaping how presence is read.</p>
-        </div>
-      </div>
-
-      <div class="plant-primitives-layout">
-        <div class="figure-panel plant-panel-large">
-          <img src="../assets/img/plant/primitives-iterations.png" alt="Design iterations of plant-inspired leaf and stem mechanisms." />
-          <p class="figure-caption">Leaf and stem iterations across multiple cycles, moving from stiff, noisy, and literal implementations toward softer and quieter motion.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="plant-image-chapter">
-      <div class="plant-chapter-head">
-        <span class="plant-section-tag">03 · Probes</span>
-        <h2 class="xpress-title">Four prototypes, each opening a different imaginary.</h2>
-        <p class="section-lede">
-          These artifacts are not a single product line. They are probes into how plant-like robots might inhabit desks,
-          tables, routines, and shared spaces in more ambient ways.
-        </p>
-      </div>
-
-      <div class="prototype-grid plant-prototype-grid">
-        <div class="prototype-card">
-          <span class="proto-label">Desk companion</span>
-          <h4>Snake Plant</h4>
-          <p>A posture-aware desk object whose leaning and recovery suggest long-term correction rather than instant feedback.</p>
-          <div class="imaginary-block">
-            <span class="imaginary-label">Imaginary</span>
-            <p>A plant that droops gently as you slouch and revives when you reset, making the cue feel ambient rather than disciplinary.</p>
-          </div>
-          <div class="plant-probe-video media-embed-shell media-embed-probe">
-            <iframe
-              src="https://drive.google.com/file/d/1EOOfM1vb8Q-XgO7xf0hZRWlhszLRGb4p/preview"
-              title="Snake Plant probe video"
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="autoplay"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="prototype-card">
-          <span class="proto-label">Social facilitator</span>
-          <h4>Flower Plant</h4>
-          <p>A flower-crowned form using orientation and stem motion to participate in group attention and conversational flow.</p>
-          <div class="imaginary-block">
-            <span class="imaginary-label">Imaginary</span>
-            <p>A tabletop companion that turns toward speakers, leans toward quieter participants, and gently mediates social space.</p>
-          </div>
-          <div class="plant-probe-video media-embed-shell media-embed-probe">
-            <iframe
-              src="https://drive.google.com/file/d/16dHeN1p5a6nYhViaI6bYNnkeAguNYeij/preview"
-              title="Flower Plant probe video"
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="autoplay"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="prototype-card">
-          <span class="proto-label">Functional gesture</span>
-          <h4>Keeper Plant</h4>
-          <p>A Venus-flytrap-like form whose leaves enclose, present, and protect an object as part of a routine.</p>
-          <div class="imaginary-block">
-            <span class="imaginary-label">Imaginary</span>
-            <p>A pill organizer that keeps medication enclosed until the right time, then slowly opens and pulses to invite action.</p>
-          </div>
-          <div class="plant-probe-video media-embed-shell media-embed-probe">
-            <iframe
-              src="https://drive.google.com/file/d/1BsOICEp4oG_y5Pl1L0ODqscXY2gnmn6C/preview"
-              title="Keeper Plant probe video"
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="autoplay"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="prototype-card">
-          <span class="proto-label">Mobile presence</span>
-          <h4>Dancing Pot</h4>
-          <p>A moving pot that pairs locomotion with delicate leaf motion to create playful presence without demanding engagement.</p>
-          <div class="imaginary-block">
-            <span class="imaginary-label">Imaginary</span>
-            <p>A water-cooler companion that approaches, performs a small dance, and turns a routine moment into ambient social presence.</p>
-          </div>
-          <div class="plant-probe-video media-embed-shell media-embed-probe">
-            <iframe
-              src="https://drive.google.com/file/d/1dtZJ3mgjcDl7MpUpeU-q3fbDAB7vtplf/preview"
-              title="Dancing Pot probe video"
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="autoplay"
-              allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-
-      <div class="plant-prototype-layout">
-        <div class="figure-panel plant-panel-large">
-          <img src="../assets/img/plant/exploded-views.png" alt="Exploded views of the Snake Plant and Flower Plant prototypes." />
-          <p class="figure-caption">Exploded views reveal how the artifacts are built from expressive leaves, stems, flowers, pots, and drive systems rather than sealed black-box forms.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="plant-image-chapter">
-      <div class="plant-chapter-head">
-        <span class="plant-section-tag">04 · Workshops</span>
-        <h2 class="xpress-title">The project used workshops to surface reactions, critiques, and new futures.</h2>
-        <p class="section-lede">
-          Participants were not asked whether they simply liked the robots. They were asked to annotate, modify,
-          and push them into new contexts, turning the artifacts into design prompts rather than finished answers.
-        </p>
-      </div>
-
-      <div class="figure-panel plant-panel-large">
-        <img src="../assets/img/plant/workshop-process.png" alt="Three-phase workshop process covering annotation, microinteraction design, and speculative imaginaries." />
-        <p class="figure-caption">The workshop flow moved from critical reflection to puppeteered microinteraction design to fully new speculative imaginaries.</p>
-      </div>
-      <div class="plant-workshop-notes">
-        <div class="context-card">
-          <h4>Storyboard annotation <span class="ctx-badge">Reflection</span></h4>
-          <p>Participants marked what felt expressive, unclear, intrusive, or promising in the original prototype stories.</p>
-        </div>
-        <div class="context-card">
-          <h4>Microinteraction design <span class="ctx-badge">Bodystorming</span></h4>
-          <p>Pairs modified existing interactions and puppeteered the prototypes to test rhythm, timing, and gesture in the body.</p>
-        </div>
-        <div class="context-card">
-          <h4>New imaginaries <span class="ctx-badge">Speculation</span></h4>
-          <p>The richest output came when participants invented entirely new settings and robot roles beyond the initial concepts.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="plant-image-chapter">
-      <div class="plant-chapter-head">
-        <span class="plant-section-tag">05 · Interpretations</span>
-        <h2 class="xpress-title">Participants treated the robots as things to critique, reframe, and extend.</h2>
-        <p class="section-lede">
-          The annotated portfolios show why this work matters as design research: people did not only react to the artifacts,
-          they actively re-authored them through critique and speculation.
-        </p>
-      </div>
-
-      <div class="figure-panel plant-panel-large">
-        <img src="../assets/img/plant/snake-plant-annotated-storyboard.png" alt="Annotated Snake Plant storyboard with participant comments and extensions." />
-        <p class="figure-caption">Snake Plant annotations mixed delight, practical critique, and concern about sensing, showing how ambient artifacts still need to justify their footprint.</p>
-      </div>
-
-      <div class="figure-panel plant-panel-large">
-        <img src="../assets/img/plant/merged-annotated-portfolio.png" alt="Annotated portfolios for the Dancing Pot and Flower Plant." />
-        <p class="figure-caption">Dancing Pot and Flower Plant elicited both affection and pushback, clarifying where ambient presence crosses into awkwardness or overreach.</p>
-      </div>
-
-      <div class="quote-grid plant-quote-grid">
-        <div class="quote-block">
-          <blockquote>
-            "I don't want more clutter. I have enough on my desk… why do I need another thing?"
-          </blockquote>
-          <p class="quote-attr">P9 — on why a robot must justify its footprint</p>
-        </div>
-        <div class="quote-block">
-          <blockquote>
-            "Slouching for 5 seconds is ok, slouching for 1 hour is a problem. The leaf could look weaker and weaker, like it's dying — then when you correct, it revives."
-          </blockquote>
-          <p class="quote-attr">P1 — on temporal accumulation as the right nudge model</p>
-        </div>
-      </div>
-
-      <div class="intro-highlights plant-imaginaries-grid">
-        <div class="highlight-item">
-          <span class="highlight-title">Family garden</span>
-          <p>A set of plant robots reflecting the emotional atmosphere of a household through drooping, curling, and perking up.</p>
-        </div>
-        <div class="highlight-item">
-          <span class="highlight-title">Long-distance presence</span>
-          <p>Paired plant robots in separate locations that mirror simple gestures, sharing presence without a call or screen.</p>
-        </div>
-        <div class="highlight-item">
-          <span class="highlight-title">Sleep and time hygiene</span>
-          <p>A plant-like lamp that dims and shifts posture gradually as evening progresses, nudging toward rest through atmosphere.</p>
-        </div>
-        <div class="highlight-item">
-          <span class="highlight-title">Habit garden</span>
-          <p>A set of plant artifacts that grow or droop with routines, making progress legible through plant-like change rather than numbers.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="plant-image-chapter">
-      <div class="plant-chapter-head">
-        <span class="plant-section-tag">06 · Design axes</span>
-        <h2 class="xpress-title">Four axes distill the contribution into a reusable design vocabulary.</h2>
-        <p class="section-lede">
-          The work ends not with rules, but with tensions designers will need to navigate when working with plant metaphors in HRI.
-        </p>
-      </div>
-
-      <div class="axes-grid plant-axes-grid">
-        <div class="axis-card">
-          <span class="axis-tag">Axis 1</span>
-          <h4>Situating Presence</h4>
-          <p>Plant-like robots need to justify their footprint through multiplicity of role, personalization, and ecological fit.</p>
-        </div>
-        <div class="axis-card">
-          <span class="axis-tag">Axis 2</span>
-          <h4>Expressive Palette</h4>
-          <p>Meaning emerges through a delicate mix of interpretability, subtle motion, ambient visibility, and perceived liveliness.</p>
-        </div>
-        <div class="axis-card">
-          <span class="axis-tag">Axis 3</span>
-          <h4>Rhythms of Expression</h4>
-          <p>Gradual accumulation, layered timing, and intentional non-reactivity matter as much as overt gestures.</p>
-        </div>
-        <div class="axis-card">
-          <span class="axis-tag">Axis 4</span>
-          <h4>Shapes of Presence</h4>
-          <p>Abstraction, scale, materiality, and engineering constraints all shape how believable and useful plant-like robots can be.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="plant-section">
-      <div class="opportunity-block plant-opportunity">
-        <span class="opp-label">Why it matters</span>
-        <p>
-          Plant-inspired robots suggest a new HRI category: artifacts that support, signal, and shape atmosphere without behaving like assistants that constantly demand attention.
-          The prototypes, workshop outputs, and design axes together create a vocabulary for building that category more deliberately.
-        </p>
-      </div>
-
-      <div class="intro-actions" style="margin-top: 1.2rem;">
-        <a class="btn btn-primary" href="https://tinyurl.com/3k82nww3" target="_blank">Prototypes + build files</a>
-        <a class="btn btn-ghost" href="../assets/pdf/pa-design.pdf" target="_blank">Read the paper</a>
-      </div>
-    </section>
-
-  </div>
-
-  <footer class="site-footer">
-    <p>
-      <a href="mailto:vantony1@jhu.edu">vantony1@jhu.edu</a>
-      &nbsp;·&nbsp;
-      <a href="../publications.html">All Publications</a>
-      &nbsp;·&nbsp;
-      <a href="../index.html#work">All Work</a>
+      <a href="../index.html#mentoring">Mentoring &amp; Teaching</a>
+      <a href="../studio.html" aria-current="true">Studio</a>
+      <a href="../assets/pdf/vantony_CV.pdf">CV</a>
+    </nav>
+    <p class="contact">
+      <a href="mailto:vantony1@jhu.edu">vantony1@jhu.edu</a><br>
+      <a href="https://scholar.google.com/citations?user=g-6V3woAAAAJ&amp;hl=en">Google Scholar</a> · <a href="https://github.com/vantony1">GitHub</a>
     </p>
-    <p>Johns Hopkins University &nbsp;·&nbsp; Baltimore, MD</p>
-  </footer>
+  </aside>
+
+  <main class="main project">
+    <p class="crumb"><a href="../studio.html">Studio</a> / Plant-Inspired Robots</p>
+
+    <header class="project-head">
+      <span class="kicker">HRI 2026</span>
+      <h1>Plant-Inspired Robots</h1>
+      <p class="dek">Plant-Inspired Robot Design Metaphors for Ambient HRI</p>
+      <p class="award"><span class="star" aria-hidden="true">★</span> ACM/IEEE HRI ’26 Best Paper Honorable Mention</p>
+      <p class="credits"><b>Victor Nikhil Antony</b>, <span class="mentee">Adithya R. N.</span>, <span class="mentee">Sarah Derrick</span>, <span class="mentee">Zhili Gong</span>, <span class="mentee">Peter M. Donley</span>, and Chien-Ming Huang</p>
+      <div class="tags"><span>Research through Design</span><span>Ambient HRI</span><span>Open Source</span></div>
+      <div class="actions">
+        <a class="button primary" href="https://doi.org/10.1145/3757279.3785645">Read the paper</a>
+        <a class="button" href="https://arxiv.org/abs/2601.22387">arXiv</a>
+        <a class="button" href="https://tinyurl.com/3k82nww3">Open-source materials</a>
+        <a class="button" href="https://doi.org/10.1145/3776734.3794578">Demo paper</a>
+      </div>
+    </header>
+
+    <div class="side">
+      <figure class="fig hero">
+        <img src="../assets/img/plant/teaser-plant-vert.png" alt="Plant inspirations, the Snake Plant on a desk nudging posture, and two imagined artifacts: a robotic lamp and a robotic bookmark.">
+        <figcaption>Using a Research through Design process, we translate plant-inspired metaphors into robot prototypes and HRI imaginaries.</figcaption>
+      </figure>
+      <div>
+        <p class="lede">Plants offer a paradoxical model for interaction: they are ambient, low-demand presences that nonetheless shape atmosphere, routines, and relationships through temporal rhythms and subtle expressions. In contrast, most human-robot interaction (HRI) has been grounded in anthropomorphic and zoomorphic paradigms, producing overt, high-demand forms of engagement.</p>
+        <p class="lede">Using a Research through Design (RtD) methodology, we explore plants as metaphoric inspiration for HRI. We conducted iterative cycles of ideation, prototyping, and reflection to investigate what design primitives emerge from plant metaphors and morphologies, and how these primitives can be combined into expressive robotic forms.</p>
+        <span class="kicker">Contributions</span>
+        <ul class="bullets">
+          <li><b>Artifacts:</b> a suite of open-source robotic plant prototypes exploring expressive potential and ambient interaction.</li>
+          <li><b>Designerly insights:</b> how people perceive and imagine plant-inspired robots, through design critiques, annotated portfolios, and imaginaries.</li>
+          <li><b>Design considerations:</b> to inform the translation of plant metaphors into robot design.</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="chapter">
+      <span class="kicker">Design process</span>
+      <h2>Plant-inspired robot primitives</h2>
+      <p class="lede">Drawing on a survey of plant life, we identified leaves, stems, flowers, and pots as key elements. Treating these elements as design primitives structured our prototyping process and provided scaffolding for translating plant metaphors into tangible robotic primitives.</p>
+      <div class="points four">
+        <div class="point"><h3>Leaf</h3><p>A lightweight, string-driven mechanism printed in TPU. Pulling the string straightens the leaf; releasing it returns the leaf to its curled form, enabling gestures such as wilting, perking, or unfurling.</p></div>
+        <div class="point"><h3>Stem</h3><p>A concentric bellow mechanism, adapted from soft and continuum robots, supports gestures such as leaning, bowing, and swaying that evoke the motion of plant stems.</p></div>
+        <div class="point"><h3>Pot</h3><p>Containers of other primitives and extensions of expression. Some pots turned or swayed; others moved across the surface, offering different kinds of presence.</p></div>
+        <div class="point"><h3>Flower</h3><p>Our experiments with flowers were limited, exploring color, translucency, and the glow of embedded LEDs.</p></div>
+      </div>
+      <figure class="fig">
+        <img src="../assets/img/plant/primitives-iterations.png" alt="Design iterations of the leaf and stem primitives.">
+        <figcaption>Our leaf and stem primitives underwent several design iterations to realize plant-like expressive potential. Servo motors proved too noisy and jittery; stepper motors with TMC drivers enabled near-silent operation.</figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Prototypes</span>
+      <h2>Four speculative probes</h2>
+      <p class="lede">We constructed four plant-inspired robotic prototypes: Snake Plant, Flower Plant, Keeper Plant, and Dancing Pot. Each combines the primitives in distinct configurations, evoking new imaginaries around contextual and expressive possibilities.</p>
+      <div class="probes">
+        <article class="probe">
+          <h3>Snake Plant</h3>
+          <p>Three actuated leaves mounted on a rotatable pot. When the pot rotates, the angled top cap produces a characteristic leaning motion, as if the plant is subtly shifting direction.</p>
+          <div class="imaginary"><span class="kicker">Imaginary</span><p>Placed on a desk, the plant mirrors a user’s posture: upright with good posture, drooping as posture deteriorates, and recovering when corrected. It greets the user at the start of the day and performs a small celebration at the end.</p></div>
+          <div class="video"><iframe src="https://drive.google.com/file/d/1EOOfM1vb8Q-XgO7xf0hZRWlhszLRGb4p/preview" title="Snake Plant probe video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay" allowfullscreen></iframe></div>
+        </article>
+        <article class="probe">
+          <h3>Flower Plant</h3>
+          <p>An actuated stem crowned with a flower on a rotating pot. Stem bending and pot rotation produce composite gestures that echo a sunflower orienting itself in its environment.</p>
+          <div class="imaginary"><span class="kicker">Imaginary</span><p>At a coffee table, the robot joins the conversational flow: turning toward active speakers, leaning toward quieter participants to invite inclusion, or gesturing toward shared objects to ease conversational lulls.</p></div>
+          <div class="video"><iframe src="https://drive.google.com/file/d/16dHeN1p5a6nYhViaI6bYNnkeAguNYeij/preview" title="Flower Plant probe video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay" allowfullscreen></iframe></div>
+        </article>
+        <article class="probe">
+          <h3>Keeper Plant</h3>
+          <p>Drawing in part from the Venus flytrap, eight small leaves arranged around a central cavity curl inward to enclose or unfurl outward. Folding and blooming take on functional roles of holding and presenting.</p>
+          <div class="imaginary"><span class="kicker">Imaginary</span><p>Used as a pill organizer, the plant grips the box when medication is not due. At the appointed time, the leaves slowly unfurl and softly pulse as a nudge to take the medicine.</p></div>
+          <div class="video"><iframe src="https://drive.google.com/file/d/1BsOICEp4oG_y5Pl1L0ODqscXY2gnmn6C/preview" title="Keeper Plant probe video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay" allowfullscreen></iframe></div>
+        </article>
+        <article class="probe">
+          <h3>Dancing Pot</h3>
+          <p>A mobile pot crowned with a fern-inspired, two-tier leaf arrangement. Juxtaposing locomotion with delicate leaf gestures explores how mobile robots and plant metaphors can enrich each other.</p>
+          <div class="imaginary"><span class="kicker">Imaginary</span><p>Positioned near a water dispenser, the plant approaches visitors and performs a short dance as they fill their glass, creating a playful sense of ambient presence.</p></div>
+          <div class="video"><iframe src="https://drive.google.com/file/d/1dtZJ3mgjcDl7MpUpeU-q3fbDAB7vtplf/preview" title="Dancing Pot probe video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay" allowfullscreen></iframe></div>
+        </article>
+      </div>
+      <figure class="fig">
+        <img src="../assets/img/plant/exploded-views.png" alt="Exploded views of the Snake Plant and Flower Plant prototypes.">
+        <figcaption>Our prototypes leverage our primitives in distinct configurations to be probes of the plant-inspired design space.</figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Design workshops</span>
+      <h2>Eliciting imaginaries</h2>
+      <p class="lede">To explore how plant-inspired robotic forms might be interpreted and re-imagined, we conducted three 90-minute design workshops with 11 participants aged 19 to 82; the third workshop consisted entirely of older adults. Participants were encouraged to touch, move, and manipulate the prototypes.</p>
+      <figure class="fig">
+        <img src="../assets/img/plant/workshop-process.png" alt="The three workshop phases: storyboard annotation, micro-interaction design, and new imaginaries.">
+        <figcaption>Our design workshops elicited perceptions and new imaginaries of plant-inspired robots with three phases of activities.</figcaption>
+      </figure>
+      <div class="points">
+        <div class="point"><h3>Storyboard annotation</h3><p>Participants annotated four video storyboards, each depicting an imaginary for a prototype, and discussed what felt expressive, what seemed confusing, and what they would change.</p></div>
+        <div class="point"><h3>Micro-interaction design</h3><p>Pairs modified a storyboard or sketched a new interaction sequence, puppeting the prototypes or bodystorming to illustrate expressive timing and gesture.</p></div>
+        <div class="point"><h3>New imaginaries</h3><p>Participants imagined new contexts and sketched speculative scenarios, envisioning morphology, temporality, behavior, and expressions.</p></div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Findings</span>
+      <h2>Imagining plant-inspired robots</h2>
+      <p class="lede">Participants’ imaginaries reconfigured and built upon our prototypes, framing plant-inspired robots as ambient, expressive, and multifunctional artifacts woven into everyday routines.</p>
+      <figure class="fig">
+        <img src="../assets/img/plant/snake-plant-annotated-storyboard.png" alt="Annotated portfolio for the Snake Plant imaginary.">
+        <figcaption>Annotated portfolio showcasing the Snake Plant imaginary and participants’ perceptions. Green marks positive impressions, red critiques, blue questions or reflections, and purple concrete extension ideas.</figcaption>
+      </figure>
+      <figure class="fig">
+        <img src="../assets/img/plant/merged-annotated-portfolio.png" alt="Annotated portfolios for the Dancing Pot and Flower Plant imaginaries.">
+        <figcaption>Annotated portfolio showcasing the Flower Plant and Dancing Pot imaginaries and participants’ perceptions.</figcaption>
+      </figure>
+      <div class="points two">
+        <div class="point"><h3>Mediating social interactions</h3><p>Participants imagined classroom plant robots wilting as noise levels rose, and a family “garden” of robots, one per person, whose posture signals each member’s mood.</p></div>
+        <div class="point"><h3>Work and focus</h3><p>Extending the Snake Plant, participants envisioned reminders to move after sitting too long, to rest their eyes, or to refocus when distracted, using plant-like behaviors.</p></div>
+        <div class="point"><h3>Sleep and time hygiene</h3><p>P11 imagined a plant-inspired reading lamp that gradually dims and shifts its posture as evening progresses, nudging the user toward rest.</p></div>
+        <div class="point"><h3>Habit tracking</h3><p>P5 proposed a set of plant robots, each tied to a habit: one grows when a run is completed, another droops when journaling is skipped.</p></div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Design considerations</span>
+      <h2>Translating plant metaphors for ambient HRI</h2>
+      <p class="lede">We consolidated reflections from the RtD process and insights from the workshops into design considerations organized along four axes.</p>
+      <div class="points two">
+        <div class="point"><span class="kicker">Presence</span><h3>Situating presence</h3><p>The role, placement, and ecology of plants within a space shape how people live with them, and offer cues for situating robots as everyday artifacts.</p></div>
+        <div class="point"><span class="kicker">Palette</span><h3>A rich yet delicate expressive palette</h3><p>Plant gestures such as swaying and drooping shift robotic expression toward more ambient, interpretive forms, but are rarely fixed in meaning.</p></div>
+        <div class="point"><span class="kicker">Rhythms</span><h3>Rhythms of expression</h3><p>Plants unfold across multiple timescales, from rapid movements to seasonal arcs of growth and decay, inviting behaviors that range from immediate reactions to long-term ambient signaling.</p></div>
+        <div class="point"><span class="kicker">Shape</span><h3>Shapes of presence</h3><p>Plant inspiration can be rendered literally, abstractly, or as hybrids. Literal forms offer intuitive reading; abstract forms introduce ambiguity that invites interpretation.</p></div>
+      </div>
+      <div class="quotes">
+        <div class="quote">
+          <blockquote>“I don’t want more clutter. I have enough on my desk... why do I need another thing?”</blockquote>
+          <p>P9, on the value and necessity of a new artifact</p>
+        </div>
+        <div class="quote">
+          <blockquote>“Slouching for 5 seconds is ok, slouching for 1 hour is a problem.”</blockquote>
+          <p>P1, updating the Snake Plant imaginary</p>
+        </div>
+      </div>
+    </section>
+
+    <aside class="callout">
+      <span class="kicker">Towards plant-inspired ambient HRI</span>
+      <p>Our research-through-design practice explored how plant metaphors can inform HRI by shaping presence, temporality, form, and expression, and generated imaginaries for robots that are ambient, gradual, and interpretive. The work also raises questions about sustainability: unlike living plants, robotic artifacts carry a large ecological footprint.</p>
+      <div class="actions">
+        <a class="button primary" href="https://tinyurl.com/3k82nww3">Prototypes and build files</a>
+        <a class="button" href="https://doi.org/10.1145/3757279.3785645">Read the paper</a>
+      </div>
+    </aside>
+  </main>
+</div>
+
+<footer class="site page">Victor Nikhil Antony · Department of Computer Science, Johns Hopkins University · Baltimore, MD</footer>
 
 </body>
 </html>

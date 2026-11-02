@@ -1,258 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Interruption Handling for Robots — Victor Nikhil Antony</title>
-  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interruption Handling for Robots · Victor Nikhil Antony</title>
+<meta name="description" content="Interruption Handling for Conversational Robots (RSS 2025): a system that detects user-initiated interruptions and manages them in real-time based on the interrupter’s intent.">
+<link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;family=Libre+Franklin:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400&amp;family=Noto+Serif+Tamil:wght@400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/project.css">
 </head>
-<body class="interruption-page">
+<body>
 
-  <nav class="nav home-nav">
-    <a class="nav-brand home-brand" href="../index.html">victor nikhil antony</a>
-    <div class="nav-links">
-      <a href="../index.html#work">Work</a>
+<div class="shell page">
+  <aside class="rail">
+    <a href="../index.html"><img class="portrait" src="../assets/img/headshot.jpg" alt="Victor Nikhil Antony"></a>
+    <p class="name"><a href="../index.html">Victor Nikhil Antony</a></p>
+    <p class="alt-name"><span lang="ta">விக்டர்</span> <span lang="hi">निखिल</span> <span lang="ta">ஆண்டனி</span></p>
+    <p class="byline">Ph.D. Candidate, Computer Science, Johns Hopkins University</p>
+    <nav aria-label="Primary">
+      <a href="../index.html#research">Research</a>
       <a href="../publications.html">Publications</a>
-      <a href="../assets/pdf/vantony_CV.pdf" target="_blank">CV</a>
-      <a href="mailto:vantony1@jhu.edu">Contact</a>
-    </div>
-  </nav>
-
-  <header class="xpress-header interruption-header">
-    <div class="interruption-landing">
-      <div class="interruption-copy">
-        <p class="interruption-kicker">Interruption Handling for Robots</p>
-        <h1 class="interruption-title">Robots should not just detect that you cut in. They should infer why.</h1>
-        <p class="interruption-subtitle">
-          Interruptions are not all the same. Some signal agreement, some offer help, some ask for clarification, and some challenge the floor entirely.
-          This project built a conversational framework that classifies interruption intent in real time and adapts the robot's response so the interaction stays socially coherent.
-        </p>
-        <div class="hero-meta">
-          <span class="meta-chip">RSS 2025</span>
-          <span class="meta-chip">Conversational Robots</span>
-          <span class="meta-chip">LLM Classification</span>
-          <span class="meta-chip">Open Source</span>
-        </div>
-        <div class="intro-actions" style="margin-top: 1.35rem;">
-          <a class="btn btn-primary" href="https://github.com/intuitivecomputing/interruption-handling-system" target="_blank">View code</a>
-          <a class="btn btn-ghost" href="../publications.html" target="_blank">Publications</a>
-        </div>
-      </div>
-      <div class="interruption-hero-side">
-        <div class="interruption-frame interruption-teaser-frame">
-          <img src="../assets/img/interruption/interaction-patterns-final.png" alt="Taxonomy and handling patterns for interruptions in human-human and human-robot interaction." />
-          <p class="figure-caption">The handling patterns separate interruptions by intent and map them to floor-holding, brief acknowledgement, contextual response, or yield behaviors.</p>
-        </div>
-        <div class="interruption-authors-wrap">
-          <p class="interruption-authors">Intent-aware interruption handling for conversational robots</p>
-          <p class="interruption-note">RSS 2025: Shiye Cao, Jiwon Moon, Amama Mahmood, Victor Nikhil Antony, Ziang Xiao, Anqi Liu, Chien-Ming Huang</p>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <div class="project-body interruption-shell">
-
-    <section class="interruption-proof-strip">
-      <div class="interruption-proof-grid">
-        <div class="interruption-proof-card">
-          <div class="interruption-proof-number">93.69%</div>
-          <div class="interruption-proof-label">Interruptions successfully handled without breaking the conversation</div>
-        </div>
-        <div class="interruption-proof-card">
-          <div class="interruption-proof-number">88.78%</div>
-          <div class="interruption-proof-label">Interruption intent classified correctly in real time</div>
-        </div>
-        <div class="interruption-proof-card">
-          <div class="interruption-proof-number">246</div>
-          <div class="interruption-proof-label">Human-human interruptions used to derive the handling strategies</div>
-        </div>
-        <div class="interruption-proof-card">
-          <div class="interruption-proof-number">4</div>
-          <div class="interruption-proof-label">Interruption types with distinct robot behaviors</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="interruption-story-block">
-      <div class="interruption-story-copy">
-        <span class="interruption-section-tag">01 · Why it matters</span>
-        <h2 class="xpress-title">Always ignoring interruptions feels rigid. Always yielding feels fragile.</h2>
-        <p class="intro-lede">
-          Existing systems usually choose one of two bad defaults. They either plow ahead as if the user never spoke, or they stop immediately every time speech overlaps.
-          Human conversation works differently. People infer intent from timing, wording, and context. This project brings that same logic into robotic turn-taking.
-        </p>
-      </div>
-      <div class="interruption-insight-notes">
-        <div class="context-card">
-          <h4>Ignore-all baseline <span class="ctx-badge">27.03%</span></h4>
-          <p>Treating all interruptions as noise breaks down fast when the user is trying to redirect, clarify, or help.</p>
-        </div>
-        <div class="context-card">
-          <h4>Yield-all baseline <span class="ctx-badge">84.68%</span></h4>
-          <p>Always stopping is better, but it still mishandles supportive overlaps that should be acknowledged without giving up the floor.</p>
-        </div>
-        <div class="context-card">
-          <h4>Intent-aware system <span class="ctx-badge">93.69%</span></h4>
-          <p>The strongest performance comes from treating interruption handling as a social inference problem, not a raw speech-detection problem.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="interruption-image-chapter">
-      <div class="interruption-chapter-head">
-        <span class="interruption-section-tag">02 · Interruption types</span>
-        <h2 class="xpress-title">The interaction problem becomes manageable once the robot knows what kind of interruption it is hearing.</h2>
-        <p class="section-lede">
-          The taxonomy came from analyzing human conversation across discussions, interviews, and briefings. Instead of treating overlap as one event, the system distinguishes between supportive and disruptive moves in the interaction.
-        </p>
-      </div>
-
-      <div class="figure-panel interruption-panel-large">
-        <img src="../assets/img/interruption/teaser-final.png" alt="Examples of different interruption types and robot responses in conversation." />
-        <p class="figure-caption">The same robot turn can be met with agreement, clarification, assistance, or disruption. Each requires a different response strategy.</p>
-      </div>
-
-      <div class="interruption-types-grid">
-        <article class="interruption-type-card">
-          <p class="interruption-type-tag">Supportive overlap</p>
-          <h3>Cooperative agreement</h3>
-          <p>The user is signaling understanding or agreement while the robot is speaking. The right move is acknowledgement, not surrender.</p>
-        </article>
-        <article class="interruption-type-card">
-          <p class="interruption-type-tag">Supportive overlap</p>
-          <h3>Cooperative assistance</h3>
-          <p>The user is helping the robot finish a point or supplying a needed word. The robot briefly listens, accepts the assist, and resumes.</p>
-        </article>
-        <article class="interruption-type-card">
-          <p class="interruption-type-tag">Contextual pivot</p>
-          <h3>Cooperative clarification</h3>
-          <p>The user needs an explanation before the conversation can continue. The robot answers in context, then returns to the original thread.</p>
-        </article>
-        <article class="interruption-type-card">
-          <p class="interruption-type-tag">Floor challenge</p>
-          <h3>Disruptive interruption</h3>
-          <p>The user is changing topic, disagreeing, or explicitly taking the floor. Here, the robot should yield or briefly wrap up before yielding.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="interruption-image-chapter">
-      <div class="interruption-chapter-head">
-        <span class="interruption-section-tag">03 · System framework</span>
-        <h2 class="xpress-title">The system moves from overlap detection to intent classification to a matched handling strategy.</h2>
-        <p class="section-lede">
-          The architecture is intentionally narrow and legible. It watches for user-initiated overlap, classifies the interruption with conversational context, and then selects the response policy that best fits the inferred intent.
-        </p>
-      </div>
-
-      <div class="figure-panel interruption-panel-large">
-        <img src="../assets/img/interruption/interruption-handling-draft.png" alt="Interruption handling architecture showing detection, intention classification, and strategy selection." />
-        <p class="figure-caption">Three modules coordinate the interaction: user-initiated interruption detection, LLM-based intent classification, and handling logic tuned to each interruption type.</p>
-      </div>
-
-      <div class="interruption-framework-grid">
-        <div class="context-card">
-          <h4>Detection <span class="ctx-badge">Overlap, not turn exchange</span></h4>
-          <p>The system monitors simultaneous speech and filters out normal floor exchange so only genuine user-initiated interruptions enter the pipeline.</p>
-        </div>
-        <div class="context-card">
-          <h4>Classification <span class="ctx-badge">LLM in context</span></h4>
-          <p>Conversational history and timing are passed into the classifier so the system can distinguish help, clarification, agreement, and disruption.</p>
-        </div>
-        <div class="context-card">
-          <h4>Handling <span class="ctx-badge">Behavior policy</span></h4>
-          <p>The robot then decides whether to hold the floor, acknowledge and continue, answer and resume, or yield gracefully.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="interruption-image-chapter">
-      <div class="interruption-chapter-head">
-        <span class="interruption-section-tag">04 · In use</span>
-        <h2 class="xpress-title">The strongest demo is not one interruption. It is what happens when several overlap patterns happen in sequence.</h2>
-        <p class="section-lede">
-          Real conversation gets messy. This example shows the system handling compounded interruptions while keeping the interaction coherent and preserving conversational momentum.
-        </p>
-      </div>
-
-      <div class="figure-panel interruption-panel-large">
-        <img src="../assets/img/interruption/interaction-example.png" alt="Example interaction showing multiple compounded interruptions handled in sequence." />
-        <p class="figure-caption">A single turn can contain agreement, clarification, and floor exchange. The system adapts its response each time instead of relying on a single fallback behavior.</p>
-      </div>
-    </section>
-
-    <section class="interruption-image-chapter">
-      <div class="interruption-chapter-head">
-        <span class="interruption-section-tag">05 · Findings</span>
-        <h2 class="xpress-title">The main result is not just higher handling accuracy. It is better conversation quality when interruptions are resolved appropriately.</h2>
-        <p class="section-lede">
-          The evaluation makes the interaction stakes visible. Mis-handled interruptions are not just technical misses; they reduce how included and satisfied people feel in the conversation.
-        </p>
-      </div>
-
-      <div class="interruption-results-grid">
-        <div class="interruption-result-card">
-          <p class="interruption-result-number">104 / 111</p>
-          <h3>Handled successfully</h3>
-          <p>The intent-aware framework substantially outperformed both naive baselines in resolving user interruptions without conversational breakdown.</p>
-        </div>
-        <div class="interruption-result-card">
-          <p class="interruption-result-number">ASR</p>
-          <h3>Main failure source</h3>
-          <p>The classifier itself held up well. Most failures came from speech recognition errors, pointing to multimodal sensing as the next leverage point.</p>
-        </div>
-        <div class="interruption-result-card">
-          <p class="interruption-result-number">rho -.43</p>
-          <h3>User experience consequence</h3>
-          <p>Failed interruption handling correlated with lower perceived inclusion and lower discussion satisfaction, showing that turn-taking quality directly shapes trust.</p>
-        </div>
-      </div>
-
-      <div class="quote-grid interruption-quote-grid">
-        <div class="quote-block">
-          <blockquote>
-            "The moment I speak, it wants to just listen. My speech should take precedence over anything it says."
-          </blockquote>
-          <p class="quote-attr">Participant — on expectations for conversational robots</p>
-        </div>
-        <div class="quote-block">
-          <blockquote>
-            "Luna, we don't have time," and the robot stopped, acknowledged, and moved on. That felt right.
-          </blockquote>
-          <p class="quote-attr">Participant — on a disruptive interruption handled well</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="interruption-image-chapter interruption-implication-block">
-      <div class="interruption-chapter-head">
-        <span class="interruption-section-tag">06 · Why it matters</span>
-        <h2 class="xpress-title">Robots that speak naturally also need to be interruptible naturally.</h2>
-        <p class="section-lede">
-          This project argues for a higher bar in conversational robotics. Interruption handling should not be a simple stop-or-ignore feature.
-          It is a social behavior layer that helps robots stay readable, collaborative, and appropriately responsive once real conversation begins.
-        </p>
-      </div>
-    </section>
-
-  </div>
-
-  <footer class="site-footer">
-    <p>
-      <a href="mailto:vantony1@jhu.edu">vantony1@jhu.edu</a>
-      &nbsp;·&nbsp;
-      <a href="../publications.html">All Publications</a>
-      &nbsp;·&nbsp;
-      <a href="../index.html#work">All Work</a>
+      <a href="../index.html#mentoring">Mentoring &amp; Teaching</a>
+      <a href="../studio.html" aria-current="true">Studio</a>
+      <a href="../assets/pdf/vantony_CV.pdf">CV</a>
+    </nav>
+    <p class="contact">
+      <a href="mailto:vantony1@jhu.edu">vantony1@jhu.edu</a><br>
+      <a href="https://scholar.google.com/citations?user=g-6V3woAAAAJ&amp;hl=en">Google Scholar</a> · <a href="https://github.com/vantony1">GitHub</a>
     </p>
-    <p>Johns Hopkins University &nbsp;·&nbsp; Baltimore, MD</p>
-  </footer>
+  </aside>
+
+  <main class="main project">
+    <p class="crumb"><a href="../studio.html">Studio</a> / Interruption Handling for Robots</p>
+
+    <header class="project-head">
+      <span class="kicker">RSS 2025</span>
+      <h1>Interruption Handling for Robots</h1>
+      <p class="dek">Interruption Handling for Conversational Robots</p>
+      <p class="credits">Shiye Cao, Jiwon Moon, Amama Mahmood, <b>Victor Nikhil Antony</b>, Ziang Xiao, Anqi Liu, and Chien-Ming Huang</p>
+      <div class="tags"><span>Conversational Robots</span><span>LLM Classification</span><span>Open Source</span></div>
+      <div class="actions">
+        <a class="button primary" href="https://arxiv.org/abs/2501.01568">Read the paper</a>
+        <a class="button" href="https://github.com/intuitivecomputing/interruption-handling-system">View code</a>
+        <a class="button" href="../publications.html">Publications</a>
+      </div>
+    </header>
+
+    <div class="side">
+      <figure class="fig hero">
+        <img src="../assets/img/interruption/interaction-patterns-final.png" alt="Interaction patterns linking each interruption type (cooperative agreement, assistance, clarification, and disruptive) to strategies for holding the floor or yielding.">
+        <figcaption>Interaction patterns of interruption handling in human conversations. The highlighted strategies were implemented in our system; “Ack” denotes acknowledge and “Cont.” denotes continue.</figcaption>
+      </figure>
+      <div>
+        <p class="lede">Interruptions, a fundamental component of human communication, can enhance the dynamics and effectiveness of conversations, but only when effectively managed by all parties involved. Despite advancements in robotic systems, state-of-the-art systems still have limited capabilities in handling user-initiated interruptions in real-time.</p>
+        <p class="lede">We present a system that detects user-initiated interruptions and manages them in real-time based on the interrupter’s intent. The system was designed based on interaction patterns identified from human-human interaction data. We integrated our system into an LLM-powered social robot and validated its effectiveness through a timed decision-making task and a contentious discussion task with 21 participants.</p>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>93.69%</b><span>Of user-initiated interruptions successfully handled (n = 104/111)</span></div>
+      <div class="stat"><b>88.78%</b><span>Of interruptions with intent correctly classified</span></div>
+      <div class="stat"><b>246</b><span>Interruptions analyzed in human-human conversations</span></div>
+      <div class="stat"><b>4</b><span>Interruption types the system classifies and handles</span></div>
+    </div>
+
+    <section class="chapter">
+      <span class="kicker">Background</span>
+      <h2>Interruptions in conversation</h2>
+      <p class="lede">Interruptions, occurring when a listener attempts to take the floor before the speaker’s utterance is complete, are a fundamental aspect of human communication. They lead to more fluid and fast-paced conversations when effectively used and handled. However, interruptions can disrupt the flow of the conversation, potentially leading to conversation breakdowns and the interrupter feeling excluded if addressed inadequately.</p>
+      <p class="lede">Existing spoken dialogue systems mostly rely on explicit turn-taking signaling, such as push-to-talk and wakewords, to detect user-initiated interruptions, and are designed to always yield the speaker turn immediately after an interruption is detected. Little work has explored how conversational robots should manage different types of interruptions. When should robots yield to users? When should robots hold their turn?</p>
+      <div class="points two">
+        <div class="point"><span class="kicker">Cooperative</span><h3>Agreement</h3><p>Aids the completion of the current turn by expressing concurrence or understanding.</p></div>
+        <div class="point"><span class="kicker">Cooperative</span><h3>Assistance</h3><p>Provides a word or idea that the speaker may need.</p></div>
+        <div class="point"><span class="kicker">Cooperative</span><h3>Clarification</h3><p>Asks the speaker to clarify or elaborate on previous information.</p></div>
+        <div class="point"><span class="kicker">Disruptive</span><h3>Disruptive interruption</h3><p>The listener challenges the speaker’s control and disrupts the conversational flow to express an opposing opinion, further develop the current topic, change the subject, or summarize the speaker’s point to end the turn.</p></div>
+      </div>
+      <figure class="fig">
+        <img src="../assets/img/interruption/teaser-final.png" alt="Three study interactions with the robot, labeled cooperative agreement, cooperative clarification, and disruptive interruption, with transcripts of the overlapping speech.">
+        <figcaption>The system classifies user-initiated interruptions into cooperative agreement, cooperative assistance, cooperative clarification, and disruptive interruption, and adapts its handling strategy accordingly. Here it responds to three user-initiated interruptions using different strategies, with overlapping speech highlighted in blue.</figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Human conversation</span>
+      <h2>Interruption handling in human interaction</h2>
+      <p class="lede">There is limited prior research on interruption handling in both human-robot and human-human interaction. To identify human behavior patterns when handling interruptions, we analyzed YouTube videos of three kinds of conversation with varying power dynamics: discussions (106 interruptions), talk show interviews (122), and press briefings (18). We coded each interruption for the intention of the interrupter and the strategy the speaker used to manage it: yield or hold the floor.</p>
+      <p class="lede">Speakers held the floor in three ways: ignoring the interruption and continuing; acknowledging it while repeating a few words spoken at the time of interruption; or explicitly stating intent to continue (e.g., “Let me finish my thought”). The third strategy was used to defend the turn from more aggressive disruptive interruptions.</p>
+      <div class="points two">
+        <div class="point"><span class="kicker">Hold floor</span><h3>Cooperative agreement</h3><p>Speakers typically acknowledged the interruption and continued speaking. A deviation from this pattern was noted in only one case.</p></div>
+        <div class="point"><span class="kicker">Hold floor</span><h3>Cooperative assistance</h3><p>The speaker typically acknowledged it, briefly paused for the interrupter to finish (usually a few words), then resumed speaking.</p></div>
+        <div class="point"><span class="kicker">Hold floor or yield</span><h3>Cooperative clarification</h3><p>The speaker typically acknowledged the question, paused for the interrupter to finish, answered, and then resumed their original thought. In contentious discussions, the speaker sometimes yielded the floor.</p></div>
+        <div class="point"><span class="kicker">Hold floor or yield</span><h3>Disruptive interruption</h3><p>The most common type (130 of 246). In debates, speakers often yielded due to the polarized nature of the discussions; in less polarized settings such as talk shows, they typically held the floor.</p></div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">System</span>
+      <h2>Interruption handling system</h2>
+      <p class="lede">Our interruption handling system has three main modules: interruption detection, intent classification, and interruption handling. The figure below shows how user input flows through it.</p>
+      <figure class="fig">
+        <img src="../assets/img/interruption/interruption-handling-draft.png" alt="Metro-map diagram: checks for overlapping speech, wakewords, and remaining planned speech lead to intent classification, which branches into continue, ack and continue, clarify and continue, ack and wrap-up, and yield immediately.">
+        <figcaption>Metro-map-inspired diagram of the interruption handling system, illustrating how user speech flows through the interruption detection, intent classification, and interruption handling modules. It shows how the system selects the handling strategy based on the predicted user intention given overlapping speech.</figcaption>
+      </figure>
+      <div class="points">
+        <div class="point"><h3>Interruption detection</h3><p>We detect interruptions by monitoring for simultaneous speech. If the robot has less than two seconds of planned speech left, the system ignores the overlap and finishes up. When the wakeword (the robot’s name) or “stop” is heard, it always yields immediately.</p></div>
+        <div class="point"><h3>Intent classification</h3><p>A prompt-engineered large language model (GPT-4o-mini) classifies the intention of the interrupter given the conversational history and the amount of time elapsed in the turn since the robot started talking.</p></div>
+        <div class="point"><h3>Interruption handling</h3><p>Following the interaction patterns identified in human conversations, the system adopts a different handling strategy based on the predicted intention of the interrupter.</p></div>
+      </div>
+      <div class="table-wrap">
+        <h3>Handling strategies</h3>
+        <div class="table-scroll">
+          <table class="data">
+            <thead>
+              <tr><th>Interruption</th><th>Strategy</th><th>Robot behavior</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Cooperative agreement, one or two words</td><td>Continue</td><td>Likely a verbal backchannel. The system disregards it and continues with the remaining planned content from the last punctuation mark.</td></tr>
+              <tr><td>Cooperative agreement, more than two words</td><td>Ack and continue</td><td>Acknowledges verbally (“ya”, “yes”, “uhhum”, or “sure”), nods, and continues with the remaining planned content.</td></tr>
+              <tr><td>Cooperative assistance</td><td>Ack and continue</td><td>Acknowledges verbally (“yeah”, “yes”, or “thanks”), nods, and continues from the last punctuation mark.</td></tr>
+              <tr><td>Cooperative clarification</td><td>Clarify and continue</td><td>An LLM addresses the clarification requested, then continues with the remaining previously planned content.</td></tr>
+              <tr><td>Disruptive, within 5 seconds of the robot starting to speak</td><td>Ack and wrap-up</td><td>An LLM generates behavior to express intent to maintain the turn (e.g., “Let me finish my thought”), provides a summary of the remaining content, and then yields.</td></tr>
+              <tr><td>Disruptive, milder</td><td>Yield immediately</td><td>Yields the floor immediately; a new robot response is generated based on the content of the interruption.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Evaluation</span>
+      <h2>Study design</h2>
+      <p class="lede">We integrated the interruption handling system into an LLM-powered social robot and conducted a user study with 21 participants (11 female, 10 male) aged 18 to 30. Participants completed two tasks in random order, each followed by a questionnaire on perceived inclusion in the discussion and overall satisfaction with the discussion, and the study concluded with a semi-structured interview. To encourage user-initiated interruptions, we made the following design choices.</p>
+      <div class="points">
+        <div class="point"><h3>Tasks</h3><p>In the timed decision-making task, participants had five minutes to select seven out of fifteen items to help them survive in a desert survival simulation. In the discussion task, they prepared a 2-minute presentation on whether the federal government should abolish capital punishment.</p></div>
+        <div class="point"><h3>Robot persona</h3><p>The robot had a feminine name (“Luna”), a feminine voice, gaze aversion while talking, and generally positive facial expressions. Prior research highlights that gender significantly affects interruption patterns.</p></div>
+        <div class="point"><h3>Pre-programmed events</h3><p>Two events per task where the robot holds the floor for roughly one minute to provoke user-initiated interruptions: an introduction with disclaimers, and an unrelated fun story or facts.</p></div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Results</span>
+      <h2>Findings</h2>
+      <p class="lede">We identified 121 user-initiated interruptions from 206.59 minutes of interaction data. The timed decision-making task (n = 86) had more than twice as many user-initiated interruptions as the contentious discussion task (n = 35). Of the 111 interruptions handled by the system, 104 were successfully handled, meaning that the robot effectively responded to the interrupter without causing a conversation breakdown.</p>
+      <div class="stats three">
+        <div class="stat"><b>27.03%</b><span>Successfully handled by a system that ignores interruptions</span></div>
+        <div class="stat"><b>84.68%</b><span>Successfully handled by a system that always yields</span></div>
+        <div class="stat"><b>93.69%</b><span>Successfully handled by our intention-based system</span></div>
+      </div>
+      <div class="points two">
+        <div class="point"><h3>Interruption types</h3><p>The most common type of interruption was disruptive (n = 92, 76.03%), followed by cooperative agreement (n = 18), cooperative clarification (n = 9), and rarely, cooperative assistance (n = 2).</p></div>
+        <div class="point"><h3>Intent classification</h3><p>Of the 55 interruption attempts that passed through the intent classification module, it correctly classified 44 (80.00%). Including interruptions with wakewords detected, 88.78% were correctly classified.</p></div>
+        <div class="point"><h3>Causes of failure</h3><p>Speech recognition errors caused the majority of interruption handling failures. Two correctly classified interruptions failed due to errors in determining where the robot left off at the time of interruption.</p></div>
+        <div class="point"><h3>Inclusion and satisfaction</h3><p>The number of unsuccessfully handled interruptions was negatively correlated with users’ perceived inclusion in the discussion (ρ(42) = −.43, p = .005) and their satisfaction with the discussion (ρ(42) = −.35, p = .021).</p></div>
+      </div>
+      <figure class="fig">
+        <img src="../assets/img/interruption/interaction-example.png" alt="A participant discussing capital punishment with the robot, with three numbered overlaps annotated: cooperative agreement, cooperative clarification, and a robot-initiated overlap.">
+        <figcaption>Example conversation where the system handles various types of compounded interruptions. Overlap 3 is an example of a robot-initiated interruption.</figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Discussion</span>
+      <h2>Design implications</h2>
+      <p class="lede">Systems that ignore interruptions are prone to conversational breakdowns as they disregard the user’s intention to shift the conversation. Systems that always yield break the interaction flow when they yield to non-disruptive overlapping speech, such as cooperative agreement and backchannels, which can result in user frustration over time.</p>
+      <div class="points two">
+        <div class="point"><h3>Robot’s role, task context, and interruption handling</h3><p>While floor holding is a common strategy in human conversations, robots holding the floor during disruptive interruptions were not perceived favorably by all participants. Participants who perceived the robot’s role as assistive expected it to yield immediately at every turn. Interruption handling design may also help reinforce a robot’s intended role in a given context.</p></div>
+        <div class="point"><h3>Breaking habits: from scripted to natural HRI</h3><p>Some participants preferred the predictability of a “designated stop mechanism” (wakewords), while some felt uncomfortable using the robot’s name or “stop” to interrupt, as it can be viewed as rude in human-human conversations. The habits users have developed with commercial voice assistants constrain their interactions with systems capable of more natural, conversational exchanges.</p></div>
+      </div>
+      <div class="quotes">
+        <div class="quote">
+          <blockquote>“I felt like I am trying to solve the issue, and I am just using you [the robot] as a tool to help me”</blockquote>
+          <p>Participant, on the robot’s role in the task</p>
+        </div>
+        <div class="quote">
+          <blockquote>“the moment I speak, it wants to just like immediate listen, and like my speech should take precedence over anything it says”</blockquote>
+          <p>The same participant, on their ideal interaction</p>
+        </div>
+      </div>
+    </section>
+
+    <aside class="callout">
+      <span class="kicker">Limitations and future work</span>
+      <p>Speech recognition errors were the primary cause of failure for the intention classification module; future work could investigate using multimodal inputs with multimodal LLMs as an additional information source. Our system also does not account for non-verbal interruptions: we observed seven instances where the users’ body language, such as opening their mouths, indicated an intention to interrupt the robot without making any sounds.</p>
+      <p>Our system focuses on interruption handling in dyadic conversations. Future work should explore how robots should handle interruptions in multi-party and team situations, and in longer-term, multi-session interactions in the wild.</p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/intuitivecomputing/interruption-handling-system">View code</a>
+        <a class="button" href="https://arxiv.org/abs/2501.01568">Read the paper</a>
+      </div>
+    </aside>
+  </main>
+</div>
+
+<footer class="site page">Victor Nikhil Antony · Department of Computer Science, Johns Hopkins University · Baltimore, MD</footer>
 
 </body>
 </html>

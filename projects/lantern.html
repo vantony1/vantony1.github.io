@@ -1,258 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lantern — Victor Nikhil Antony</title>
-  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lantern · Victor Nikhil Antony</title>
+<meta name="description" content="Lantern: A Minimalist Robotic Object Platform (HRI 2026). An open-source, low-cost (~$40) platform for building simple, haptic, holdable robotic objects.">
+<link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;family=Libre+Franklin:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400&amp;family=Noto+Serif+Tamil:wght@400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/project.css">
 </head>
-<body class="lantern-page">
+<body>
 
-  <nav class="nav home-nav">
-    <a class="nav-brand home-brand" href="../index.html">victor nikhil antony</a>
-    <div class="nav-links">
-      <a href="../index.html#work">Work</a>
+<div class="shell page">
+  <aside class="rail">
+    <a href="../index.html"><img class="portrait" src="../assets/img/headshot.jpg" alt="Victor Nikhil Antony"></a>
+    <p class="name"><a href="../index.html">Victor Nikhil Antony</a></p>
+    <p class="alt-name"><span lang="ta">விக்டர்</span> <span lang="hi">निखिल</span> <span lang="ta">ஆண்டனி</span></p>
+    <p class="byline">Ph.D. Candidate, Computer Science, Johns Hopkins University</p>
+    <nav aria-label="Primary">
+      <a href="../index.html#research">Research</a>
       <a href="../publications.html">Publications</a>
-      <a href="../assets/pdf/vantony_CV.pdf" target="_blank">CV</a>
-      <a href="mailto:vantony1@jhu.edu">Contact</a>
-    </div>
-  </nav>
-
-  <header class="xpress-header lantern-header">
-    <div class="lantern-landing">
-      <div class="lantern-copy">
-        <h1 class="lantern-name">Lantern</h1>
-        <h2 class="lantern-title">A $40 social robot anyone can build.</h2>
-        <p class="lantern-subtitle">
-          Lantern is a haptic, holdable robotic object built to make social robotics more accessible.
-          It trades expensive humanoid hardware for a softer, calmer form that still communicates
-          attention, acknowledgement, and presence through motion, light, and touch.
-        </p>
-        <div class="hero-meta" style="margin-top: 1rem;">
-          <span class="meta-chip">HRI 2026</span>
-          <span class="meta-chip">Open Source</span>
-          <span class="meta-chip">Ambient HRI</span>
-          <span class="meta-chip">ROS2</span>
-        </div>
-        <div class="intro-actions" style="margin-top: 1.35rem;">
-          <a class="btn btn-primary" href="https://lantern-website-iota.vercel.app/" target="_blank">Project site + build guide</a>
-          <a class="btn btn-ghost" href="../assets/pdf/lantern.pdf" target="_blank">Read the paper</a>
-        </div>
-        <div class="lantern-authors-wrap">
-          <p class="lantern-authors">
-            Victor Nikhil Antony<span>*</span>, Zhili Gong<span>*</span>, Guanchen Li, Clara Jeon, and Chien-Ming Huang
-          </p>
-          <p class="lantern-note">*equal contribution</p>
-        </div>
-        <div class="lantern-stat-grid">
-          <div class="lantern-stat-card">
-            <div class="lantern-stat-number">~$40</div>
-            <div class="lantern-stat-label">Total build cost</div>
-          </div>
-          <div class="lantern-stat-card">
-            <div class="lantern-stat-number">2–4 hrs</div>
-            <div class="lantern-stat-label">Replication time across external labs</div>
-          </div>
-          <div class="lantern-stat-card">
-            <div class="lantern-stat-number">5</div>
-            <div class="lantern-stat-label">Deployment contexts validated</div>
-          </div>
-          <div class="lantern-stat-card">
-            <div class="lantern-stat-number">4.17 / 5</div>
-            <div class="lantern-stat-label">Overall experience rating in the sensory room study</div>
-          </div>
-        </div>
-      </div>
-      <div class="lantern-teaser">
-        <div class="lantern-hero-embed media-embed-shell media-embed-square">
-          <iframe
-            src="https://drive.google.com/file/d/1BvJgfhFwBtCn0AD-JZhbiMm1C8OYNPW5/preview"
-            title="Lantern demo video"
-            loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allow="autoplay"
-            allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <div class="project-body lantern-shell">
-
-    <section class="lantern-story-block">
-      <div class="lantern-story-copy">
-        <span class="lantern-section-tag">01 · The object</span>
-        <h2 class="xpress-title">Social presence without a face, a screen, or a large budget.</h2>
-        <p class="intro-lede">
-          Lantern was designed around a simple question: how much social presence can you create with the lightest possible hardware footprint?
-          The answer is a soft, hand-scale object that people can hold, tilt, squeeze, and keep nearby.
-        </p>
-        <div class="lantern-goals-wrap">
-          <span class="lantern-mini-label">Design goals</span>
-          <div class="lantern-goals">
-            <div class="context-card">
-              <h4>Low-cost</h4>
-              <p>Affordable enough to prototype, replicate, and distribute.</p>
-            </div>
-            <div class="context-card">
-              <h4>Portable</h4>
-              <p>Lightweight and easy to bring into real spaces beyond the lab.</p>
-            </div>
-            <div class="context-card">
-              <h4>Expressive</h4>
-              <p>Simple motion primitives that still read as attention and calm.</p>
-            </div>
-            <div class="context-card">
-              <h4>Open</h4>
-              <p>Build logic that other researchers and designers can actually reuse.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="figure-panel lantern-panel-large">
-        <img src="../assets/img/lantern/teaser-draft.png" alt="Lantern, a compact robotic object with a soft yellow textile body." />
-        <p class="figure-caption">Lantern’s core form: soft-bodied, holdable, and designed to feel present without relying on anthropomorphic cues.</p>
-      </div>
-    </section>
-
-    <section class="lantern-image-chapter">
-      <div class="lantern-chapter-head">
-        <span class="lantern-section-tag">02 · Where it lives</span>
-        <h2 class="xpress-title">The same platform, multiple social roles.</h2>
-        <p class="section-lede">
-          Lantern works because it is not locked to one script. The hardware is simple enough to travel across therapeutic, educational, and ambient companion contexts.
-        </p>
-      </div>
-
-      <div class="lantern-context-layout">
-        <div class="figure-panel lantern-panel-large">
-          <img src="../assets/img/lantern/lantern-use-cases-annotated.png" alt="Lantern use cases across bedside, desk, sensory room, hospital, and classroom." />
-          <p class="figure-caption">Use cases across bedside support, focus regulation, sensory calming, post-op breathing, and classroom deployment.</p>
-        </div>
-
-        <div class="context-split lantern-context-split">
-          <div class="context-card">
-            <h4>Sensory room <span class="ctx-badge">n=20</span></h4>
-            <p>Lantern supported calming and focus in a school sensory room, where participants repeatedly described it as responsive, alive, and easy to connect with.</p>
-          </div>
-          <div class="context-card">
-            <h4>Study buddy <span class="ctx-badge">Ambient</span></h4>
-            <p>As an ADHD study buddy, Lantern explored how a quiet object can support attention without feeling like surveillance or interruption.</p>
-          </div>
-          <div class="context-card">
-            <h4>Post-op care <span class="ctx-badge">Clinical</span></h4>
-            <p>Motion, light, and haptics paced breathing in a hospital scenario, offering guidance without a display or spoken instructions.</p>
-          </div>
-          <div class="context-card">
-            <h4>Teaching platform <span class="ctx-badge">Open</span></h4>
-            <p>Lantern also operated as infrastructure: a reproducible robot platform for HRI classes, lab replication, and public exhibition.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="lantern-image-chapter">
-      <div class="lantern-chapter-head">
-        <span class="lantern-section-tag">03 · Interaction</span>
-        <h2 class="xpress-title">People did not just look at Lantern. They handled it.</h2>
-        <p class="section-lede">
-          The strongest part of Lantern is how quickly it invites touch. The form, softness, and scale turn interaction into something closer to handling an object than commanding a machine.
-        </p>
-      </div>
-
-      <div class="figure-panel lantern-panel-wide">
-        <img src="../assets/img/lantern/image1-6.png" alt="People holding, tilting, and closely engaging with Lantern during sensory room interaction." />
-        <p class="figure-caption">Lantern in use: held in the lap, lifted toward the face, rotated by hand, and treated like a responsive object rather than a tabletop device.</p>
-      </div>
-
-      <div class="lantern-interaction-grid">
-        <div class="figure-panel lantern-interaction-media">
-          <img src="../assets/img/lantern/lantern-demonstrations.png" alt="Lantern expressive behavior demonstrations and material studies." />
-          <p class="figure-caption">Behavior and material studies shaping how the object signals attention, calm, and acknowledgement.</p>
-        </div>
-        <div class="lantern-interaction-side">
-          <div class="figure-panel lantern-interaction-video-panel" id="lantern-study-buddy-panel">
-            <div class="lantern-secondary-video lantern-secondary-video-compact media-embed-shell media-embed-study">
-              <iframe
-                src="https://drive.google.com/file/d/1dqhEaEmV17HiHsdCGKlC1OBUl5lyjdP7/preview"
-                title="Lantern ADHD study buddy demo"
-                loading="lazy"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allow="autoplay"
-                allowfullscreen></iframe>
-            </div>
-            <p class="figure-caption">Study buddy interaction showing how Lantern can support focus through ambient motion instead of command-driven feedback.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="lantern-image-chapter">
-      <div class="lantern-chapter-head">
-        <span class="lantern-section-tag">04 · Mechanics</span>
-        <h2 class="xpress-title">Minimal mechanics, enough expressivity.</h2>
-        <p class="section-lede">
-          Lantern’s engineering is intentionally lean. Every degree of freedom had to earn its place by increasing expressivity without making the platform expensive or difficult to replicate.
-        </p>
-      </div>
-
-      <div class="visual-grid lantern-mech-grid">
-        <div class="figure-block figure-panel">
-          <img src="../assets/img/lantern/mech-design-draft.png" alt="Mechanical design of Lantern." />
-          <p class="figure-caption">Internal architecture and assembly logic.</p>
-        </div>
-        <div class="figure-block figure-panel lantern-kinematics-panel">
-          <img src="../assets/img/lantern/kinematics.png" alt="Lantern kinematics diagram." />
-          <p class="figure-caption">Kinematics and the motion primitives that shape Lantern’s behavior language.</p>
-        </div>
-      </div>
-
-      <div class="lantern-kinematic-split">
-        <div class="figure-panel">
-          <img src="../assets/img/lantern/design-iteration-draft.png" alt="Lantern structural prototype sequence." />
-          <p class="figure-caption">Structural refinement toward an integrated, reproducible base.</p>
-        </div>
-        <div class="lantern-kinematic-copy">
-          <h4>Three deliberate choices.</h4>
-          <p>A soft exterior makes Lantern approachable and holdable.</p>
-          <p>A minimal servo-driven body gives it just enough motion to signal orientation, attention, and calm.</p>
-          <p>A simple internal architecture keeps the platform open-source, inexpensive, and replicable in under four hours.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="id8-section">
-      <div class="opportunity-block">
-        <span class="opp-label">Why Lantern matters</span>
-        <p>
-          Lantern suggests that social robotics does not need to begin with expensive humanoid hardware.
-          A softer, cheaper, more reproducible object can still create attachment, calm, and companionship —
-          while making the research itself easier to distribute.
-        </p>
-      </div>
-
-      <div class="intro-actions" style="margin-top: 1.4rem;">
-        <a class="btn btn-primary" href="https://lantern-website-iota.vercel.app/" target="_blank">Explore the build guide</a>
-        <a class="btn btn-ghost" href="../assets/pdf/lantern.pdf" target="_blank">Read the paper</a>
-      </div>
-    </section>
-
-  </div>
-
-  <footer class="site-footer">
-    <p>
-      <a href="mailto:vantony1@jhu.edu">vantony1@jhu.edu</a>
-      &nbsp;·&nbsp;
-      <a href="../publications.html">All Publications</a>
-      &nbsp;·&nbsp;
-      <a href="../index.html#work">All Work</a>
+      <a href="../index.html#mentoring">Mentoring &amp; Teaching</a>
+      <a href="../studio.html" aria-current="true">Studio</a>
+      <a href="../assets/pdf/vantony_CV.pdf">CV</a>
+    </nav>
+    <p class="contact">
+      <a href="mailto:vantony1@jhu.edu">vantony1@jhu.edu</a><br>
+      <a href="https://scholar.google.com/citations?user=g-6V3woAAAAJ&amp;hl=en">Google Scholar</a> · <a href="https://github.com/vantony1">GitHub</a>
     </p>
-    <p>Johns Hopkins University &nbsp;·&nbsp; Baltimore, MD</p>
-  </footer>
+  </aside>
+
+  <main class="main project">
+    <p class="crumb"><a href="../studio.html">Studio</a> / Lantern</p>
+
+    <header class="project-head">
+      <span class="kicker">HRI 2026</span>
+      <h1>Lantern</h1>
+      <p class="dek">Lantern: A Minimalist Robotic Object Platform</p>
+      <p class="award"><span class="star" aria-hidden="true">★</span> ACM/IEEE HRI ’26 Sustainability Demonstration Recognition</p>
+      <p class="credits"><b>Victor Nikhil Antony</b>*, <span class="mentee">Zhili Gong</span>*, <span class="mentee">Guanchen Li</span>, <span class="mentee">Clara Jeon</span>, and Chien-Ming Huang</p>
+      <p class="note">*equal contribution</p>
+      <div class="tags"><span>Open Source</span><span>Ambient HRI</span><span>ROS2</span></div>
+      <div class="actions">
+        <a class="button primary" href="https://doi.org/10.1145/3757279.3785644">Read the paper</a>
+        <a class="button" href="https://lantern-website-iota.vercel.app/">Project site + build guide</a>
+        <a class="button" href="https://doi.org/10.1145/3776734.3794577">Demo paper</a>
+      </div>
+    </header>
+
+    <div class="side portrait">
+      <div class="video portrait"><iframe src="https://drive.google.com/file/d/1BvJgfhFwBtCn0AD-JZhbiMm1C8OYNPW5/preview" title="Lantern demo video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay" allowfullscreen></iframe></div>
+      <div class="stats col">
+        <div class="stat"><b>~$40</b><span>Unit build cost (USD)</span></div>
+        <div class="stat"><b>2–4 hrs</b><span>For two external HRI groups to replicate Lantern from a build guide, an instructional video, and a kit</span></div>
+        <div class="stat"><b>5</b><span>Explorations: a co-design workshop, a sensory room case study, external HRI labs, a graduate HRI course, and public exhibitions</span></div>
+        <div class="stat"><b>4.17 / 5</b><span>Average rating of the experience with the robot in the sensory room case study</span></div>
+      </div>
+    </div>
+
+    <div class="side">
+      <figure class="fig">
+        <img src="../assets/img/lantern/teaser-draft.png" alt="East Asian paper lanterns as inspiration, the Lantern base design, and three example uses: a robotic speaker, a robotic toy, and a robotic lamp.">
+        <figcaption>Lantern is an affordable, adaptable robotic platform inspired by East Asian paper lanterns, designed to enable the creation of simple robotic objects for diverse HRI use cases.</figcaption>
+      </figure>
+      <div>
+        <p class="lede">Robotic objects are simple actuated systems that subtly blend into human environments. Lantern is a minimalist robotic object platform to enable building simple robotic artifacts. We conducted in-depth design and engineering iterations of Lantern’s mechatronic architecture to meet specific design goals while maintaining a low build cost (~$40 USD).</p>
+        <p class="lede">As an extendable, open-source platform, Lantern aims to enable exploration of a range of HRI scenarios by leveraging human tendency to assign social meaning to simple forms. Our findings show that Lantern effectively evokes engagement, can support versatile applications ranging from emotion regulation to focused work, and serves as a viable platform for lowering barriers to HRI as a field.</p>
+      </div>
+    </div>
+
+    <section class="chapter" aria-labelledby="lantern-mindfulness-title">
+      <span class="kicker">Featured use case · Mindfulness</span>
+      <h2 id="lantern-mindfulness-title">Lantern as a mindfulness meditation guide for older adults.</h2>
+      <div class="video wide"><iframe src="https://www.youtube-nocookie.com/embed/SA3TgkSDT3A?rel=0" title="Lantern as a mindfulness meditation guide for older adults" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      <div class="actions">
+        <a class="button" href="https://youtu.be/SA3TgkSDT3A">YouTube <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Approach</span>
+      <h2>Design goals</h2>
+      <p class="lede">Lantern is engineered with an “easy assembly, warm interaction” mindset at its core, employing minimalist design principles. Prioritizing affordability, adaptability, and ease of assembly, Lantern is a step towards lowering barriers to HRI research with a low-cost, easy-to-build robotic object platform.</p>
+      <div class="points two">
+        <div class="point"><h3>Haptic</h3><p>Haptic interaction forms the basis of Lantern’s ability to create engaging interactions through low degree-of-freedom actuation. Vibrotactile and kinesthetic haptic feedback open up new possibilities for affect communication across interaction contexts.</p></div>
+        <div class="point"><h3>Holdable</h3><p>Beyond its compact and light form factor, Lantern’s soft exterior and deformable shell embolden its holdable profile. It can communicate via Wi-Fi and be powered with a battery, further enhancing its portability.</p></div>
+        <div class="point"><h3>Low-cost</h3><p>With a target per-unit build cost of around $40 USD, Lantern aims to lower the economic barriers to entry for interactive robotics research, particularly to enable in-the-wild, large-scale, long-term human-robot interaction studies.</p></div>
+        <div class="point"><h3>Simple</h3><p>A minimalist design streamlines Lantern’s mechanics and control requirements, making the robot more reliable and less intimidating to build and adapt. Simplified fabrication and assembly processes facilitate rapid replication.</p></div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">System</span>
+      <h2>The design of Lantern</h2>
+      <p class="lede">The design of Lantern is inspired by traditional East Asian paper lanterns. Its core movement involves smooth, rhythmic expansion and contraction, evoking the calming motion of a floating lantern while providing haptic feedback.</p>
+      <div class="side">
+        <figure class="fig">
+          <img src="../assets/img/lantern/mech-design-draft.png" alt="Exploded view of Lantern’s CAD model with labeled parts: top belt clamp, top cap, PETG shield, top brace, GT2 belt, servo with pulley, pulley stand with belt guide, electronics tray, base housing, battery holder, and snap-on stand.">
+          <figcaption>Exploded view of Lantern’s CAD model, highlighting the base housing with servo-driven GT2 belt, the PET-G shield exterior with top brace, the pulley and belt guide for alignment, and the snap-on stand for stability.</figcaption>
+        </figure>
+        <div class="points">
+          <div class="point"><h3>Mechanical design</h3><p>A servo motor with a pulley actuates Lantern by winding and releasing a belt that links the base housing and top plate. The belt converts the pulley’s torque into a linear force, deforming the shield and altering Lantern’s external dimensions.</p></div>
+          <div class="point"><h3>Shell</h3><p>Slicing the PET-G sheet in intervals allows radial expansion when the shell is axially compressed. A 1 mm sheet with 18 slices withstands inward compression during user interaction while remaining deformable with the torque of the servo motor.</p></div>
+          <div class="point"><h3>Electronics</h3><p>A Raspberry Pi Pico W controls Lantern’s behaviors. A 25 kg-cm hobby-grade servo produces the kinesthetic expansion effect, and a mini-vibration motor produces the vibro-tactile feedback.</p></div>
+          <div class="point"><h3>Software</h3><p>A microPython SDK for quick prototyping and stand-alone programs, and a microROS+ROS2-based system for ROS-based interaction programming.</p></div>
+        </div>
+      </div>
+      <div class="side">
+        <figure class="fig">
+          <img src="../assets/img/lantern/design-iteration-draft.png" alt="Three Lantern prototypes: #1 with guide rods and middle chassis, #2 with an integrated base, and #3 with an anti-collapse top brace and snap-on stand.">
+          <figcaption>Lantern underwent several design iterations. #1 had six guide rods and suffered from tilting and incomplete strokes; #2 replaced the guide rods with a belt guide and integrated base housing; #3 added structural braces and a stand for stability.</figcaption>
+        </figure>
+        <div class="points">
+          <div class="point"><h3>Fabrication</h3><p>The entire skeletal structure of Lantern, except for the shield, can be 3D printed with PLA filament and assembled using M3 fasteners. Each build requires around 150 g of filament, and the 1 mm PET-G sheet can be laser-cut.</p></div>
+          <div class="point"><h3>Form factor and embodiment</h3><p>An exterior covering envelops Lantern’s internal skeleton. It can be crafted from various materials (e.g., paper, yarn, cotton) with different textures and colors, allowing Lantern to be customized to specific applications or personalized to individual users.</p></div>
+        </div>
+      </div>
+      <figure class="fig">
+        <img src="../assets/img/lantern/kinematics.png" alt="Shell deformation under compression, and a plot of change in diameter against compression displacement for shell lengths of 125, 155, and 185 mm.">
+        <figcaption>Adjustments to the pulley belt and shell length allow for easy modification of Lantern’s height and expansion width. Shells of different lengths exhibit distinct responses to compression.</figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Customization</span>
+      <h2>Imagining use cases</h2>
+      <p class="lede">To demonstrate Lantern’s adaptability and its viability across contexts, we integrated sound, light outputs, IMU, and touch sensing to enable the following use cases.</p>
+      <div class="side">
+        <figure class="fig">
+          <img src="../assets/img/lantern/lantern-use-cases-annotated.png" alt="Two use case sequences: (a) a white paper Lantern lamp that brightens, expands, and turns off when flipped; (b) a fluffy wool Lantern with ears and eyes that reacts to touch.">
+          <figcaption>Illustrations of Lantern’s use cases: (a) as a circadian rhythm lamp, it guides wake-up routines; (b) as a fluffy toy with touch sensing, it can be a cuddly companion.</figcaption>
+        </figure>
+        <div class="points">
+          <div class="point"><h3>Robotic lamp for circadian well-being</h3><p>A 60-pixel RGB LED strip and a 6-DoF IMU turn Lantern into a bedside wake-up light. The alarm is dismissed only after the user picks up Lantern and performs two gentle tilts or a single 180° flip.</p></div>
+          <div class="point"><h3>Embodied speaker</h3><p>With a mini speaker and microSD storage, Lantern synchronizes its expansion-contraction cycles to the beat of the music, while the vibration motor pulses in time with bass-heavy beats.</p></div>
+          <div class="point"><h3>Soft toy</h3><p>A fluffy wool exterior and two 3D-printed TPU “ears” make Lantern a cuddly comfort object. The vibration motor delivers low-amplitude, 20 Hz “purr” bursts that fade in and out every 10 s.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Design workshop</span>
+      <h2>Hacking Lantern</h2>
+      <p class="lede">We hosted a two-hour, hackathon-style design workshop with five participants from different academic fields (e.g., Mechanical Engineering, Mental Health Counseling, Human-Robot Interaction). Participants identified applications including breathing exercises for training or recovery, emotion regulation, yoga or Pilates routines, encouragement during spirometry tests, and maternity delivery training.</p>
+      <p class="lede">Two teams designed interactions for distinct use cases. Both teams implemented key behaviors of their envisioned interactions on Lantern in less than 20 minutes.</p>
+      <div class="points two">
+        <div class="point"><h3>Emotion regulation for children in schools</h3><p>Lantern was envisioned for elementary school sensory rooms, particularly after conflicts, to help children self-regulate their emotions through guided breathing. The team implemented “Bunny breathing” (short, quick breaths) and “Dragon breathing” (slow, deep inhales and exhales), and proposed a steady, slow-paced heartbeat to further calm children afterwards.</p></div>
+        <div class="point"><h3>Post-operative exercises in hospitals</h3><p>Lantern was envisioned for hospital rooms post-surgery to assist patients with guided breathing exercises. The team implemented a standard post-operative exercise: three normal breaths followed by one slow, deep inhale (3–5 seconds) and a controlled exhale.</p></div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Case study</span>
+      <h2>Lantern in a sensory room</h2>
+      <p class="lede">Inspired by the emotion regulation concept from the workshop, we set up a sensory room in a campus building with soft lighting, slow lofi background music, and a humidifier dispersing lavender essential oils. Lantern was placed on a small table beside a soft saucer chair and programmed with a slow breathing behavior.</p>
+      <p class="lede">A total of 20 participants (13M/7F, aged 18–31) interacted with Lantern and then filled out a short survey. Interaction styles varied from soft touches and pokes to more forceful squeezes, and some participants even engaged verbally, occasionally talking to it.</p>
+      <figure class="fig">
+        <img src="../assets/img/lantern/image1-6.png" alt="Five sensory room participants: one leaning back and watching, one reaching for Lantern on the table, one pressing its top, one holding it up to her face, and one holding it on his lap.">
+        <figcaption>Some participants leaned back and watched Lantern as it moved, while others pressed its head, held it in their palms, or placed it on their laps.</figcaption>
+      </figure>
+      <div class="stats three">
+        <div class="stat"><b>~5 min</b><span>Average interaction time, ranging from 1.5 to 14.3 minutes</span></div>
+        <div class="stat"><b>4 / 5</b><span>“I am feeling calmer now than before I interacted with the robot” (SD&nbsp;=&nbsp;0.59)</span></div>
+        <div class="stat"><b>3.11 / 5</b><span>Perceived liveliness was mixed (SD&nbsp;=&nbsp;1.08); some attributed low liveliness to slow movement speed and predictability</span></div>
+      </div>
+      <div class="quotes">
+        <div class="quote">
+          <blockquote>“Interaction with the robot felt like interacting with a pet. It was really nice and helped me relax.”</blockquote>
+          <p>P7, sensory room case study</p>
+        </div>
+        <div class="quote">
+          <blockquote>“The [robot’s squeaking] with its appearance was kind of charming, and I spent a bit of time observing its movements, which helped me focus more on my thoughts.”</blockquote>
+          <p>P16, sensory room case study</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Research and education</span>
+      <h2>Lantern as a research tool and educational platform</h2>
+      <p class="lede">We provided four external HRI labs with a build guide, an instructional video, and a kit containing the materials necessary to construct Lantern, then hosted online discussions with two of the groups. The two groups successfully replicated Lantern within 2–4 hours and suggested a variety of potential use cases for Lantern in HRI research.</p>
+      <div class="quotes">
+        <div class="quote">
+          <blockquote>“a pair of lungs on [the QT robot]... add a degree of freedom that’s salient, but not expensive or too difficult.”</blockquote>
+          <p>R1, external HRI researcher</p>
+        </div>
+        <div class="quote">
+          <blockquote>“[Lantern] is a different kind of robot than most of the ones I’ve seen because it changes shape, whereas most robots are pretty rigid.”</blockquote>
+          <p>R2, external HRI researcher</p>
+        </div>
+      </div>
+      <div class="side">
+        <figure class="fig" id="lantern-study-buddy-panel">
+          <div class="video square"><iframe src="https://drive.google.com/file/d/1dqhEaEmV17HiHsdCGKlC1OBUl5lyjdP7/preview" title="Lantern ADHD study buddy demo" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay" allowfullscreen></iframe></div>
+          <figcaption>HRI class project: a “study buddy” for students with ADHD based on body doubling principles.</figcaption>
+        </figure>
+        <div>
+          <p class="lede">Feedback from external researchers, combined with the lack of low-cost, adaptable platforms for HRI education, motivated us to integrate Lantern into a graduate-level Introduction to HRI course with 30 students organized into ten teams. Each team received a Lantern kit, assembled it, and demonstrated core functionality before advancing to project work.</p>
+          <p class="lede">Projects spanned participatory design sessions with peers, interaction studies probing trust and engagement, and prototypes tailored for specific contexts. One team developed a “study buddy” for students with ADHD, while others built therapeutic companions or examined interaction transparency.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Exhibitions</span>
+      <h2>Public exhibitions</h2>
+      <p class="lede">To further probe what kind of interactions Lantern evokes with special populations (e.g., children, older adults), as discussed by external researchers, we conducted a series of public exhibitions to inform future applications and interaction design.</p>
+      <figure class="fig">
+        <img src="../assets/img/lantern/lantern-demonstrations.png" alt="The ADHD study buddy class project, the sensory room, public exhibitions with older adults and children, and sensory room interactions.">
+        <figcaption>We explore Lantern’s potential through a series of interactions featuring graduate students, older adults and children.</figcaption>
+      </figure>
+      <div class="points two">
+        <div class="point"><h3>Older adults community center</h3><p>During a one-hour outreach session in a senior living center, Lantern performed slow inflation-deflation cycles. Participants held, lifted, and even squeezed it, and many described it as “adorable,” “cute,” and “neat.” Despite not being explicitly designed for squeezing, Lantern consistently recovered from these interactions.</p></div>
+        <div class="point"><h3>Children’s robotics open-house</h3><p>Children aged 6–12 (n=8) interacted freely with Lantern running a slow-breathing behavior. Some handled it with noticeable care, while others poked it or held it upside down. Some remarked that they felt relaxed or even sleepy, and their curiosity prompted us to remove the outer cover and explain its components.</p></div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Discussion</span>
+      <h2>Design opportunities</h2>
+      <p class="lede">Across contexts, interactions with Lantern surfaced unexpected design tensions and new design possibilities.</p>
+      <div class="points two">
+        <div class="point"><h3>Sound design</h3><p>Participants often described the operational sounds from Lantern (e.g., the hum of its motor) as soothing and charming. Rhythmic sounds, like a soft “lub-dub” heartbeat paired with tactile vibrations, can create a more immersive, multi-sensory experience.</p></div>
+        <div class="point"><h3>Language capabilities</h3><p>Lantern can invite verbal interactions, and tiny language models could provide simple verbal responses grounded in its role. However, complex verbal interactions could raise user expectations, potentially clashing with Lantern’s minimalist form.</p></div>
+        <div class="point"><h3>Tactile engagements</h3><p>Although Lantern was not initially designed for squeezing, many participants, particularly older adults, instinctively tried to engage with it in this way. Flexible, 3D-printed TPU shells would allow users to squeeze Lantern.</p></div>
+        <div class="point"><h3>Dynamic interactions for long-term engagement</h3><p>Participants noted that static, pre-programmed behaviors limited Lantern’s sense of liveliness. Future iterations should integrate real-time, adaptive behaviors driven by user inputs (e.g., gestures, touch) or environmental sensing.</p></div>
+      </div>
+    </section>
+
+    <aside class="callout">
+      <span class="kicker">Future work</span>
+      <p>As our studies primarily aimed to establish proof-of-concept, further controlled research against baselines is needed to isolate Lantern’s specific effects, and evaluating its robustness, reliability, and maintainability through long-term deployments is a crucial next step. Future work should explore Lantern for the delivery of targeted longitudinal interventions in key domains such as sleep health, ADHD support, and mindfulness and meditation.</p>
+      <div class="actions">
+        <a class="button primary" href="https://lantern-website-iota.vercel.app/">Explore the build guide</a>
+        <a class="button" href="https://doi.org/10.1145/3757279.3785644">Read the paper</a>
+      </div>
+    </aside>
+  </main>
+</div>
+
+<footer class="site page">Victor Nikhil Antony · Department of Computer Science, Johns Hopkins University · Baltimore, MD</footer>
+
 </body>
 </html>

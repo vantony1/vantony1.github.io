@@ -1,349 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Designing Robot Exercise Partners — Victor Nikhil Antony</title>
-  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise Robots · Victor Nikhil Antony</title>
+<meta name="description" content="Co-Designing with Older Adults, for Older Adults: Robots to Promote Physical Activity (HRI 2023), and an in-home case study of a Poppy Ergo Jr exercise robot (HRI 2024 Workshop on HRI for Aging in Place).">
+<link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;family=Libre+Franklin:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400&amp;family=Noto+Serif+Tamil:wght@400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/project.css">
 </head>
-<body class="poppy-page">
+<body>
 
-  <nav class="nav home-nav">
-    <a class="nav-brand home-brand" href="../index.html">victor nikhil antony</a>
-    <div class="nav-links">
-      <a href="../index.html#work">Work</a>
+<div class="shell page">
+  <aside class="rail">
+    <a href="../index.html"><img class="portrait" src="../assets/img/headshot.jpg" alt="Victor Nikhil Antony"></a>
+    <p class="name"><a href="../index.html">Victor Nikhil Antony</a></p>
+    <p class="alt-name"><span lang="ta">விக்டர்</span> <span lang="hi">निखिल</span> <span lang="ta">ஆண்டனி</span></p>
+    <p class="byline">Ph.D. Candidate, Computer Science, Johns Hopkins University</p>
+    <nav aria-label="Primary">
+      <a href="../index.html#research">Research</a>
       <a href="../publications.html">Publications</a>
-      <a href="../assets/pdf/vantony_CV.pdf" target="_blank">CV</a>
-      <a href="mailto:vantony1@jhu.edu">Contact</a>
-    </div>
-  </nav>
-
-  <header class="xpress-header poppy-header">
-    <div class="poppy-landing">
-      <div class="poppy-copy">
-        <p class="poppy-kicker">Designing Robot Exercise Partners</p>
-        <h1 class="poppy-title">Co-designing how robot-supported exercise should feel for older adults.</h1>
-        <p class="poppy-subtitle">
-          This project began with a design question rather than a technical one: if a robot were going to
-          support physical activity at home, what kind of relationship should it create? Across participatory
-          workshops and a later in-home case study with Poppy Ergo Jr, the work explored how exercise support
-          could become more social, more adaptive, and more respectful of older adults' autonomy.
-        </p>
-        <div class="hero-meta">
-          <span class="meta-chip">HRI 2023</span>
-          <span class="meta-chip">HRI 2024 Aging in Place Workshop</span>
-          <span class="meta-chip">Participatory Design</span>
-          <span class="meta-chip">Healthy Aging</span>
-          <span class="meta-chip">Social Robotics</span>
-        </div>
-        <div class="intro-actions" style="margin-top: 1.35rem;">
-          <a class="btn btn-primary" href="../assets/pdf/hri-23.pdf" target="_blank">Co-design paper</a>
-          <a class="btn btn-ghost" href="../assets/pdf/poppy-arxiv.pdf" target="_blank">Home deployment paper</a>
-        </div>
-      </div>
-      <div class="poppy-hero-side">
-        <div class="poppy-frame poppy-hero-figure">
-          <img src="../figures/poppy-teaser.png" alt="Poppy project teaser image showing the robot exercise partner concept and study context." />
-          <p class="figure-caption">Poppy as a robot exercise partner: a design probe shaped through participatory work with older adults and later tested in the home.</p>
-        </div>
-        <div class="poppy-authors-wrap">
-          <p class="poppy-authors">Victor Nikhil Antony<span>*</span>, Sue Min Cho<span>*</span>, Chien-Ming Huang</p>
-          <p class="poppy-note">*equal contribution · HRI 2023 · Co-designing with Older Adults, for Older Adults</p>
-          <p class="poppy-authors">Victor Nikhil Antony, Chien-Ming Huang</p>
-          <p class="poppy-note">HRI 2024: Workshop on HRI for Aging in Place · Designing Social Robots that Engage Older Adults in Exercise</p>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <div class="project-body poppy-shell">
-
-    <section class="poppy-proof-strip">
-      <div class="poppy-proof-grid">
-        <div class="poppy-proof-card">
-          <div class="poppy-proof-number">14</div>
-          <div class="poppy-proof-label">Older adults in the co-design study, ages 65–94</div>
-        </div>
-        <div class="poppy-proof-card">
-          <div class="poppy-proof-number">3</div>
-          <div class="poppy-proof-label">Relationship models that emerged: Trainer, Companion, Augmenter</div>
-        </div>
-        <div class="poppy-proof-card">
-          <div class="poppy-proof-number">7</div>
-          <div class="poppy-proof-label">Design guidelines initially distilled from the participatory work</div>
-        </div>
-        <div class="poppy-proof-card">
-          <div class="poppy-proof-number">7</div>
-          <div class="poppy-proof-label">Days of in-home deployment with Poppy Ergo Jr</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="poppy-overview-section">
-      <div class="poppy-frame poppy-overview-frame">
-        <img src="../assets/img/poppy/teaser-procedure.png" alt="Three-stage co-design process with older adults and the broader study flow for robot exercise partners." />
-        <p class="figure-caption">The project moved through interviews, workshops, and critique sessions before later testing those design ideas through an in-home deployment.</p>
-      </div>
-    </section>
-
-    <section class="poppy-story-block">
-      <div class="poppy-story-copy">
-        <span class="poppy-section-tag">01 · Design question</span>
-        <h2 class="xpress-title">The challenge was not just getting people to move. It was designing a partner they would actually want nearby.</h2>
-        <p class="intro-lede">
-          Existing exercise tools often assume that better tracking, more reminders, or stricter routines will solve inactivity.
-          The papers point in a different direction: older adults wanted support that understood their schedule, their limits, and
-          the emotional texture of exercise at home. That made this project fundamentally about interaction design and relationship design.
-        </p>
-      </div>
-      <div class="poppy-insight-notes">
-        <div class="context-card">
-          <h4>Autonomy <span class="ctx-badge">Scheduling</span></h4>
-          <p>Participants wanted control over when and how they exercised, rather than daily compliance pressure imposed by the system.</p>
-        </div>
-        <div class="context-card">
-          <h4>Adaptation <span class="ctx-badge">Physical limits</span></h4>
-          <p>Pain, mobility constraints, and fall concerns made rigid exercise flows feel exclusionary instead of supportive.</p>
-        </div>
-        <div class="context-card">
-          <h4>Companionship <span class="ctx-badge">Motivation</span></h4>
-          <p>What many participants wanted most was presence: a robot that exercised with them, not one that simply monitored them.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="poppy-quotes-early">
-      <div class="quote-grid poppy-quote-grid">
-        <div class="quote-block">
-          <blockquote>
-            "Having a workout group motivates me more to work out. You want to show up for the other people."
-          </blockquote>
-          <p class="quote-attr">Co-design participant — on social motivation</p>
-        </div>
-        <div class="quote-block">
-          <blockquote>
-            "I'm scared of falling, and I have to be really careful with some movements. The robot should know that."
-          </blockquote>
-          <p class="quote-attr">Co-design participant — on the need for physical adaptation</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="poppy-image-chapter">
-      <div class="poppy-chapter-head">
-        <span class="poppy-section-tag">02 · Relationship models</span>
-        <h2 class="xpress-title">Older adults designed three different kinds of robot exercise partners.</h2>
-        <p class="section-lede">
-          The most important output of the co-design work was not a single preferred robot. It was a small design vocabulary for how a robot could relate to a user during physical activity.
-        </p>
-      </div>
-
-      <div class="poppy-role-grid">
-        <article class="poppy-role-card">
-          <p class="poppy-role-tag">Structure</p>
-          <h3>Trainer</h3>
-          <p>A robot that provides routine, pacing, and clear exercise guidance for users who want an external scaffold.</p>
-          <ul>
-            <li>Leads structured routines</li>
-            <li>Demonstrates form and counts progress</li>
-            <li>Works when guidance feels supportive, not punitive</li>
-          </ul>
-        </article>
-        <article class="poppy-role-card">
-          <p class="poppy-role-tag">Presence</p>
-          <h3>Companion</h3>
-          <p>A robot that joins the user in exercise and offers encouragement through presence rather than direction.</p>
-          <ul>
-            <li>Exercises alongside, not above</li>
-            <li>Encourages gently without nagging</li>
-            <li>Makes movement feel shared and social</li>
-          </ul>
-        </article>
-        <article class="poppy-role-card">
-          <p class="poppy-role-tag">Adaptation</p>
-          <h3>Augmenter</h3>
-          <p>A robot that reshapes routines around physical limitations, chronic conditions, and changing mobility.</p>
-          <ul>
-            <li>Adapts routines to the body in front of it</li>
-            <li>Prioritizes safety and accommodation</li>
-            <li>Treats variation as expected, not exceptional</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="poppy-image-chapter">
-      <div class="poppy-chapter-head">
-        <span class="poppy-section-tag">03 · Artifacts</span>
-        <h2 class="xpress-title">Workshops generated concrete concepts, embodiments, and interaction sketches.</h2>
-        <p class="section-lede">
-          The project’s design contribution lives in these artifacts as much as in the written guidelines. They make visible how participants imagined tone, form, and flow.
-        </p>
-      </div>
-
-      <div class="poppy-artifact-grid">
-        <div class="figure-panel">
-          <img src="../assets/img/poppy/prototypes.png" alt="Prototype concepts created during co-design workshops with older adults." />
-          <p class="figure-caption">Prototype concepts from workshops surfaced different expectations around posture, approachability, and social presence.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="poppy-image-chapter">
-      <div class="poppy-chapter-head">
-        <span class="poppy-section-tag">04 · Motivators and barriers</span>
-        <h2 class="xpress-title">The co-design findings showed that motivation and friction are both deeply situated.</h2>
-        <p class="section-lede">
-          Sociality, health goals, and enjoyment motivated activity. Pain, fatigue, fall risk, and scheduling friction undermined it. Together these findings explain why the relationship model mattered so much.
-        </p>
-      </div>
-
-      <div class="figure-panel">
-        <img src="../assets/img/poppy/results-motivators-draft.png" alt="Motivators for physical activity among older adults." />
-        <p class="figure-caption">Motivators clustered around companionship, wellbeing, and enjoyment rather than around surveillance or optimization.</p>
-      </div>
-
-      <div class="figure-panel poppy-figure-spacer">
-        <img src="../assets/img/poppy/results-barriers-draft.png" alt="Barriers to physical activity among older adults." />
-        <p class="figure-caption">Barriers were practical and embodied: pain, fatigue, fear of falling, and the difficulty of fitting routines into daily life.</p>
-      </div>
-
-      <div class="poppy-findings-row">
-        <div class="context-card">
-          <h4>Social motivation is real <span class="ctx-badge">Companion</span></h4>
-          <p>Participants repeatedly described wanting someone to exercise with, which gave the Companion role real grounding.</p>
-        </div>
-        <div class="context-card">
-          <h4>Rigid systems exclude <span class="ctx-badge">Augmenter</span></h4>
-          <p>Physical limitations and injury concerns made adaptation feel essential, not optional.</p>
-        </div>
-        <div class="context-card">
-          <h4>Respect matters <span class="ctx-badge">Tone</span></h4>
-          <p>The preferred interaction style was clear: encouragement without nagging, guidance without loss of control.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="poppy-image-chapter">
-      <div class="poppy-chapter-head">
-        <span class="poppy-section-tag">05 · Deployment as stress test</span>
-        <h2 class="xpress-title">Poppy Ergo Jr translated the design ideas into a working home exercise system.</h2>
-        <p class="section-lede">
-          The later case study did not replace the co-design work. It tested it. Poppy Ergo Jr became the first probe for asking which design principles held up once the robot entered daily life.
-        </p>
-      </div>
-
-      <div class="figure-panel poppy-deployment-panel">
-        <img src="../figures/teaser.png" alt="Poppy Ergo Jr used in the home deployment study." />
-        <p class="figure-caption">The home study used Poppy Ergo Jr with a touchscreen interface, hotword activation, pose estimation, and wearable sensing to structure exercise sessions in the participant's home.</p>
-      </div>
-
-      <div class="poppy-flow-grid">
-        <div class="context-card">
-          <h4>Choose and begin <span class="ctx-badge">Interface</span></h4>
-          <p>The participant woke Poppy, selected routines through the touchscreen, and retained control over when and what to do.</p>
-        </div>
-        <div class="context-card">
-          <h4>Exercise with feedback <span class="ctx-badge">System</span></h4>
-          <p>Poppy demonstrated exercises while pose tracking and wearable data supported monitoring and coaching during the session.</p>
-        </div>
-        <div class="context-card">
-          <h4>See what breaks <span class="ctx-badge">Learning</span></h4>
-          <p>The week-long deployment revealed whether the co-designed interaction ideas were robust enough for real routines and real bodies.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="poppy-image-chapter">
-      <div class="poppy-chapter-head">
-        <span class="poppy-section-tag">06 · What held up</span>
-        <h2 class="xpress-title">The deployment confirmed the value of the design direction and exposed remaining gaps.</h2>
-        <p class="section-lede">
-          The system worked well enough to surface a sharper insight: the missing pieces were not just technical bugs, but places where the design still reflected an engineer’s idea of exercise more than an older adult’s.
-        </p>
-      </div>
-
-      <div class="poppy-evidence-grid">
-        <div class="context-card">
-          <h4>Autonomy stayed central <span class="ctx-badge">Scheduling</span></h4>
-          <p>Flexible routine structure mattered more than strict daily repetition, reinforcing the co-design emphasis on user control.</p>
-        </div>
-        <div class="context-card">
-          <h4>Variety mattered <span class="ctx-badge">Content</span></h4>
-          <p>A small exercise library was not enough for a week-long experience, especially given how much exercise content already exists elsewhere.</p>
-        </div>
-        <div class="context-card">
-          <h4>Adaptation was still incomplete <span class="ctx-badge">Pose tracking</span></h4>
-          <p>Rigid sensing assumptions created friction for a participant with an arm issue, validating exactly why the Augmenter role mattered.</p>
-        </div>
-        <div class="context-card">
-          <h4>Presence was promising <span class="ctx-badge">Engagement</span></h4>
-          <p>The deployment suggested that robot presence can sustain routine, but only when it respects the user’s own pacing and bodily constraints.</p>
-        </div>
-      </div>
-
-      <div class="quote-grid poppy-quote-grid">
-        <div class="quote-block">
-          <blockquote>
-            "I don't want to work out an hour a day — 20 minutes a day would be fine, but I'd prefer it being an hour, three days a week."
-          </blockquote>
-          <p class="quote-attr">Deployment participant — on flexibility over compliance</p>
-        </div>
-        <div class="quote-block">
-          <blockquote>
-            "I have an arm issue, and unless I completed the exercise exactly the way they wanted it done, it wouldn't move forward — so I soldiered through."
-          </blockquote>
-          <p class="quote-attr">Deployment participant — on why adaptation cannot be optional</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="poppy-image-chapter">
-      <div class="poppy-chapter-head">
-        <span class="poppy-section-tag">07 · Takeaways</span>
-        <h2 class="xpress-title">The lasting contribution is a design direction for robot exercise partners.</h2>
-        <p class="section-lede">
-          Across both papers, the work suggests a smaller set of durable design principles: build for autonomy, adapt to real bodies, treat social presence as a primary design material, and keep interaction accessible and legible.
-        </p>
-      </div>
-
-      <div class="poppy-takeaway-grid">
-        <div class="poppy-takeaway-card">
-          <h3>Design for partnership</h3>
-          <p>The robot should feel like a partner in activity, not a compliance device that enforces a routine from above.</p>
-        </div>
-        <div class="poppy-takeaway-card">
-          <h3>Adapt around the body</h3>
-          <p>Exercise support has to respond to pain, mobility limitations, and fluctuating capacity rather than demanding ideal form.</p>
-        </div>
-        <div class="poppy-takeaway-card">
-          <h3>Support autonomy</h3>
-          <p>Timing, intensity, and routine structure need to stay negotiable so the system fits into a user’s life instead of trying to reorganize it.</p>
-        </div>
-        <div class="poppy-takeaway-card">
-          <h3>Keep the interaction legible</h3>
-          <p>Appearance, feedback, and interface flow all shape trust. The robot has to feel approachable, understandable, and easy to use.</p>
-        </div>
-      </div>
-    </section>
-
-  </div>
-
-  <footer class="site-footer">
-    <p>
-      <a href="mailto:vantony1@jhu.edu">vantony1@jhu.edu</a>
-      &nbsp;·&nbsp;
-      <a href="../publications.html">All Publications</a>
-      &nbsp;·&nbsp;
-      <a href="../index.html#work">All Work</a>
+      <a href="../index.html#mentoring">Mentoring &amp; Teaching</a>
+      <a href="../studio.html" aria-current="true">Studio</a>
+      <a href="../assets/pdf/vantony_CV.pdf">CV</a>
+    </nav>
+    <p class="contact">
+      <a href="mailto:vantony1@jhu.edu">vantony1@jhu.edu</a><br>
+      <a href="https://scholar.google.com/citations?user=g-6V3woAAAAJ&amp;hl=en">Google Scholar</a> · <a href="https://github.com/vantony1">GitHub</a>
     </p>
-    <p>Johns Hopkins University &nbsp;·&nbsp; Baltimore, MD</p>
-  </footer>
+  </aside>
+
+  <main class="main project">
+    <p class="crumb"><a href="../studio.html">Studio</a> / Exercise Robots</p>
+
+    <header class="project-head">
+      <span class="kicker">HRI 2023 · HRI 2024 Aging in Place Workshop</span>
+      <h1>Designing Robot Exercise Partners</h1>
+      <p class="dek">Co-Designing with Older Adults, for Older Adults: Robots to Promote Physical Activity</p>
+      <p class="credits"><b>Victor Nikhil Antony</b>*, Sue Min Cho*, and Chien-Ming Huang</p>
+      <p class="note">*Equal contribution.<br>The in-home case study is a separate paper by Victor Nikhil Antony and Chien-Ming Huang: “Designing Social Robots that Engage Older Adults in Exercise: A Case Study,” HRI 2024 Workshop on HRI for Aging in Place.</p>
+      <div class="tags"><span>Participatory Design</span><span>Healthy Aging</span><span>Social Robotics</span></div>
+      <div class="actions">
+        <a class="button primary" href="../assets/pdf/hri-23.pdf">Co-design paper</a>
+        <a class="button" href="https://arxiv.org/abs/2403.04153">Home deployment paper</a>
+      </div>
+    </header>
+
+    <div class="side">
+      <div>
+        <p class="lede">Lack of physical activity has severe negative health consequences for older adults and limits their ability to live independently. Robots have been proposed to help engage older adults in physical activity (PA), albeit with limited success. There is a lack of robust understanding of older adults’ needs and wants from robots designed to engage them in PA.</p>
+        <p class="lede">We report on a co-design process where older adults, physical therapy experts, and engineers designed robots to promote PA in older adults. We found a variety of motivators for and barriers against PA, conceptualized a broad spectrum of possible robotic support, and found that robots can play various roles to help older adults engage in PA.</p>
+        <p class="lede">A follow-up case study evaluated a prototype social robot, designed to lead users through exercise sessions with motivational feedback, in the home of a 78-year-old participant for one week.</p>
+      </div>
+      <div class="stats col">
+        <div class="stat"><b>14</b><span>Older adult participants in the co-design process, ages 65–94</span></div>
+        <div class="stat"><b>2</b><span>Experts in older adult physical therapy and personal training</span></div>
+        <div class="stat"><b>3</b><span>Stages: interviews, co-design workshops, and design and critique</span></div>
+        <div class="stat"><b>3</b><span>Robot roles: trainers, companions, and augmenters of physical abilities</span></div>
+        <div class="stat"><b>7</b><span>General robot design guidelines</span></div>
+        <div class="stat"><b>7</b><span>Days of in-home deployment with a Poppy Ergo Jr prototype</span></div>
+      </div>
+    </div>
+
+    <section class="chapter">
+      <span class="kicker">Method</span>
+      <h2>Co-design process</h2>
+      <p class="lede">We employed the co-design methodology to empower older adults as drivers of the design for robots to engage them in PA. Our approach involved three stages to understand the barriers and motivators for older adults to engage in physical activity, and to collaboratively design, with various stakeholders, assistive robots to engage older adults in physical activity.</p>
+      <p class="lede">We recruited 14 participants (age range 65–94) with a variety of physical abilities and living conditions, from condos and houses to a rehabilitation center.</p>
+      <figure class="fig">
+        <img src="../assets/img/poppy/teaser-procedure.png" alt="Photos of the three stages: interviews, co-design workshops with older adults and physical therapists, and design and critique workshops, with sticky notes and sketches.">
+        <figcaption>We co-designed robots to promote physical activity with older adults in three stages: interviews with older adults (a); co-design workshops with older adults (b, c) and physical therapists (d); and design (e) and critique (f) workshops.</figcaption>
+      </figure>
+      <div class="points">
+        <div class="point"><span class="kicker">Stage 1</span><h3>Semi-structured interviews</h3><p>Interviews with nine older adults, each around 40 minutes, to gain an initial understanding of their PA context, to probe them to think about potential robots for promoting active living, and to build rapport.</p></div>
+        <div class="point"><span class="kicker">Stage 2</span><h3>Co-design workshops</h3><p>A 1.5-hour workshop with two experts in older adult physical therapy and personal training, and three older adult workshops of around 1.25 hours each. Workshop #3 was held at a rehabilitation center with three older adults with amputations.</p></div>
+        <div class="point"><span class="kicker">Stage 3</span><h3>Design and critique</h3><p>Older adults had exciting ideas, but a general lack of comfort with sketching restricted their ability to communicate them. Three graduate students developed the ideas into more concrete robotic plans, which older adults then critiqued.</p></div>
+      </div>
+      <p class="note">Collaborative map-making was the key dialogue driver across workshops. Two researchers coded all transcripts; inter-rater reliability (Cohen’s Kappa on 20% overlap data) was 0.81.</p>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Results</span>
+      <h2>Motivators and barriers</h2>
+      <div class="side">
+        <figure class="fig">
+          <img src="../assets/img/poppy/pa-drafts.png" alt="Mind map of physical activities for older adults: aerobic, group, creativity hobbies, multicomponent, activities of daily living, muscle strengthening, balance, and family activities.">
+          <figcaption>Physical activities for older adults.</figcaption>
+        </figure>
+        <div>
+          <p class="lede">We found significant variety in the types of PA older adults find enjoyable.</p>
+          <p class="lede">Motivators included social benefits, mental benefits, physical benefits, progression, active lifestyle, and community factors. Barriers included accessibility issues (i.e., infrastructure, environmental, financial, technical, social), physical limitations, mental state, and commitments. Both were consistent with previous findings.</p>
+        </div>
+      </div>
+      <figure class="fig">
+        <img src="../assets/img/poppy/results-motivators-draft.png" alt="Mind map of motivators for physical activity, grouped into mental benefits, physical benefits, social contact, active lifestyle, progression, mental state, and community factors.">
+        <figcaption>Motivators for physical activities. Numbers in the figure are occurrences of thematic codes.</figcaption>
+      </figure>
+      <figure class="fig">
+        <img src="../assets/img/poppy/results-barriers-draft.png" alt="Mind map of barriers to physical activity, grouped into accessibility, physical limitations, mental state, and commitments.">
+        <figcaption>Barriers to physical activities. Numbers in the figure are occurrences of thematic codes.</figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Results</span>
+      <h2>Robot roles</h2>
+      <p class="lede">The discussion on barriers and motivators helped facilitate the exploration of a variety of roles robots can play to amplify PA in older adults.</p>
+      <div class="points">
+        <div class="point">
+          <h3>Robots as trainers</h3>
+          <p>An apparent yet practical solution, intended to improve accessibility to learning how to exercise and trying different exercises: targeted workouts such as yoga and strength training, and group classes such as water aerobics and group dance.</p>
+          <ul class="bullets">
+            <li><b>Roles:</b> personal trainer, group activity leader, motivational coach</li>
+            <li><b>Features:</b> progression and adaptation, encouragement, informative feedback</li>
+          </ul>
+        </div>
+        <div class="point">
+          <h3>Robots as companions</h3>
+          <p>Companionship can be realized in many forms to directly and indirectly encourage older adults to pursue enjoyable physical activities. Robots can accompany older adults during PA (e.g., walking, creative hobbies) to counter loneliness.</p>
+          <ul class="bullets">
+            <li><b>Roles:</b> friend or partner, informant or personal assistant, housekeeper</li>
+            <li><b>Features:</b> emotional support, social support</li>
+          </ul>
+        </div>
+        <div class="point">
+          <h3>Robots as augmenters of physical abilities</h3>
+          <p>Robots can augment older adults’ physical abilities, enabling them to engage again in enjoyable PA (e.g., biking, skiing and hiking). These robots would only provide support as needed and allow the user to exert themselves as much as they safely can.</p>
+          <ul class="bullets">
+            <li><b>Role:</b> physical support robot</li>
+            <li><b>Features:</b> wear-ability, informative guidance</li>
+          </ul>
+        </div>
+      </div>
+      <div class="quotes">
+        <div class="quote">
+          <blockquote>“The social activity that comes with doing group exercises is very, very valuable... when it’s hard to differentiate between social activity and exercise activity. That’s good.”</blockquote>
+          <p>Joe (M/75)</p>
+        </div>
+        <div class="quote">
+          <blockquote>“I think for older people, as their friends pass away, and their partner passes away, it gets harder to meet other people and they’re lonely... because they have physical limitations, they can’t just go out and make friends.”</blockquote>
+          <p>Betty (F/71)</p>
+        </div>
+        <div class="quote">
+          <blockquote>“Fall risk is more of a factor in my mind, I just try to be honest with myself about the reality of those things... I’ve definitely made the involuntary transition from more active to less active”</blockquote>
+          <p>Clement (M/79)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Design and critique</span>
+      <h2>Potential designs</h2>
+      <p class="lede">We consolidated design guidelines and robot proposals from the previous stages so that engineers could develop the older adults’ ideas into more concrete robotic plans. Older adults then critiqued each design, marking features they liked and disliked.</p>
+      <figure class="fig">
+        <img src="../assets/img/poppy/prototypes.png" alt="Sketches of three robot designs: a touchscreen trainer robot with adjustable height, a soft companion robot with a hologram, and a belt that projects gait information.">
+        <figcaption>Designs of robots to promote physical activity: a trainer robot (Design 1), a companion robot (Design 2), and a robotic aid in the form of a belt (Design 3).</figcaption>
+      </figure>
+      <div class="points">
+        <div class="point"><span class="kicker">Trainer</span><h3>Design 1</h3><p>A large touchscreen displays demonstrations of exercises, and the adjustable height allows ergonomic posture for the user. Evaluators found the touchscreen useful but suggested adding remote control, because not all older adults may be comfortable with using a touch screen.</p></div>
+        <div class="point"><span class="kicker">Companion</span><h3>Design 2</h3><p>A robot with a cushy, soft exterior in a customizable color that engages in social interactions and can also be used as a security system. A hologram supports interaction or entertainment, and a charging home provides a physical privacy barrier. Evaluators were favorable towards it.</p></div>
+        <div class="point"><span class="kicker">Augmenter</span><h3>Design 3</h3><p>A belt that projects gait information on the ground and catches the user in case of an unavoidable fall. Evaluators were not convinced; they emphasized the need for simplicity, practicality, and ease of use, and preferred a more familiar design of a walker.</p></div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Discussion</span>
+      <h2>General robot design guidelines</h2>
+      <p class="lede">A wide range of robotic assistance can help promote PA in older adults, each with its own set of required functions. Regardless of robots’ intended roles, the following general design guidelines should be considered.</p>
+      <div class="table-wrap">
+        <div class="table-scroll">
+          <table class="data">
+            <thead>
+              <tr><th>Guideline</th><th>What we found</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><b>Interactivity</b></td><td>Engaging dialogue with motivational feedback is a vital feature for many older adults and use cases, although the required level of interactivity depends on the scenario.</td></tr>
+              <tr><td><b>Verbal and non-verbal communication</b></td><td>Clear speech, visible text, proper gaze and discernible movements. An expressive face was suggested for the functional reason of allowing users to lip-read.</td></tr>
+              <tr><td><b>Adaptive to users’ preferences and abilities</b></td><td>As individuals grow, their abilities evolve and their living conditions change; robots need to account for these changes and adjust to the user’s mood.</td></tr>
+              <tr><td><b>Easy to use</b></td><td>Long-term uptake would be dependent on a shallow learning curve and effortless usage.</td></tr>
+              <tr><td><b>Mindful towards privacy</b></td><td>Almost all older adults expressed concern for the misuse of their data, but were open to relevant data being shared with stakeholders such as physicians and informal caregivers.</td></tr>
+              <tr><td><b>Appearance</b></td><td>Those looking for social support preferred a humanoid or zoomorphic look; those in search of functional support preferred a utilitarian look. There was a clear desire for a compact robot.</td></tr>
+              <tr><td><b>Respectful interactions</b></td><td>Interactions need to respect older adults’ expectations for self-reliance and independence; condescending or discouraging behaviours can damage relationships with them.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="quotes">
+        <div class="quote">
+          <blockquote>“A lot of people as they get older, rely on being able to see a mouth. I see the mouth, and what the mouth shape say of the sound becomes very important.”</blockquote>
+          <p>Alfred (M/67), on lip-reading</p>
+        </div>
+        <div class="quote">
+          <blockquote>“If you discourage [an older adult client], or if they felt like you were like condescending to them, they will just stop showing up.”</blockquote>
+          <p>Arlo, physical therapy expert</p>
+        </div>
+      </div>
+      <div class="points">
+        <div class="point"><h3>Older adults: a diverse population</h3><p>Although we found general trends, these robots must be personalized to individual preferences in terms of the robots’ role, morphology, and behavior. Some individuals may only need companionship and reminders, while others may need personal training and mobility assistance.</p></div>
+        <div class="point"><h3>Access equals impact</h3><p>These robots need to be financially accessible to be effective, as a large portion of older adults are on fixed incomes. Societal actions are also needed to lower barriers, such as improved access to PA facilities.</p></div>
+        <div class="point"><h3>Ethics and liabilities</h3><p>The issue of liability needs to be addressed, and ensuring user safety may thwart users’ privacy in many situations. To establish robots as an effective tool to engage older adults in PA, there is a critical need for a code of robotic conduct.</p></div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Case study</span>
+      <h2>System overview</h2>
+      <p class="lede">Towards understanding older adults’ needs from exercise-promoting social robots in long-term, in-home scenarios, we developed a prototype social robot platform designed to engage older adults in daily exercise sessions. We extracted design guidelines from the co-design study; the prototype fits most closely to the trainer role.</p>
+      <figure class="fig">
+        <img src="../figures/teaser.png" alt="An older adult exercising in her dining room in front of a touchscreen with the Poppy Ergo Jr robot arm beside it, and the Workout and Dashboard screens of the interface.">
+        <figcaption>Our prototype features a large touchscreen display along with a Poppy Ergo Jr robot as the embodied social agent.</figcaption>
+      </figure>
+      <div class="points">
+        <div class="point"><h3>Exercise session</h3><p>Five exercises (bicep curls, side raises, front raises, oblique twists, and chair squats), each shown in a demonstration video and followed by three sets of ten reps. The robot counts reps out loud and gives motivational feedback such as “you got this! almost there”.</p></div>
+        <div class="point"><h3>Progress dashboard</h3><p>At the end of each session, a dashboard visually represents the user’s weekly progress, and the robot articulates a verbal summary of the user’s achievements, designed to prompt reflection and goal setting.</p></div>
+        <div class="point"><h3>Sensing and implementation</h3><p>Users say “Hey Poppy” or use the touchscreen. Mediapipe pose detection and a K-Nearest Neighbours model count reps, and a Fitbit Versa 2 provides real-time heart rate. The system runs on a ROS2 backend and a ReactJS frontend.</p></div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <span class="kicker">Case study</span>
+      <h2>In-home case study</h2>
+      <p class="lede">We deployed the prototype for seven days to the home of a 78-year-old woman living alone at her suburban house with no notable mobility constraints or health conditions, and conducted a semi-structured interview at the end. She engaged with the system for daily exercise all seven days, although according to the participant this adherence was largely driven by study protocol.</p>
+      <div class="points">
+        <div class="point"><h3>User autonomy</h3><p>The participant wanted options to omit certain exercises, reorder the sequence of activities, and adjust the frequency of exercise sessions to match her preference and lifestyle.</p></div>
+        <div class="point"><h3>Variety and engagement</h3><p>A lack of diversity in the exercise offerings led to a perception of monotony. She did not like the robot saying her name often and suggested integrating music instead.</p></div>
+        <div class="point"><h3>Existing alternatives</h3><p>She uses exercise walk-through videos that she finds more engaging and better suited to her needs. Social robots must be sufficiently more engaging, helpful and convenient than existing alternatives.</p></div>
+        <div class="point"><h3>Motion tracking</h3><p>Erroneous exercise recognition disrupted the flow of activity, undermined trust, and could aggravate existing physical ailments. A coarser motion tracking system could support a wider range of physical activity.</p></div>
+        <div class="point"><h3>Robot embodiment</h3><p>The absence of significant commentary on the robot signals a need to harness its physical embodiment and non-verbal behaviors, for example by having the robot imitate the user’s exercises as an exercise partner.</p></div>
+        <div class="point"><h3>Wearable sensing</h3><p>The participant found the Fitbit excessively cumbersome, using it only during exercise sessions. Making it less cumbersome matters for analysing the intervention’s impact on daily activity and health statistics over time.</p></div>
+      </div>
+      <div class="quotes">
+        <div class="quote">
+          <blockquote>“I don’t want to work out an hour a day, 20 mins a day would be fine but I would prefer it being an hour, 3 days a week.”</blockquote>
+          <p>Case study participant, on autonomy</p>
+        </div>
+        <div class="quote">
+          <blockquote>“There are so many exercise videos out there that are so nice... I personally don’t need that system...”</blockquote>
+          <p>Case study participant, on existing alternatives</p>
+        </div>
+        <div class="quote">
+          <blockquote>“I have an arm issue, and unless I completed the exercise exactly the way they [the robot] wanted it done, it wouldn’t move forward...”</blockquote>
+          <p>Case study participant, on motion tracking</p>
+        </div>
+      </div>
+    </section>
+
+    <aside class="callout">
+      <span class="kicker">Next steps</span>
+      <p>In the next phase of our design efforts, we will concentrate on boosting user autonomy in choosing exercise protocols, integrating music, enhancing the robot’s motivational feedback, and fostering a workout partner dynamic to increase engagement during exercise sessions. Designing social robots iteratively with direct feedback from older adults can help us identify the most critical features required for long-term engagement and consistent usage.</p>
+      <div class="actions">
+        <a class="button primary" href="../assets/pdf/hri-23.pdf">Co-design paper</a>
+        <a class="button" href="https://arxiv.org/abs/2403.04153">Home deployment paper</a>
+      </div>
+    </aside>
+  </main>
+</div>
+
+<footer class="site page">Victor Nikhil Antony · Department of Computer Science, Johns Hopkins University · Baltimore, MD</footer>
 
 </body>
 </html>
