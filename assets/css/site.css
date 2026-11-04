@@ -1,14 +1,14 @@
 /* Site styles for index, publications, and studio.
-   Type and layout follow cs.jhu.edu/~cmhuang: Source Serif 4 + Libre Franklin, warm paper, one accent. */
+   Type and layout follow cs.jhu.edu/~cmhuang: Source Serif 4 + Libre Franklin, cool off-white paper, one accent. */
 
 :root {
-  --paper: #FBFAF8;
-  --tile: #F2EFE9;
+  --paper: #F7F8FA;
+  --tile: #ECEEF2;
   --ink: #1C1C1A;
   --ink-2: #4A4A46;
   --muted: #6E6C66;
-  --hairline: #DEDCD4;
-  --line-strong: #CFCBC2;
+  --hairline: #DDE0E6;
+  --line-strong: #CBD0D8;
   --accent: #185690;
   --accent-soft: #E8EEF6;
   --rose: #9B3F5C;
@@ -79,7 +79,10 @@ section { scroll-margin-top: 32px; }
 
 /* ── Home: intro ────────────────────────── */
 .intro p { margin: 0 0 16px; font-size: 17.5px; line-height: 1.55; }
-.intro p:first-child::first-letter { font-weight: 900; font-size: 54px; float: left; line-height: .75; padding: 6px 8px 0 0; }
+.intro p:first-child::first-letter { float: left; font-size: 52px; line-height: .8; padding: 5px 8px 0 0; font-weight: 600; color: var(--accent); }
+@supports (initial-letter: 2) or (-webkit-initial-letter: 2) {
+  .intro p:first-child::first-letter { float: none; padding: 0; font-size: inherit; line-height: inherit; -webkit-initial-letter: 2; initial-letter: 2; margin-right: 8px; }
+}
 
 /* ── Home: themes and badges ────────────── */
 .theme + .theme { margin-top: 26px; }
@@ -120,6 +123,7 @@ section { scroll-margin-top: 32px; }
 .list { display: flex; flex-direction: column; gap: 9px; font-size: 14.5px; line-height: 1.35; }
 .list .d { color: var(--muted); font-size: 12.5px; }
 .note { margin: 14px 0 0; font-size: 14px; color: var(--ink-2); }
+.label + .note { margin: 0 0 18px; }
 
 /* ── Home: publications sidebar ─────────── */
 .pubs {
@@ -134,6 +138,7 @@ section { scroll-margin-top: 32px; }
 }
 .pubs-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 18px; flex-shrink: 0; }
 .pubs-head h2 { margin: 0; }
+.pubs > .legend { margin: -8px 0 16px; flex-shrink: 0; }
 .more { font-family: var(--sans); font-size: 13px; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
 .pub-list { display: flex; flex-direction: column; gap: 14px; overflow-y: auto; min-height: 0; padding-right: 4px; }
 .pub { font-size: 16px; line-height: 1.35; padding-bottom: 14px; border-bottom: 1px solid var(--hairline); }
@@ -215,6 +220,8 @@ section { scroll-margin-top: 32px; }
 /* ── Footer ─────────────────────────────── */
 footer.site { max-width: 1320px; margin: 56px auto 0; padding: 20px 32px 56px; border-top: 1px solid var(--hairline); font-family: var(--sans); font-size: 12.5px; color: var(--muted); }
 footer.site.page { max-width: 1180px; }
+footer.site a { text-decoration: underline; text-underline-offset: 3px; }
+footer.site a:hover { color: var(--ink); }
 
 /* ── Responsive ─────────────────────────── */
 @media (max-width: 1100px) {
